@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TmpDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="TmpDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Article" EntityType="TmpDBModel.Article" />
+    <EntitySet Name="Credit" EntityType="TmpDBModel.Credit" />
+    <EntitySet Name="Users" EntityType="TmpDBModel.Users" />
+    <EntitySet Name="Vente" EntityType="TmpDBModel.Vente" />
+  </EntityContainer>
+  <EntityType Name="Article">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Designation" Type="String" Nullable="false" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="PrixAchat" Type="Decimal" Nullable="false" Precision="53" Scale="0" />
+    <Property Name="PrixVente" Type="Decimal" Nullable="false" Precision="53" Scale="0" />
+    <Property Name="SN" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="QT" Type="Int32" Nullable="false" />
+    <Property Name="IsGenerique" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Credit">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ArticleId" Type="Int64" />
+    <Property Name="Designation" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="PrixAchat" Type="Decimal" Precision="53" Scale="0" />
+    <Property Name="PrixVente" Type="Decimal" Precision="53" Scale="0" />
+    <Property Name="SN" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="DateDeVente" Type="DateTime" />
+    <Property Name="QT" Type="Int32" />
+    <Property Name="NomClient" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="Coordonnes" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="ModePaiement" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="ParentId" Type="Int64" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="Pass" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="Stock" Type="Boolean" />
+    <Property Name="Vente" Type="Boolean" />
+    <Property Name="Vente_S" Type="Boolean" />
+    <Property Name="HistoriqueVente" Type="Boolean" />
+    <Property Name="AVoir" Type="Boolean" />
+    <Property Name="Inventaire" Type="Boolean" />
+    <Property Name="VenteCredit" Type="Boolean" />
+    <Property Name="VenteCredit_S" Type="Boolean" />
+    <Property Name="GererAcces" Type="Boolean" />
+    <Property Name="ViderBase" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Vente">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ArticleId" Type="Int64" />
+    <Property Name="Designation" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="PrixAchat" Type="Decimal" Precision="53" Scale="0" />
+    <Property Name="PrixVente" Type="Decimal" Precision="53" Scale="0" />
+    <Property Name="SN" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="DateDeVente" Type="DateTime" />
+    <Property Name="QT" Type="Int32" />
+  </EntityType>
+</Schema>

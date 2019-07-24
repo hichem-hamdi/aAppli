@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="MyDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Article" EntityType="MyDBModel.Article" />
+    <EntitySet Name="Vente" EntityType="MyDBModel.Vente" />
+    <EntitySet Name="Credit" EntityType="MyDBModel.Credit" />
+    <EntitySet Name="Users" EntityType="MyDBModel.User" />
+    <EntitySet Name="Establishment" EntityType="MyDBModel.Establishment" />
+    <AssociationSet Name="FK_Article_0_0" Association="MyDBModel.FK_Article_0_0">
+      <End Role="Establishment" EntitySet="Establishment" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_0_0" Association="MyDBModel.FK_Users_0_0">
+      <End Role="Establishment" EntitySet="Establishment" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <EntitySet Name="Reservation" EntityType="MyDBModel.Reservation" />
+    <AssociationSet Name="FK_Reservation_4_0" Association="MyDBModel.FK_Reservation_4_0">
+      <End Role="Article" EntitySet="Article" />
+      <End Role="Reservation" EntitySet="Reservation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reservation_2_0" Association="MyDBModel.FK_Reservation_2_0">
+      <End Role="Establishment" EntitySet="Establishment" />
+      <End Role="Reservation" EntitySet="Reservation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reservation_3_0" Association="MyDBModel.FK_Reservation_3_0">
+      <End Role="Establishment" EntitySet="Establishment" />
+      <End Role="Reservation" EntitySet="Reservation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reservation_0_0" Association="MyDBModel.FK_Reservation_0_0">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Reservation" EntitySet="Reservation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reservation_1_0" Association="MyDBModel.FK_Reservation_1_0">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Reservation" EntitySet="Reservation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vente_0_0" Association="MyDBModel.FK_Vente_0_0">
+      <End Role="Establishment" EntitySet="Establishment" />
+      <End Role="Vente" EntitySet="Vente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Credit_0_0" Association="MyDBModel.FK_Credit_0_0">
+      <End Role="Establishment" EntitySet="Establishment" />
+      <End Role="Credit" EntitySet="Credit" />
+    </AssociationSet>
+    <EntitySet Name="Brand" EntityType="MyDBModel.Brand" />
+    <EntitySet Name="Categorie" EntityType="MyDBModel.Categorie" />
+    <EntitySet Name="Famille" EntityType="MyDBModel.Famille" />
+    <EntitySet Name="Size" EntityType="MyDBModel.Size" />
+    <EntitySet Name="SOUS_CATEGORIE" EntityType="MyDBModel.SOUS_CATEGORIE" />
+    <AssociationSet Name="FK_Article_0" Association="MyDBModel.FK_Article_0">
+      <End Role="Size" EntitySet="Size" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Article_1" Association="MyDBModel.FK_Article_1">
+      <End Role="Brand" EntitySet="Brand" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Article_2" Association="MyDBModel.FK_Article_2">
+      <End Role="SOUS_CATEGORIE" EntitySet="SOUS_CATEGORIE" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Article_3" Association="MyDBModel.FK_Article_3">
+      <End Role="Categorie" EntitySet="Categorie" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Article_4" Association="MyDBModel.FK_Article_4">
+      <End Role="Famille" EntitySet="Famille" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Article">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" Type="Int64" />
+    <Property Name="Designation" Nullable="false" MaxLength="2147483647" FixedLength="false" Unicode="true" Type="String" />
+    <Property Name="PrixAchat" Nullable="false" Precision="53" Scale="0" Type="Decimal" />
+    <Property Name="PrixVente" Nullable="false" Precision="53" Scale="0" Type="Decimal" />
+    <Property Name="SN" MaxLength="2147483647" FixedLength="false" Unicode="true" Type="String" />
+    <Property Name="QT" Nullable="false" Type="Int32" />
+    <Property Name="IsGenerique" Nullable="false" Type="Boolean" />
+    <Property Type="Int64" Name="EstablishmentId" />
+    <NavigationProperty Name="Establishment" Relationship="MyDBModel.FK_Article_0_0" FromRole="Article" ToRole="Establishment" />
+    <NavigationProperty Name="Reservation" Relationship="MyDBModel.FK_Reservation_4_0" FromRole="Article" ToRole="Reservation" />
+    <Property Type="Int64" Name="FamilleId" />
+    <Property Type="Int64" Name="CategorieId" />
+    <Property Type="Int64" Name="SousCategorieId" />
+    <Property Type="Int64" Name="BrandId" />
+    <Property Type="Int64" Name="SizeId" />
+    <NavigationProperty Name="Size" Relationship="MyDBModel.FK_Article_0" FromRole="Article" ToRole="Size" />
+    <NavigationProperty Name="Brand" Relationship="MyDBModel.FK_Article_1" FromRole="Article" ToRole="Brand" />
+    <NavigationProperty Name="SOUS_CATEGORIE" Relationship="MyDBModel.FK_Article_2" FromRole="Article" ToRole="SOUS_CATEGORIE" />
+    <NavigationProperty Name="Categorie" Relationship="MyDBModel.FK_Article_3" FromRole="Article" ToRole="Categorie" />
+    <NavigationProperty Name="Famille" Relationship="MyDBModel.FK_Article_4" FromRole="Article" ToRole="Famille" />
+  </EntityType>
+  <EntityType Name="Vente">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="Int64" Name="ArticleId" />
+    <Property Type="String" Name="Designation" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="PrixAchat" Precision="53" Scale="0" />
+    <Property Type="Decimal" Name="PrixVente" Precision="53" Scale="0" />
+    <Property Type="String" Name="SN" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateDeVente" />
+    <Property Type="Int32" Name="QT" />
+    <Property Type="Int64" Name="EstablishmentId" />
+    <NavigationProperty Name="Establishment" Relationship="MyDBModel.FK_Vente_0_0" FromRole="Vente" ToRole="Establishment" />
+  </EntityType>
+  <EntityType Name="Credit">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="Int64" Name="ArticleId" />
+    <Property Type="String" Name="Designation" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="PrixAchat" Precision="53" Scale="0" />
+    <Property Type="Decimal" Name="PrixVente" Precision="53" Scale="0" />
+    <Property Type="String" Name="SN" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateDeVente" />
+    <Property Type="Int32" Name="QT" />
+    <Property Type="String" Name="NomClient" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Coordonnes" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ModePaiement" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ParentId" />
+    <Property Type="Int64" Name="EstablishmentId" />
+    <NavigationProperty Name="Establishment" Relationship="MyDBModel.FK_Credit_0_0" FromRole="Credit" ToRole="Establishment" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Login" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Pass" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Stock" />
+    <Property Type="Boolean" Name="Vente" />
+    <Property Type="Boolean" Name="Vente_S" />
+    <Property Type="Boolean" Name="HistoriqueVente" />
+    <Property Type="Boolean" Name="AVoir" />
+    <Property Type="Boolean" Name="Inventaire" />
+    <Property Type="Boolean" Name="VenteCredit" />
+    <Property Type="Boolean" Name="VenteCredit_S" />
+    <Property Type="Boolean" Name="GererAcces" />
+    <Property Type="Boolean" Name="ViderBase" />
+    <Property Type="Int64" Name="EstablishmentId" />
+    <NavigationProperty Name="Establishment" Relationship="MyDBModel.FK_Users_0_0" FromRole="User" ToRole="Establishment" />
+    <NavigationProperty Name="Reservation" Relationship="MyDBModel.FK_Reservation_0_0" FromRole="User" ToRole="Reservation" />
+    <NavigationProperty Name="Reservation1" Relationship="MyDBModel.FK_Reservation_1_0" FromRole="User" ToRole="Reservation" />
+  </EntityType>
+  <EntityType Name="Establishment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_0_0" FromRole="Establishment" ToRole="Article" />
+    <NavigationProperty Name="Users" Relationship="MyDBModel.FK_Users_0_0" FromRole="Establishment" ToRole="User" />
+    <NavigationProperty Name="Reservation" Relationship="MyDBModel.FK_Reservation_2_0" FromRole="Establishment" ToRole="Reservation" />
+    <NavigationProperty Name="Reservation1" Relationship="MyDBModel.FK_Reservation_3_0" FromRole="Establishment" ToRole="Reservation" />
+    <NavigationProperty Name="Vente" Relationship="MyDBModel.FK_Vente_0_0" FromRole="Establishment" ToRole="Vente" />
+    <NavigationProperty Name="Credit" Relationship="MyDBModel.FK_Credit_0_0" FromRole="Establishment" ToRole="Credit" />
+  </EntityType>
+  <Association Name="FK_Article_0_0">
+    <End Type="MyDBModel.Establishment" Role="Establishment" Multiplicity="0..1" />
+    <End Type="MyDBModel.Article" Role="Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Establishment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="EstablishmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_0_0">
+    <End Type="MyDBModel.Establishment" Role="Establishment" Multiplicity="0..1" />
+    <End Type="MyDBModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Establishment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="EstablishmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Reservation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="ArticleId" Nullable="false" />
+    <Property Type="String" Name="SN" Nullable="false" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="FromId" Nullable="false" />
+    <Property Type="Int64" Name="ToId" Nullable="false" />
+    <Property Type="DateTime" Name="RequestDate" Nullable="false" />
+    <Property Type="Boolean" Name="IsValidated" />
+    <Property Type="DateTime" Name="ValidationDate" />
+    <Property Type="Int64" Name="UserId" Nullable="false" />
+    <Property Type="Int64" Name="ValidatedBy" />
+    <Property Type="Int32" Name="Qt" />
+    <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Reservation_4_0" FromRole="Reservation" ToRole="Article" />
+    <NavigationProperty Name="Establishment" Relationship="MyDBModel.FK_Reservation_2_0" FromRole="Reservation" ToRole="Establishment" />
+    <NavigationProperty Name="Establishment1" Relationship="MyDBModel.FK_Reservation_3_0" FromRole="Reservation" ToRole="Establishment" />
+    <NavigationProperty Name="Users" Relationship="MyDBModel.FK_Reservation_0_0" FromRole="Reservation" ToRole="User" />
+    <NavigationProperty Name="Users1" Relationship="MyDBModel.FK_Reservation_1_0" FromRole="Reservation" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_Reservation_4_0">
+    <End Type="MyDBModel.Article" Role="Article" Multiplicity="1" />
+    <End Type="MyDBModel.Reservation" Role="Reservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Article">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Reservation">
+        <PropertyRef Name="ArticleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reservation_2_0">
+    <End Type="MyDBModel.Establishment" Role="Establishment" Multiplicity="1" />
+    <End Type="MyDBModel.Reservation" Role="Reservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Establishment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Reservation">
+        <PropertyRef Name="ToId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reservation_3_0">
+    <End Type="MyDBModel.Establishment" Role="Establishment" Multiplicity="1" />
+    <End Type="MyDBModel.Reservation" Role="Reservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Establishment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Reservation">
+        <PropertyRef Name="FromId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reservation_0_0">
+    <End Type="MyDBModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="MyDBModel.Reservation" Role="Reservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Reservation">
+        <PropertyRef Name="ValidatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reservation_1_0">
+    <End Type="MyDBModel.User" Role="User" Multiplicity="1" />
+    <End Type="MyDBModel.Reservation" Role="Reservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Reservation">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vente_0_0">
+    <End Type="MyDBModel.Establishment" Role="Establishment" Multiplicity="0..1" />
+    <End Type="MyDBModel.Vente" Role="Vente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Establishment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Vente">
+        <PropertyRef Name="EstablishmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Credit_0_0">
+    <End Type="MyDBModel.Establishment" Role="Establishment" Multiplicity="0..1" />
+    <End Type="MyDBModel.Credit" Role="Credit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Establishment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Credit">
+        <PropertyRef Name="EstablishmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Brand">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_1" FromRole="Brand" ToRole="Article" />
+  </EntityType>
+  <EntityType Name="Categorie">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_3" FromRole="Categorie" ToRole="Article" />
+  </EntityType>
+  <EntityType Name="Famille">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_4" FromRole="Famille" ToRole="Article" />
+  </EntityType>
+  <EntityType Name="Size">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_0" FromRole="Size" ToRole="Article" />
+  </EntityType>
+  <EntityType Name="SOUS_CATEGORIE">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_2" FromRole="SOUS_CATEGORIE" ToRole="Article" />
+  </EntityType>
+  <Association Name="FK_Article_0">
+    <End Type="MyDBModel.Size" Role="Size" Multiplicity="0..1" />
+    <End Type="MyDBModel.Article" Role="Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Size">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="SizeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Article_1">
+    <End Type="MyDBModel.Brand" Role="Brand" Multiplicity="0..1" />
+    <End Type="MyDBModel.Article" Role="Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Brand">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="BrandId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Article_2">
+    <End Type="MyDBModel.SOUS_CATEGORIE" Role="SOUS_CATEGORIE" Multiplicity="0..1" />
+    <End Type="MyDBModel.Article" Role="Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SOUS_CATEGORIE">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="SousCategorieId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Article_3">
+    <End Type="MyDBModel.Categorie" Role="Categorie" Multiplicity="0..1" />
+    <End Type="MyDBModel.Article" Role="Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categorie">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="CategorieId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Article_4">
+    <End Type="MyDBModel.Famille" Role="Famille" Multiplicity="0..1" />
+    <End Type="MyDBModel.Article" Role="Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Famille">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="FamilleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

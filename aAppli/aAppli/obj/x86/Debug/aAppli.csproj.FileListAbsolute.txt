@@ -1,0 +1,1523 @@
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\X86\sqlcecompact35.dll
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\X86\sqlceme35.dll
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\X86\sqlceqp35.dll
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\X86\sqlcese35.dll
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\aAppli.exe
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\aAppli.pdb
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\itextsharp.dll
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\FR\System.Data.SqlServerCe.resources.dll
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\bin\Debug\FR\System.Data.SqlServerCe.Entity.resources.dll
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\hichem.hamdi\Documents\Visual Studio 2010\Projects\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\X86\sqlcecompact35.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\X86\sqlceme35.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\X86\sqlceqp35.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\X86\sqlcese35.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\aAppli.exe
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\aAppli.pdb
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\itextsharp.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\bin\Debug\aAppli.exe
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\bin\Debug\aAppli.pdb
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\bin\Debug\itextsharp.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\X86\sqlcecompact35.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\X86\sqlceme35.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\X86\sqlceqp35.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\X86\sqlcese35.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\aAppli.exe
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\aAppli.pdb
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\itextsharp.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\hichem.hamdi\Desktop\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\bin\Debug\itextsharp.dll
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\bin\Debug\aAppli.exe
+C:\Users\hichem.hamdi\Downloads\aAppli\aAppli\aAppli\aAppli\aAppli\bin\Debug\aAppli.pdb
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\bin\Debug\aAppli.exe.config
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\bin\Debug\aAppli.exe
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\bin\Debug\aAppli.pdb
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\bin\Debug\itextsharp.dll
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\App.g.cs
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Documents and Settings\Administrateur\Bureau\test2\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\bin\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\bin\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\bin\Debug\itextsharp.dll
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Administrateur\Desktop\test2\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\Hichem.Hamdi\Desktop\aAppli\aAppli\aAppli\bin\Debug\FR\System.Data.SqlServerCe.resources.dll
+C:\Users\Hichem.Hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.csprojResolveAssemblyReference.cache
+C:\Users\Hichem.Hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.csproj.GenerateResource.Cache
+C:\Users\Hichem.Hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.baml
+C:\Users\Hichem.Hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+C:\Users\Hichem.Hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+C:\Users\Hichem.Hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\CreditView.baml
+C:\Users\Hichem.Hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+C:\Users\Hichem.Hamdi\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\bin\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\bin\Debug\itextsharp.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\Views\CreditView.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli\aAppli\aAppli\bin\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\bin\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\bin\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\bin\Debug\itextsharp.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\Views\CreditView.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\ConnexionView.baml
+C:\Users\Administrateur\Desktop\3 12 2012\aAppli 3 12 2012\aAppli\aAppli\obj\x86\Debug\ConnexionView.g.cs
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\bin\Debug\aAppli.exe.config
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\aAppli.exe
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\aAppli.pdb
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\bin\Debug\aAppli.exe
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\bin\Debug\aAppli.pdb
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\bin\Debug\itextsharp.dll
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\bin\Debug\itextsharp.xtra.dll
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\bin\Debug\System.Data.Entity.dll
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\bin\Debug\System.Windows.Interactivity.dll
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\bin\Debug\WPFToolkit.Extended.dll
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\bin\Debug\System.Windows.Interactivity.xml
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\MainWindow.baml
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\ConnexionView.baml
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\InventaireView.baml
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\RapportVente.baml
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\MainWindow.g.cs
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\ConnexionView.g.cs
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\StockView.g.cs
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\App.g.cs
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\AvoirView.baml
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\CreditView.baml
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\StockView.baml
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\VenteView.baml
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\aAppli.g.resources
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\logeciel code a barre\aAppli 05 12 2012\aAppli\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\bin\Debug\aAppli.exe.config
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\aAppli.exe
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\aAppli.pdb
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\bin\Debug\aAppli.exe
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\bin\Debug\aAppli.pdb
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\bin\Debug\itextsharp.dll
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\bin\Debug\itextsharp.xtra.dll
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\bin\Debug\System.Data.Entity.dll
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\bin\Debug\System.Windows.Interactivity.dll
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\bin\Debug\WPFToolkit.Extended.dll
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\bin\Debug\System.Windows.Interactivity.xml
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\MainWindow.baml
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\ConnexionView.baml
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\InventaireView.baml
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\RapportVente.baml
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\MainWindow.g.cs
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\ConnexionView.g.cs
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\StockView.g.cs
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\App.g.cs
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\AvoirView.baml
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\CreditView.baml
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\StockView.baml
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\Views\VenteView.baml
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\aAppli.g.resources
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\aAppli 22 12 2012\aAppli 05 12 2012\aAppli\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\bin\Debug\aAppli.exe.config
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\aAppli.exe
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\aAppli.pdb
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\bin\Debug\aAppli.exe
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\bin\Debug\aAppli.pdb
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\bin\Debug\itextsharp.dll
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\bin\Debug\itextsharp.xtra.dll
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\bin\Debug\System.Data.Entity.dll
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\bin\Debug\System.Windows.Interactivity.dll
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\bin\Debug\WPFToolkit.Extended.dll
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\bin\Debug\System.Windows.Interactivity.xml
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\MainWindow.baml
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\ConnexionView.baml
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\Views\InventaireView.baml
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\Views\RapportVente.baml
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\MainWindow.g.cs
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\ConnexionView.g.cs
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\Views\StockView.g.cs
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\App.g.cs
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\Views\AvoirView.baml
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\Views\CreditView.baml
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\Views\StockView.baml
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\Views\VenteView.baml
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\aAppli.g.resources
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\aAppli 22 12 2012\aAppli 13 01 2013\aAppli\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\bin\Debug\aAppli.exe.config
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\aAppli.exe
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\aAppli.pdb
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\bin\Debug\aAppli.exe
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\bin\Debug\aAppli.pdb
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\bin\Debug\itextsharp.dll
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\bin\Debug\itextsharp.xtra.dll
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\bin\Debug\System.Data.Entity.dll
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\bin\Debug\System.Windows.Interactivity.dll
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\bin\Debug\WPFToolkit.Extended.dll
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\bin\Debug\System.Windows.Interactivity.xml
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\MainWindow.baml
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\ConnexionView.baml
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\Views\InventaireView.baml
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\Views\RapportVente.baml
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\MainWindow.g.cs
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\ConnexionView.g.cs
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\Views\StockView.g.cs
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\App.g.cs
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\Views\AvoirView.baml
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\Views\CreditView.baml
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\Views\StockView.baml
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\Views\VenteView.baml
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\aAppli.g.resources
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\aAppli 22 12 2012\aAppli New 13 01 2013\aAppli\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.exe
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.pdb
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\itextsharp.dll
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.csprojResolveAssemblyReference.cache
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\ConnexionView.baml
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\InventaireView.baml
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\ConnexionView.g.cs
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\CreditView.baml
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\Administrateur\Downloads\Pièces jointes_201354\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.csproj.GenerateResource.Cache
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\itextsharp.dll
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.csprojResolveAssemblyReference.cache
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\ConnexionView.baml
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\InventaireView.baml
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\ConnexionView.g.cs
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\CreditView.baml
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\Administrateur\Desktop\aAppli 14 01 2013\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.csproj.GenerateResource.Cache
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\itextsharp.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.csprojResolveAssemblyReference.cache
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\ConnexionView.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\InventaireView.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\ConnexionView.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\CreditView.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\Administrateur\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.csproj.GenerateResource.Cache
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.exe
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.pdb
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\itextsharp.dll
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.csprojResolveAssemblyReference.cache
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\ConnexionView.baml
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\InventaireView.baml
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\ConnexionView.g.cs
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\CreditView.baml
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.csproj.GenerateResource.Cache
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\ManageUsers.g.cs
+C:\Users\hichemh\Downloads\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\ManageUsers.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.exe
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.pdb
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\itextsharp.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.csprojResolveAssemblyReference.cache
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\ConnexionView.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\InventaireView.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\ConnexionView.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\ManageUsers.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\CreditView.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\ManageUsers.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\hichemh\Desktop\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.csproj.GenerateResource.Cache
+C:\Users\hichemh\Desktop\aAppliV2\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\hichemh\Desktop\aAppliV2\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\hichemh\Desktop\aAppliV2\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.csprojResolveAssemblyReference.cache
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\ConnexionView.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\InventaireView.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\ConnexionView.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\ManageUsers.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.exe
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.pdb
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\itextsharp.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\CreditView.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\ManageUsers.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\hichemh\Desktop\aAppli\aAppli\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.csproj.GenerateResource.Cache
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\bin\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\bin\Debug\itextsharp.dll
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\ConnexionView.baml
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\InventaireView.baml
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\ConnexionView.g.cs
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\ManageUsers.g.cs
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\CreditView.baml
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\ManageUsers.baml
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.csproj.GenerateResource.Cache
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\aAppli Code\aAppli 14 01 2013\aAppli\obj\x86\Debug\aAppli.csprojResolveAssemblyReference.cache
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\bin\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\bin\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\bin\Debug\itextsharp.dll
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\aAppli.csprojResolveAssemblyReference.cache
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\ConnexionView.baml
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.baml
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\ConnexionView.g.cs
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.g.cs
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\Views\CreditView.baml
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.baml
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\Administrateur\Desktop\aAppli (1)\aAppli\aAppli\obj\x86\Debug\aAppli.csproj.GenerateResource.Cache
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\ConnexionView.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\ConnexionView.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\bin\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\bin\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\bin\Debug\itextsharp.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\CreditView.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.csproj.GenerateResource.Cache
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\bin\Debug\aAppli.exe.config
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\bin\Debug\aAppli.exe
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\bin\Debug\aAppli.pdb
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\bin\Debug\itextsharp.dll
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\ConnexionView.baml
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.baml
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\ConnexionView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.g.cs
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\App.g.cs
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\CreditView.baml
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.baml
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\InventaireGlobal.baml
+C:\Documents and Settings\Administrateur\Bureau\aAppli code 26 07 2013\aAppli\aAppli\aAppli\obj\x86\Debug\Views\InventaireGlobal.g.cs
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\bin\Debug\aAppli.exe.config
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\bin\Debug\aAppli.exe.manifest
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\bin\Debug\aAppli.application
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\bin\Debug\aAppli.exe
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\bin\Debug\aAppli.pdb
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\bin\Debug\itextsharp.dll
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\ConnexionView.baml
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.baml
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\ConnexionView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\InventaireGlobal.g.cs
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.g.cs
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\App.g.cs
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\CreditView.baml
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\InventaireGlobal.baml
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.baml
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.exe.manifest
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.application
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+C:\Documents and Settings\Administrateur\Bureau\Janvier 2014 - aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\bin\Debug\aAppli.exe.config
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\bin\Debug\aAppli.exe.manifest
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\bin\Debug\aAppli.application
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\bin\Debug\aAppli.exe
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\bin\Debug\aAppli.pdb
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\bin\Debug\itextsharp.dll
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\ConnexionView.baml
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.baml
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\ConnexionView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\InventaireGlobal.g.cs
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.g.cs
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\App.g.cs
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\CreditView.baml
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\InventaireGlobal.baml
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.baml
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\aAppli.exe.manifest
+C:\Documents and Settings\Administrateur\Bureau\18 01 2014\18 01 2014\aAppli\aAppli\obj\x86\Debug\aAppli.application
+G:\26 07 2014\aAppli\aAppli\bin\Debug\aAppli.exe.config
+G:\26 07 2014\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+G:\26 07 2014\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\bin\Debug\aAppli.exe.manifest
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\bin\Debug\aAppli.application
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\bin\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\bin\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\bin\Debug\itextsharp.dll
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\aAppli.csprojResolveAssemblyReference.cache
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\ConnexionView.baml
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.baml
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\ConnexionView.g.cs
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\InventaireGlobal.g.cs
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.g.cs
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\CreditView.baml
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\InventaireGlobal.baml
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.baml
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\aAppli.csproj.GenerateResource.Cache
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\aAppli.exe.manifest
+C:\Users\Administrateur\Desktop\New Folder\aAppli\aAppli\obj\x86\Debug\aAppli.application
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\bin\Debug\aAppli.exe.config
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\bin\Debug\aAppli.exe.manifest
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\bin\Debug\aAppli.application
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\bin\Debug\aAppli.exe
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\bin\Debug\aAppli.pdb
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\bin\Debug\itextsharp.dll
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\ConnexionView.baml
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.baml
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\ConnexionView.g.cs
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\InventaireGlobal.g.cs
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.g.cs
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\App.g.cs
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.baml
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\CreditView.baml
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\InventaireGlobal.baml
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.baml
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\aAppli.csproj.GenerateResource.Cache
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\aAppli.exe.manifest
+D:\logiciel code abarre 26 05 2015\logiciel code abarre 26 05 2015\aAppli\aAppli\obj\x86\Debug\aAppli.application
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\aAppli.exe.config
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\aAppli.exe.manifest
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\aAppli.application
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\aAppli.exe
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\aAppli.pdb
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\itextsharp.dll
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli.csprojResolveAssemblyReference.cache
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\ConnexionView.baml
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.baml
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\ConnexionView.g.cs
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\InventaireGlobal.g.cs
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.g.cs
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\App.g.cs
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.baml
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\CreditView.baml
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\InventaireGlobal.baml
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.baml
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli.csproj.GenerateResource.Cache
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli.exe.manifest
+D:\logiciel code abarre 19 07 2015\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli.application
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\aAppli.exe.manifest
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\aAppli.application
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\itextsharp.dll
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\ConnexionView.baml
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.baml
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\ConnexionView.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\InventaireGlobal.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\CreditView.baml
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\InventaireGlobal.baml
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.baml
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli.exe.manifest
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\aAppli.application
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\ManageEstablishments.baml
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\ManageEstablishments.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\VerifierExsitence.baml
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\VerifierExsitence.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\ReserverArticle.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\ReserverArticle.baml
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueReservation.baml
+C:\Users\Administrateur\Desktop\logiciel code abarre 19 07 2015\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueReservation.g.cs
+C:\Users\Administrateur\Desktop\logiciel code abarre 02 01 2016 full\aAppli\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\Administrateur\Desktop\logiciel code abarre 02 01 2016 full\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\logiciel code abarre 02 01 2016 full\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\bin\Debug\aAppli.exe.config
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\bin\Debug\aAppli.exe.manifest
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\bin\Debug\aAppli.application
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\bin\Debug\aAppli.exe
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\bin\Debug\aAppli.pdb
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\bin\Debug\itextsharp.dll
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\ConnexionView.baml
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueReservation.baml
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.baml
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\VerifierExsitence.baml
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\ConnexionView.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueReservation.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\InventaireGlobal.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\ManageEstablishments.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\ReserverArticle.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\VerifierExsitence.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\App.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.baml
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\CreditView.baml
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\InventaireGlobal.baml
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\ManageEstablishments.baml
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.baml
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\ReserverArticle.baml
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\aAppli.exe.manifest
+C:\Users\Administrateur\Desktop\code a barre\logiciel code abarre 03 01 2016 full\aAppli\aAppli\obj\x86\Debug\aAppli.application
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\ConnexionView.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueReservation.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\VerifierExsitence.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\MainWindow.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\ConnexionView.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\CreditView.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueReservation.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\InventaireGlobal.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\InventaireView.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\ManageEstablishments.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\RapportVente.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\ReserverArticle.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\StockView.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\VenteView.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\VerifierExsitence.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\App.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\aAppli_Content.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.cache
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\aAppli_MarkupCompile.lref
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\AvoirView.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\CreditView.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueCreditView.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueVenteView.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\InventaireGlobal.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\ManageEstablishments.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\ManageUsers.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\ReserverArticle.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\StockView.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\VenteView.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\aAppli.g.resources
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\aAppli.Properties.Resources.resources
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\aAppli.csproj.GenerateResource.cache
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\aAppli.exe
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\aAppli.pdb
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\bin\Debug\aAppli.exe.config
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\bin\Debug\aAppli.exe.manifest
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\bin\Debug\aAppli.application
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\bin\Debug\aAppli.exe
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\bin\Debug\aAppli.pdb
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\bin\Debug\itextsharp.dll
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\bin\Debug\itextsharp.xtra.dll
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.dll
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\bin\Debug\Microsoft.Practices.Unity.dll
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\bin\Debug\System.Data.Entity.dll
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\aAppli.exe.manifest
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\aAppli.application
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.dll
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\MnageFamilies.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\MnageFamilies.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\aAppli.csprojResolveAssemblyReference.cache
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\ManageCategories.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\ManageCategories.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\ManageSubCategories.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\ManageSubCategories.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\ManageBrands.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\ManageBrands.baml
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\ManageSizes.g.cs
+D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\aAppli\obj\x86\Debug\Views\ManageSizes.baml

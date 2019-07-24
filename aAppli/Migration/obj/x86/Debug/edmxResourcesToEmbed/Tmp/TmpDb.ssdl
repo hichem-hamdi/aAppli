@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyTmpDBModel.Store" Alias="Self" Provider="System.Data.SQLite" ProviderManifestToken="ISO8601" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="MyTmpDBModelStoreContainer">
+    <EntitySet Name="Article" EntityType="MyTmpDBModel.Store.Article" store:Type="Tables" />
+    <EntitySet Name="Credit" EntityType="MyTmpDBModel.Store.Credit" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="MyTmpDBModel.Store.Users" store:Type="Tables" />
+    <EntitySet Name="Vente" EntityType="MyTmpDBModel.Store.Vente" store:Type="Tables" />
+  </EntityContainer>
+  <EntityType Name="Article">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Designation" Type="nvarchar" Nullable="false" />
+    <Property Name="PrixAchat" Type="decimal" Nullable="false" Precision="53" />
+    <Property Name="PrixVente" Type="decimal" Nullable="false" Precision="53" />
+    <Property Name="SN" Type="nvarchar" />
+    <Property Name="QT" Type="int" Nullable="false" />
+    <Property Name="IsGenerique" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Credit">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ArticleId" Type="integer" />
+    <Property Name="Designation" Type="nvarchar" />
+    <Property Name="PrixAchat" Type="decimal" Precision="53" />
+    <Property Name="PrixVente" Type="decimal" Precision="53" />
+    <Property Name="SN" Type="nvarchar" />
+    <Property Name="DateDeVente" Type="datetime" />
+    <Property Name="QT" Type="int" />
+    <Property Name="NomClient" Type="nvarchar" />
+    <Property Name="Coordonnes" Type="nvarchar" />
+    <Property Name="ModePaiement" Type="nvarchar" />
+    <Property Name="ParentId" Type="integer" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="nvarchar" />
+    <Property Name="Pass" Type="nvarchar" />
+    <Property Name="Stock" Type="bit" />
+    <Property Name="Vente" Type="bit" />
+    <Property Name="Vente/S" Type="bit" />
+    <Property Name="HistoriqueVente" Type="bit" />
+    <Property Name="AVoir" Type="bit" />
+    <Property Name="Inventaire" Type="bit" />
+    <Property Name="VenteCredit" Type="bit" />
+    <Property Name="VenteCredit/S" Type="bit" />
+    <Property Name="GererAcces" Type="bit" />
+    <Property Name="ViderBase" Type="bit" />
+  </EntityType>
+  <EntityType Name="Vente">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ArticleId" Type="integer" />
+    <Property Name="Designation" Type="nvarchar" />
+    <Property Name="PrixAchat" Type="decimal" Precision="53" />
+    <Property Name="PrixVente" Type="decimal" Precision="53" />
+    <Property Name="SN" Type="nvarchar" />
+    <Property Name="DateDeVente" Type="datetime" />
+    <Property Name="QT" Type="int" />
+  </EntityType>
+</Schema>

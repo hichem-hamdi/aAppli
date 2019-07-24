@@ -1,0 +1,282 @@
+﻿<Window x:Class="aAppli.Views.VenteView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:viewModels="clr-namespace:aAppli.ViewModels"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit/extended"
+        WindowState="Maximized"
+        Title="VenteView"
+        Height="300"
+        Width="300"
+        Loaded="Window_Loaded">
+    <Window.Resources>
+        <viewModels:VenteViewModel x:Key="VenteViewModel" />
+        <DataTemplate x:Key="ActionTemplate">
+            <StackPanel Orientation="Horizontal">
+
+                <Image Source="/aAppli;component/Images/DeleteRed.png"
+                       Cursor="Hand"
+                       Margin="5"
+                       Width="16"
+                       Height="16">
+                    <ToolTipService.ToolTip>
+                        <ToolTip>
+                            <TextBlock Text="Delete" />
+                        </ToolTip>
+                    </ToolTipService.ToolTip>
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonDown">
+                            <i:InvokeCommandAction Command="{Binding DeleteCommand, Source={StaticResource VenteViewModel}}"
+                                                   CommandParameter="{Binding}" />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Image>
+
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+
+    <Window.DataContext>
+        <Binding Source="{StaticResource VenteViewModel}" />
+    </Window.DataContext>
+    <wpf:BusyIndicator x:Name="busy">
+        <wpf:BusyIndicator IsBusy="{Binding IsBusy}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="{Binding QtRestante}"
+                               HorizontalAlignment="Right"
+                       VerticalAlignment="Bottom"
+                       Margin="5,-75"
+                       Foreground="Red"
+                       FontSize="15"
+                       FontWeight="Bold"/>
+                    <DataGrid MaxHeight="150"
+                          AutoGenerateColumns="False"
+                          CanUserAddRows="False"
+                          AlternatingRowBackground="#9FC5F8"
+                          ItemsSource="{Binding ArticlesAVendre,Mode=TwoWay}"
+                          Grid.ColumnSpan="2"
+                          Margin="101,0,0,0">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Id"
+                                                Visibility="Hidden"
+                                                Binding="{Binding Id}" />
+                            <DataGridTextColumn Header="Désignation"
+                                                Binding="{Binding Designation,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                                Width="*">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                        <Setter Property="Margin"
+                                                Value="5" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="Prix Achat"
+                                                Binding="{Binding PrixAchat,StringFormat=N3,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                            Visibility="{Binding PrixAchatVisibility,Source={StaticResource VenteViewModel}}">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                        <Setter Property="Margin"
+                                                Value="5" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="Prix Vente"
+                                                Binding="{Binding PrixVente,StringFormat=N3,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                        <Setter Property="Margin"
+                                                Value="5" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="S/N à Vendre"
+                                                Width="250"
+                                                Binding="{Binding SNAVendre,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                        <Setter Property="Margin"
+                                                Value="5" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="QT à Vendre"
+                                                Binding="{Binding QTAVendre,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                        <Setter Property="Margin"
+                                                Value="5" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTemplateColumn Header="Actions"
+                                                    Width="70"
+                                                    CellTemplate="{StaticResource ActionTemplate}" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="100" />
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5,14" FontWeight="Bold" VerticalAlignment="Center" Foreground="Green" Text="Totale Vente:"></TextBlock>
+                            <TextBlock Margin="5,14" FontWeight="Bold"
+                       VerticalAlignment="Center" Foreground="Green" Text="{Binding PrixVenteTotale, Mode=TwoWay,StringFormat=N3}" ></TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5,14" FontWeight="Bold"
+                       VerticalAlignment="Center" Foreground="Green" Text="Totale Marchandise:"  ></TextBlock>
+                            <TextBlock Margin="5,14" FontWeight="Bold"
+                       VerticalAlignment="Center" Foreground="Green" Text="{Binding PrixAchatTotale, Mode=TwoWay,StringFormat=N3}" ></TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5,14" FontWeight="Bold"
+                       VerticalAlignment="Center" Foreground="Green" Text="Bénéfices TND:"  ></TextBlock>
+                            <TextBlock Margin="5,14" FontWeight="Bold"
+                       VerticalAlignment="Center" Foreground="Green" Text="{Binding BeneficeTnd, Mode=TwoWay,StringFormat=N3}" ></TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5,14" FontWeight="Bold"
+                       VerticalAlignment="Center" Foreground="Green" Text="Bénéfices:">
+                            </TextBlock>
+                            <TextBlock Margin="5,14" FontWeight="Bold"
+                       VerticalAlignment="Center" Foreground="Green" Text="{Binding Benefice, Mode=TwoWay}"></TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <TextBlock Text="Désignation : "
+                       FontWeight="Bold"
+                       Margin="5"
+                       Foreground="CornflowerBlue"
+                       VerticalAlignment="Center"  Grid.Row="2"/>
+                    <TextBox Text="{Binding Designation}"
+                     VerticalAlignment="Center"
+                     AcceptsReturn="True"
+                     TextWrapping="Wrap"
+                     FontWeight="Bold"
+                     FontSize="15"
+                     IsEnabled="False"
+                     Grid.Column="1"  Grid.Row="2" />
+                    <TextBlock Text="Prix Achat :"
+                               x:Name="lblPrixAchat"
+                               Margin="5"
+                       Foreground="CornflowerBlue"
+                       FontWeight="Bold"
+                       VerticalAlignment="Center"
+                       Grid.Row="3" />
+                    <TextBox Text="{Binding PrixAchat,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,StringFormat=N3}"
+                             x:Name="txtPrixAchat"
+                             VerticalAlignment="Center"
+                     IsEnabled="False"
+                     Grid.Row="3"
+                     Grid.Column="1" Margin="0,14" />
+                    <TextBlock Text="Prix Vente :"
+                       Margin="5"
+                       Foreground="CornflowerBlue"
+                       FontWeight="Bold"
+                       VerticalAlignment="Center"
+                       Grid.Row="4" />
+                    <TextBox Text="{Binding PrixVente,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,StringFormat=N3}"
+                     VerticalAlignment="Center"
+                     FontWeight="Bold"
+                     Grid.Row="4"
+                     Grid.Column="1" />
+                    <TextBlock Text="Q.T :"
+                       Margin="5"
+                       Foreground="CornflowerBlue"
+                       FontWeight="Bold"
+                       VerticalAlignment="Center"
+                       Grid.Row="5" />
+                    <TextBox Text="{Binding qt,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                     VerticalAlignment="Center"
+                     FontWeight="Bold"
+                     Grid.Row="5"
+                     Grid.Column="1" />
+                    <TextBlock Text="S/N :"
+                       Margin="5"
+                       Foreground="CornflowerBlue"
+                       FontWeight="Bold"
+                       VerticalAlignment="Center"
+                       Grid.Row="6" />
+                    <TextBox x:Name="sn"
+                     Text="{Binding SN,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                     VerticalAlignment="Center"
+                     Grid.Column="1"
+                     Grid.Row="6"
+
+                     Focusable="True"
+                     IsTabStop="True">
+                        <TextBox.InputBindings>
+                            <KeyBinding Key="Enter"
+                                Command="{Binding EnterCommand}" />
+                        </TextBox.InputBindings>
+                    </TextBox>
+                    <StackPanel Grid.Row="7"
+                        Grid.ColumnSpan="2"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                        <Button Content="Vendre"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Margin="5">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="Click">
+                                    <i:InvokeCommandAction Command="{Binding VendreCommand, Source={StaticResource VenteViewModel}}"
+                                                   CommandParameter="{Binding}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </Button>
+                        <Button Content="Effacer"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Margin="5">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="Click">
+                                    <i:InvokeCommandAction Command="{Binding EffacerCommand, Source={StaticResource VenteViewModel}}"
+                                                   CommandParameter="{Binding}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </Button>
+
+                    </StackPanel>
+
+                </Grid>
+            </Grid>
+        </wpf:BusyIndicator>
+    </wpf:BusyIndicator>
+</Window>

@@ -1,0 +1,164 @@
+﻿<Window x:Class="aAppli.Views.AvoirView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:viewModels="clr-namespace:aAppli.ViewModels"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit/extended"
+        WindowState="Maximized"
+        Title="AvoirView"
+        Height="300"
+        Width="300">
+    <Window.Resources>
+        <viewModels:AvoirViewModel x:Key="AvoirViewModel" />
+    </Window.Resources>
+
+    <Window.DataContext>
+        <Binding Source="{StaticResource AvoirViewModel}" />
+    </Window.DataContext>
+    <Grid VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="S/N :"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" />
+        <TextBox x:Name="sn"
+                 VerticalAlignment="Center"
+                 Text="{Binding Sn,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                 Margin="5"
+                 Grid.Column="1">
+            <TextBox.InputBindings>
+                <KeyBinding Key="Enter"
+                            Command="{Binding EnterCommand}" />
+            </TextBox.InputBindings>
+        </TextBox>
+        <TextBlock Text="Désignation :"
+                   Grid.Row="1"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" />
+        <TextBox IsEnabled="False"
+                 x:Name="designation"
+                 Grid.Row="1"
+                 VerticalAlignment="Center"
+                 Text="{Binding Path=Article.Designation,Mode=TwoWay}"
+                 Margin="5"
+                 Grid.Column="1" />
+        
+        <DataGrid ItemsSource="{Binding Items}"
+                  Margin="10"
+                  SelectedItem="{Binding SelectedItemd,Mode=TwoWay}"
+                  Grid.Row="2"
+                  Grid.ColumnSpan="2"
+                  ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                  IsReadOnly="True"
+                  MaxHeight="300"
+                  BorderThickness="1,0,1,0"
+                  GridLinesVisibility="All"
+                  VerticalScrollBarVisibility="Visible"
+                  HorizontalScrollBarVisibility="Visible"
+                  CanUserResizeColumns="False"
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  AutoGenerateColumns="False"
+                  HorizontalGridLinesBrush="#f0f0f0"
+                  VerticalGridLinesBrush="#f0f0f0"
+                  AlternatingRowBackground="#9FC5F8">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id"
+                                            Visibility="Hidden"
+                                            Binding="{Binding Id}" />
+                <DataGridTextColumn Header="Désignation"
+                                            Binding="{Binding Designation,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                            Width="*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="VerticalAlignment"
+                                            Value="Center" />
+                            <Setter Property="Margin"
+                                            Value="5" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Q.T"
+                                            Binding="{Binding Quantite}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="VerticalAlignment"
+                                            Value="Center" />
+                            <Setter Property="Margin"
+                                            Value="5" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Prix Achat"
+                                            Binding="{Binding PrixAchat,StringFormat=N3,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="VerticalAlignment"
+                                            Value="Center" />
+                            <Setter Property="Margin"
+                                            Value="5" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Prix Vente"
+                                            Binding="{Binding PrixVente,StringFormat=N3,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="VerticalAlignment"
+                                            Value="Center" />
+                            <Setter Property="Margin"
+                                            Value="5" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="S/N"
+                                            Width="250"
+                                            Binding="{Binding SN,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="VerticalAlignment"
+                                            Value="Center" />
+                            <Setter Property="Margin"
+                                            Value="5" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Date De Vente"
+                                            Binding="{Binding DateDeVente,StringFormat='dd/MM/yyyy'}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="VerticalAlignment"
+                                            Value="Center" />
+                            <Setter Property="Margin"
+                                            Value="5" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        
+        <Button Content="O.k"
+                IsEnabled="{Binding IsOkEnabled}"
+                Grid.Row="3"
+                Margin="10"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Grid.ColumnSpan="2">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction Command="{Binding OkCommand, Source={StaticResource AvoirViewModel}}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>
+    </Grid>
+</Window>

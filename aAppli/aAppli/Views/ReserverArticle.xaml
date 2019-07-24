@@ -1,0 +1,329 @@
+﻿<Window x:Class="aAppli.Views.ReserverArticle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:viewModels="clr-namespace:aAppli.ViewModels"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit/extended"
+        WindowState="Maximized"
+        Title="ReserverArticle" 
+        Height="600" 
+        Width="1000">
+    <Window.Resources>
+        <viewModels:ReservationArticleViewModel x:Key="ReservationArticleViewModel" />
+    </Window.Resources>
+    <Window.DataContext>
+        <Binding Source="{StaticResource ReservationArticleViewModel}" />
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <wpf:WatermarkTextBox Watermark="Rechercher ...."
+                              Margin="3,15"
+                              x:Name="SearchInOther"
+                              Text="{Binding Search,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+            <wpf:WatermarkTextBox.InputBindings>
+                <KeyBinding Key="Enter"
+                                Command="{Binding EnterCommandSearch}" />
+            </wpf:WatermarkTextBox.InputBindings>
+        </wpf:WatermarkTextBox>
+
+        <DataGrid ItemsSource="{Binding Articles}"
+                              x:Name="myDataGrid"
+                              Grid.Row="1"
+                              ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                              MaxHeight="300"
+                              Margin="3,15"
+                              BorderThickness="1,0,1,0"
+                              GridLinesVisibility="All"
+                              VerticalScrollBarVisibility="Visible"
+                              HorizontalScrollBarVisibility="Visible"
+                              CanUserResizeColumns="False"
+                              CanUserAddRows="False"
+                              CanUserDeleteRows="False"
+                              AutoGenerateColumns="False"
+                              HorizontalGridLinesBrush="#f0f0f0"
+                              VerticalGridLinesBrush="#f0f0f0"
+                              AlternatingRowBackground="#9FC5F8">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Désignation"                                    
+                                                Binding="{Binding Designation}"
+                                                Width="*">
+
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Prix Achat"
+                                                Binding="{Binding PrixAchat,StringFormat=N3}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                            <Setter Property="Margin"
+                                                Value="5" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Prix Vente"
+                                                Binding="{Binding PrixVente,StringFormat=N3}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                            <Setter Property="Margin"
+                                                Value="5" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="S/N"
+                                                Width="250"
+                                                Binding="{Binding SN}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                            <Setter Property="Margin"
+                                                Value="5" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="QT"
+                                                Binding="{Binding QT}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                            <Setter Property="Margin"
+                                                Value="5" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Magasin"
+                                                    Binding="{Binding Establishment.Name}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                            <Setter Property="Margin"
+                                                Value="5" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="Button_Click">Réserver</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <wpf:ChildWindow x:Name="SelectSN"
+                         Grid.Row="1"
+                         Height="170"
+                         Width="300"
+                         WindowStartupLocation="Center"
+                         IsModal="True">
+            <StackPanel>
+                <TextBlock Margin="5,5">Veuillez saisir les S/N:</TextBlock>
+                <TextBox Margin="5,5" x:Name="sn" TextChanged="sn_TextChanged"
+                         KeyDown="sn_KeyDown">
+                    
+                </TextBox>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="5,5">Q.T</TextBlock>
+                    <TextBox x:Name="qt" IsEnabled="False" Margin="5,5"></TextBox>
+                </StackPanel>
+                <Button Margin="5,5" Click="Button_Click_1">Valider</Button>
+            </StackPanel>
+        </wpf:ChildWindow>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <GroupBox Margin="3,15">
+                <GroupBox.Header>
+                    <Label Foreground="Red"
+                           Content="Mes réservations en attentes"
+                           FontWeight="Bold" />
+                </GroupBox.Header>
+
+                <DataGrid x:Name="myBooking"
+                              ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                              MaxHeight="300"
+                              Margin="3,15"
+                              BorderThickness="1,0,1,0"
+                              GridLinesVisibility="All"
+                              VerticalScrollBarVisibility="Visible"
+                              HorizontalScrollBarVisibility="Visible"
+                              CanUserResizeColumns="False"
+                              CanUserAddRows="False"
+                              CanUserDeleteRows="False"
+                              AutoGenerateColumns="False"
+                              HorizontalGridLinesBrush="#f0f0f0"
+                              VerticalGridLinesBrush="#f0f0f0"
+                              AlternatingRowBackground="#9FC5F8">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Désignation"                                    
+                                                Binding="{Binding Designation}"
+                                                Width="*">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                    <Setter Property="Margin"
+                                                Value="5" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="S/N"
+                                                Width="250"
+                                                Binding="{Binding SN}">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                    <Setter Property="Margin"
+                                                Value="5" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="QT"
+                                                Binding="{Binding QT}">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                    <Setter Property="Margin"
+                                                Value="5" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Magasin"
+                                                    Binding="{Binding Magasin}">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                    <Setter Property="Margin"
+                                                Value="5" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Date Demande"
+                                                    Binding="{Binding RequestDate,StringFormat=\{0:dd/MM/yyyy HH:mm:ss\}}">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                    <Setter Property="Margin"
+                                                Value="5" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+
+            </GroupBox>
+
+            <GroupBox Grid.Column="1" Margin="3,15">
+                <GroupBox.Header>
+                    <Label Foreground="Green"
+                           Content="Réservations à valider"
+                           FontWeight="Bold" />
+                </GroupBox.Header>
+                <DataGrid x:Name="myBookingToValidate"
+                              ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                              MaxHeight="300"
+                              Margin="3,15"
+                              BorderThickness="1,0,1,0"
+                              GridLinesVisibility="All"
+                              VerticalScrollBarVisibility="Visible"
+                              HorizontalScrollBarVisibility="Visible"
+                              CanUserResizeColumns="False"
+                              CanUserAddRows="False"
+                              CanUserDeleteRows="False"
+                              AutoGenerateColumns="False"
+                              HorizontalGridLinesBrush="#f0f0f0"
+                              VerticalGridLinesBrush="#f0f0f0"
+                              AlternatingRowBackground="#9FC5F8">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Désignation"                                    
+                                                Binding="{Binding Designation}"
+                                                Width="*">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                    <Setter Property="Margin"
+                                                Value="5" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="S/N"
+                                                Width="250"
+                                                Binding="{Binding SN}">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                    <Setter Property="Margin"
+                                                Value="5" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="QT"
+                                                Binding="{Binding QT}">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                    <Setter Property="Margin"
+                                                Value="5" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Magasin"
+                                                    Binding="{Binding Magasin}">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                    <Setter Property="Margin"
+                                                Value="5" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Date Demande"
+                                                    Binding="{Binding RequestDate,StringFormat=\{0:dd/MM/yyyy HH:mm:ss\}}">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                    <Setter Property="Margin"
+                                                Value="5" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTemplateColumn>
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Button Click="Button_Click_3">Céder</Button>
+                                        <Button Click="Button_Click_2">Refuser</Button>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </GroupBox>
+        </Grid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,47 @@
+﻿<Window x:Class="aAppli.Views.InventaireView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowState="Maximized"
+        Title="InventaireView" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <Grid VerticalAlignment="Center"
+              HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="N° séries stock réel " />
+            <TextBox Grid.Row="1"
+                    KeyDown="TxtSN_KeyDown"
+                     x:Name="TxtSN"
+                     
+                     Width="300" />
+
+            <TextBlock Text="QT"
+                            
+                       Grid.Column="1" />
+            <TextBlock Grid.Row="1"
+                       x:Name="TxtQt"
+                       Margin="5"
+                       Grid.Column="1" />
+        </Grid>
+        
+        <StackPanel Grid.Row="1">
+            <Button Content="Verifier" HorizontalAlignment="Center"
+                    Margin="5"
+                    VerticalAlignment="Center"
+                    Click="Button_Click" />
+            <TextBox  
+                      x:Name="Txtarticle"/>
+        </StackPanel>
+    </Grid>
+</Window>

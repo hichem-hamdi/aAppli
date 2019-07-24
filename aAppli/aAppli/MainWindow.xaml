@@ -1,0 +1,114 @@
+﻿<Window x:Class="aAppli.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow"
+        Height="450"
+        WindowStartupLocation="CenterScreen"
+        Width="525">
+    <ScrollViewer>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Button Click="Button_Click"
+                Name="btnStock"
+                Content="Stock" />
+
+            <Button Grid.Row="1"
+                Name="btnVente"
+                Content="Vente"
+                Click="Button_Click_1" />
+            <Button Grid.Row="2"
+                Name="btnHistorique"
+                Content="Historique vente"
+                Click="Button_Click_2" />
+            <Button Grid.Row="3"
+                Name="btnReserverArticle"
+                Content="Réservation"
+                Click="btnReserverArticle_Click"/>
+            <Button Grid.Row="4"
+                Name="btnHistoriqueReservation"
+                Content="Historique réservation"
+                Click="btnHistoriqueReservation_Click" />
+            <Button Grid.Row="5"
+                Name="btnAVoir"
+                Content="à Voir"
+                Click="Button_Click_3" />
+            <Button Click="Inventaire_Click"
+                Name="btnInventaire"
+                Grid.Row="6"
+                Content="Inventaire" />
+            <Button Click="btnInventaireGlobal_Click" 
+                Name="btnInventaireGlobal"
+                Grid.Row="7"
+                Content="Inventaire Global" />
+            <Button Click="Credit_Click"
+                Name="btnCredit"
+                Grid.Row="8"
+                Content="Vente Credit" />
+            <Button Click="btnManage_click"
+                Name="btnManage"
+                Grid.Row="9"
+                Content="Gérer Accès" />
+            <Button Name="btnManageEstablishments"
+                Content="Gérer Sociétés"
+                Click="btnManageEstablishments_Click"
+                Grid.Row="10"></Button>
+            <Button Name="btnManageFamilies"
+                Content="Gérer Familles"
+                Click="btnManageFamilies_Click"
+                Grid.Row="11"></Button>
+            <Button Name="btnManageGategories"
+                Content="Gérer Gatégories"
+                Click="btnManageGategories_Click"
+                Grid.Row="12"></Button>
+            <Button Name="btnManageSubGategories"
+                Content="Gérer Sous-Gatégories"
+                Click="btnManageSubGategories_Click"
+                Grid.Row="13"></Button>
+            <Button Name="btnManageBrands"
+                Content="Gérer Marques"
+                Click="btnManageBrands_Click"
+                Grid.Row="14"></Button>
+            <Button Name="btnManageSizes"
+                Content="Gérer Tailles"
+                Click="btnManageSizes_Click"
+                Grid.Row="15"></Button>
+            <StackPanel Grid.Row="16">
+                <Button Name="btnVider"
+                    Content="Vider la base"
+                    Click="Button_Click_4" />
+                <StackPanel x:Name="Pnl"
+                        Visibility="Hidden">
+                    <CheckBox x:Name="ChkStock"
+                          Content="Stock" />
+                    <CheckBox x:Name="ChkVente"
+                          Content="Vente" />
+                    <CheckBox x:Name="ChkSupprimerArticleEnManque"
+                          Content="Supprimer Article en manque" />
+                    <Button Content="Ok"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Click="Button_Click_5" />
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Window>

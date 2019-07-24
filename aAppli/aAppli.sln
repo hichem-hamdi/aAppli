@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aAppli", "aAppli\aAppli.csproj", "{4227E6F6-0DE4-4601-88D6-AEA717AF3383}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "NouvelitAppliSetup", "NouvelitAppliSetup\NouvelitAppliSetup.vdproj", "{05D720E5-40AF-4479-B7A6-68DBF121D4B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migration", "Migration\Migration.csproj", "{B636FA5C-EF47-420E-8768-F941AD6BD11D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4227E6F6-0DE4-4601-88D6-AEA717AF3383}.Debug|x86.ActiveCfg = Debug|x86
+		{4227E6F6-0DE4-4601-88D6-AEA717AF3383}.Debug|x86.Build.0 = Debug|x86
+		{4227E6F6-0DE4-4601-88D6-AEA717AF3383}.Release|x86.ActiveCfg = Release|x86
+		{4227E6F6-0DE4-4601-88D6-AEA717AF3383}.Release|x86.Build.0 = Release|x86
+		{05D720E5-40AF-4479-B7A6-68DBF121D4B2}.Debug|x86.ActiveCfg = Debug
+		{05D720E5-40AF-4479-B7A6-68DBF121D4B2}.Release|x86.ActiveCfg = Release
+		{B636FA5C-EF47-420E-8768-F941AD6BD11D}.Debug|x86.ActiveCfg = Debug|x86
+		{B636FA5C-EF47-420E-8768-F941AD6BD11D}.Debug|x86.Build.0 = Debug|x86
+		{B636FA5C-EF47-420E-8768-F941AD6BD11D}.Release|x86.ActiveCfg = Release|x86
+		{B636FA5C-EF47-420E-8768-F941AD6BD11D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

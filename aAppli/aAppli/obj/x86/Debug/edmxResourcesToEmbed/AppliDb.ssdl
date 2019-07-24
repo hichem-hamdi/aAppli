@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyDBModel.Store" Alias="Self" Provider="System.Data.SQLite" ProviderManifestToken="ISO8601" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="MyDBModelStoreContainer">
+    <EntitySet Name="Article" EntityType="MyDBModel.Store.Article" store:Type="Tables" />
+    <EntitySet Name="Brand" EntityType="MyDBModel.Store.Brand" store:Type="Tables" />
+    <EntitySet Name="Categorie" EntityType="MyDBModel.Store.Categorie" store:Type="Tables" />
+    <EntitySet Name="Credit" EntityType="MyDBModel.Store.Credit" store:Type="Tables" />
+    <EntitySet Name="Establishment" EntityType="MyDBModel.Store.Establishment" store:Type="Tables" />
+    <EntitySet Name="Famille" EntityType="MyDBModel.Store.Famille" store:Type="Tables" />
+    <EntitySet Name="Reservation" EntityType="MyDBModel.Store.Reservation" store:Type="Tables" />
+    <EntitySet Name="Size" EntityType="MyDBModel.Store.Size" store:Type="Tables" />
+    <EntitySet Name="SOUS_CATEGORIE" EntityType="MyDBModel.Store.SOUS_CATEGORIE" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="MyDBModel.Store.Users" store:Type="Tables" />
+    <EntitySet Name="Vente" EntityType="MyDBModel.Store.Vente" store:Type="Tables" />
+    <AssociationSet Name="FK_Article_0" Association="MyDBModel.Store.FK_Article_0">
+      <End Role="Size" EntitySet="Size" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Article_1" Association="MyDBModel.Store.FK_Article_1">
+      <End Role="Brand" EntitySet="Brand" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Article_2" Association="MyDBModel.Store.FK_Article_2">
+      <End Role="SOUS_CATEGORIE" EntitySet="SOUS_CATEGORIE" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Article_3" Association="MyDBModel.Store.FK_Article_3">
+      <End Role="Categorie" EntitySet="Categorie" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Article_4" Association="MyDBModel.Store.FK_Article_4">
+      <End Role="Famille" EntitySet="Famille" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Article_5" Association="MyDBModel.Store.FK_Article_5">
+      <End Role="Establishment" EntitySet="Establishment" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Credit_0" Association="MyDBModel.Store.FK_Credit_0">
+      <End Role="Establishment" EntitySet="Establishment" />
+      <End Role="Credit" EntitySet="Credit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reservation_0" Association="MyDBModel.Store.FK_Reservation_0">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Reservation" EntitySet="Reservation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reservation_1" Association="MyDBModel.Store.FK_Reservation_1">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Reservation" EntitySet="Reservation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reservation_2" Association="MyDBModel.Store.FK_Reservation_2">
+      <End Role="Establishment" EntitySet="Establishment" />
+      <End Role="Reservation" EntitySet="Reservation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reservation_3" Association="MyDBModel.Store.FK_Reservation_3">
+      <End Role="Establishment" EntitySet="Establishment" />
+      <End Role="Reservation" EntitySet="Reservation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reservation_4" Association="MyDBModel.Store.FK_Reservation_4">
+      <End Role="Article" EntitySet="Article" />
+      <End Role="Reservation" EntitySet="Reservation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_0" Association="MyDBModel.Store.FK_Users_0">
+      <End Role="Establishment" EntitySet="Establishment" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vente_0" Association="MyDBModel.Store.FK_Vente_0">
+      <End Role="Establishment" EntitySet="Establishment" />
+      <End Role="Vente" EntitySet="Vente" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Article">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Designation" Type="nvarchar" Nullable="false" />
+    <Property Name="PrixAchat" Type="decimal" Nullable="false" Precision="53" />
+    <Property Name="PrixVente" Type="decimal" Nullable="false" Precision="53" />
+    <Property Name="SN" Type="nvarchar" />
+    <Property Name="QT" Type="int" Nullable="false" />
+    <Property Name="IsGenerique" Type="bit" Nullable="false" />
+    <Property Name="EstablishmentId" Type="integer" />
+    <Property Name="FamilleId" Type="integer" />
+    <Property Name="CategorieId" Type="integer" />
+    <Property Name="SousCategorieId" Type="integer" />
+    <Property Name="BrandId" Type="integer" />
+    <Property Name="SizeId" Type="integer" />
+  </EntityType>
+  <EntityType Name="Brand">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Categorie">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Credit">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ArticleId" Type="integer" />
+    <Property Name="Designation" Type="nvarchar" />
+    <Property Name="PrixAchat" Type="decimal" Precision="53" />
+    <Property Name="PrixVente" Type="decimal" Precision="53" />
+    <Property Name="SN" Type="nvarchar" />
+    <Property Name="DateDeVente" Type="datetime" />
+    <Property Name="QT" Type="int" />
+    <Property Name="NomClient" Type="nvarchar" />
+    <Property Name="Coordonnes" Type="nvarchar" />
+    <Property Name="ModePaiement" Type="nvarchar" />
+    <Property Name="ParentId" Type="integer" />
+    <Property Name="EstablishmentId" Type="integer" />
+  </EntityType>
+  <EntityType Name="Establishment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Famille">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Reservation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ArticleId" Type="integer" Nullable="false" />
+    <Property Name="SN" Type="nvarchar" Nullable="false" />
+    <Property Name="FromId" Type="integer" Nullable="false" />
+    <Property Name="ToId" Type="integer" Nullable="false" />
+    <Property Name="RequestDate" Type="datetime" Nullable="false" />
+    <Property Name="IsValidated" Type="bit" />
+    <Property Name="ValidationDate" Type="datetime" />
+    <Property Name="UserId" Type="integer" Nullable="false" />
+    <Property Name="ValidatedBy" Type="integer" />
+    <Property Name="Qt" Type="int" />
+  </EntityType>
+  <EntityType Name="Size">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="SOUS_CATEGORIE">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="nvarchar" />
+    <Property Name="Pass" Type="nvarchar" />
+    <Property Name="Stock" Type="bit" />
+    <Property Name="Vente" Type="bit" />
+    <Property Name="Vente/S" Type="bit" />
+    <Property Name="HistoriqueVente" Type="bit" />
+    <Property Name="AVoir" Type="bit" />
+    <Property Name="Inventaire" Type="bit" />
+    <Property Name="VenteCredit" Type="bit" />
+    <Property Name="VenteCredit/S" Type="bit" />
+    <Property Name="GererAcces" Type="bit" />
+    <Property Name="ViderBase" Type="bit" />
+    <Property Name="EstablishmentId" Type="integer" />
+  </EntityType>
+  <EntityType Name="Vente">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ArticleId" Type="integer" />
+    <Property Name="Designation" Type="nvarchar" />
+    <Property Name="PrixAchat" Type="decimal" Precision="53" />
+    <Property Name="PrixVente" Type="decimal" Precision="53" />
+    <Property Name="SN" Type="nvarchar" />
+    <Property Name="DateDeVente" Type="datetime" />
+    <Property Name="QT" Type="int" />
+    <Property Name="EstablishmentId" Type="integer" />
+  </EntityType>
+  <Association Name="FK_Article_0">
+    <End Role="Size" Type="MyDBModel.Store.Size" Multiplicity="0..1" />
+    <End Role="Article" Type="MyDBModel.Store.Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Size">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="SizeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Article_1">
+    <End Role="Brand" Type="MyDBModel.Store.Brand" Multiplicity="0..1" />
+    <End Role="Article" Type="MyDBModel.Store.Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Brand">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="BrandId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Article_2">
+    <End Role="SOUS_CATEGORIE" Type="MyDBModel.Store.SOUS_CATEGORIE" Multiplicity="0..1" />
+    <End Role="Article" Type="MyDBModel.Store.Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SOUS_CATEGORIE">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="SousCategorieId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Article_3">
+    <End Role="Categorie" Type="MyDBModel.Store.Categorie" Multiplicity="0..1" />
+    <End Role="Article" Type="MyDBModel.Store.Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categorie">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="CategorieId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Article_4">
+    <End Role="Famille" Type="MyDBModel.Store.Famille" Multiplicity="0..1" />
+    <End Role="Article" Type="MyDBModel.Store.Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Famille">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="FamilleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Article_5">
+    <End Role="Establishment" Type="MyDBModel.Store.Establishment" Multiplicity="0..1" />
+    <End Role="Article" Type="MyDBModel.Store.Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Establishment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="EstablishmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Credit_0">
+    <End Role="Establishment" Type="MyDBModel.Store.Establishment" Multiplicity="0..1" />
+    <End Role="Credit" Type="MyDBModel.Store.Credit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Establishment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Credit">
+        <PropertyRef Name="EstablishmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reservation_0">
+    <End Role="Users" Type="MyDBModel.Store.Users" Multiplicity="0..1" />
+    <End Role="Reservation" Type="MyDBModel.Store.Reservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Reservation">
+        <PropertyRef Name="ValidatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reservation_1">
+    <End Role="Users" Type="MyDBModel.Store.Users" Multiplicity="1" />
+    <End Role="Reservation" Type="MyDBModel.Store.Reservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Reservation">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reservation_2">
+    <End Role="Establishment" Type="MyDBModel.Store.Establishment" Multiplicity="1" />
+    <End Role="Reservation" Type="MyDBModel.Store.Reservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Establishment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Reservation">
+        <PropertyRef Name="ToId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reservation_3">
+    <End Role="Establishment" Type="MyDBModel.Store.Establishment" Multiplicity="1" />
+    <End Role="Reservation" Type="MyDBModel.Store.Reservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Establishment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Reservation">
+        <PropertyRef Name="FromId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reservation_4">
+    <End Role="Article" Type="MyDBModel.Store.Article" Multiplicity="1" />
+    <End Role="Reservation" Type="MyDBModel.Store.Reservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Article">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Reservation">
+        <PropertyRef Name="ArticleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_0">
+    <End Role="Establishment" Type="MyDBModel.Store.Establishment" Multiplicity="0..1" />
+    <End Role="Users" Type="MyDBModel.Store.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Establishment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="EstablishmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vente_0">
+    <End Role="Establishment" Type="MyDBModel.Store.Establishment" Multiplicity="0..1" />
+    <End Role="Vente" Type="MyDBModel.Store.Vente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Establishment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Vente">
+        <PropertyRef Name="EstablishmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

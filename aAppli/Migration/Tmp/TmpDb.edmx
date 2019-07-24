@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MyTmpDBModel.Store" Alias="Self" Provider="System.Data.SQLite" ProviderManifestToken="ISO8601" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="MyTmpDBModelStoreContainer">
+          <EntitySet Name="Article" EntityType="MyTmpDBModel.Store.Article" store:Type="Tables" />
+          <EntitySet Name="Credit" EntityType="MyTmpDBModel.Store.Credit" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="MyTmpDBModel.Store.Users" store:Type="Tables" />
+          <EntitySet Name="Vente" EntityType="MyTmpDBModel.Store.Vente" store:Type="Tables" />
+        </EntityContainer>
+        <EntityType Name="Article">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Designation" Type="nvarchar" Nullable="false" />
+          <Property Name="PrixAchat" Type="decimal" Nullable="false" Precision="53" />
+          <Property Name="PrixVente" Type="decimal" Nullable="false" Precision="53" />
+          <Property Name="SN" Type="nvarchar" />
+          <Property Name="QT" Type="int" Nullable="false" />
+          <Property Name="IsGenerique" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Credit">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ArticleId" Type="integer" />
+          <Property Name="Designation" Type="nvarchar" />
+          <Property Name="PrixAchat" Type="decimal" Precision="53" />
+          <Property Name="PrixVente" Type="decimal" Precision="53" />
+          <Property Name="SN" Type="nvarchar" />
+          <Property Name="DateDeVente" Type="datetime" />
+          <Property Name="QT" Type="int" />
+          <Property Name="NomClient" Type="nvarchar" />
+          <Property Name="Coordonnes" Type="nvarchar" />
+          <Property Name="ModePaiement" Type="nvarchar" />
+          <Property Name="ParentId" Type="integer" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Login" Type="nvarchar" />
+          <Property Name="Pass" Type="nvarchar" />
+          <Property Name="Stock" Type="bit" />
+          <Property Name="Vente" Type="bit" />
+          <Property Name="Vente/S" Type="bit" />
+          <Property Name="HistoriqueVente" Type="bit" />
+          <Property Name="AVoir" Type="bit" />
+          <Property Name="Inventaire" Type="bit" />
+          <Property Name="VenteCredit" Type="bit" />
+          <Property Name="VenteCredit/S" Type="bit" />
+          <Property Name="GererAcces" Type="bit" />
+          <Property Name="ViderBase" Type="bit" />
+        </EntityType>
+        <EntityType Name="Vente">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ArticleId" Type="integer" />
+          <Property Name="Designation" Type="nvarchar" />
+          <Property Name="PrixAchat" Type="decimal" Precision="53" />
+          <Property Name="PrixVente" Type="decimal" Precision="53" />
+          <Property Name="SN" Type="nvarchar" />
+          <Property Name="DateDeVente" Type="datetime" />
+          <Property Name="QT" Type="int" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MyTmpDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="MyTmpDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Article" EntityType="MyTmpDBModel.Article" />
+          <EntitySet Name="Credit" EntityType="MyTmpDBModel.Credit" />
+          <EntitySet Name="Users" EntityType="MyTmpDBModel.Users" />
+          <EntitySet Name="Vente" EntityType="MyTmpDBModel.Vente" />
+        </EntityContainer>
+        <EntityType Name="Article">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Designation" Type="String" Nullable="false" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+          <Property Name="PrixAchat" Type="Decimal" Nullable="false" Precision="53" Scale="0" />
+          <Property Name="PrixVente" Type="Decimal" Nullable="false" Precision="53" Scale="0" />
+          <Property Name="SN" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+          <Property Name="QT" Type="Int32" Nullable="false" />
+          <Property Name="IsGenerique" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Credit">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ArticleId" Type="Int64" />
+          <Property Name="Designation" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+          <Property Name="PrixAchat" Type="Decimal" Precision="53" Scale="0" />
+          <Property Name="PrixVente" Type="Decimal" Precision="53" Scale="0" />
+          <Property Name="SN" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+          <Property Name="DateDeVente" Type="DateTime" />
+          <Property Name="QT" Type="Int32" />
+          <Property Name="NomClient" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+          <Property Name="Coordonnes" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+          <Property Name="ModePaiement" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+          <Property Name="ParentId" Type="Int64" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Login" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+          <Property Name="Pass" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+          <Property Name="Stock" Type="Boolean" />
+          <Property Name="Vente" Type="Boolean" />
+          <Property Name="Vente_S" Type="Boolean" />
+          <Property Name="HistoriqueVente" Type="Boolean" />
+          <Property Name="AVoir" Type="Boolean" />
+          <Property Name="Inventaire" Type="Boolean" />
+          <Property Name="VenteCredit" Type="Boolean" />
+          <Property Name="VenteCredit_S" Type="Boolean" />
+          <Property Name="GererAcces" Type="Boolean" />
+          <Property Name="ViderBase" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Vente">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ArticleId" Type="Int64" />
+          <Property Name="Designation" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+          <Property Name="PrixAchat" Type="Decimal" Precision="53" Scale="0" />
+          <Property Name="PrixVente" Type="Decimal" Precision="53" Scale="0" />
+          <Property Name="SN" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+          <Property Name="DateDeVente" Type="DateTime" />
+          <Property Name="QT" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MyTmpDBModelStoreContainer" CdmEntityContainer="MyTmpDBEntities">
+          <EntitySetMapping Name="Article"><EntityTypeMapping TypeName="MyTmpDBModel.Article"><MappingFragment StoreEntitySet="Article">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="Designation" ColumnName="Designation" />
+            <ScalarProperty Name="PrixAchat" ColumnName="PrixAchat" />
+            <ScalarProperty Name="PrixVente" ColumnName="PrixVente" />
+            <ScalarProperty Name="SN" ColumnName="SN" />
+            <ScalarProperty Name="QT" ColumnName="QT" />
+            <ScalarProperty Name="IsGenerique" ColumnName="IsGenerique" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Credit"><EntityTypeMapping TypeName="MyTmpDBModel.Credit"><MappingFragment StoreEntitySet="Credit">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="ArticleId" ColumnName="ArticleId" />
+            <ScalarProperty Name="Designation" ColumnName="Designation" />
+            <ScalarProperty Name="PrixAchat" ColumnName="PrixAchat" />
+            <ScalarProperty Name="PrixVente" ColumnName="PrixVente" />
+            <ScalarProperty Name="SN" ColumnName="SN" />
+            <ScalarProperty Name="DateDeVente" ColumnName="DateDeVente" />
+            <ScalarProperty Name="QT" ColumnName="QT" />
+            <ScalarProperty Name="NomClient" ColumnName="NomClient" />
+            <ScalarProperty Name="Coordonnes" ColumnName="Coordonnes" />
+            <ScalarProperty Name="ModePaiement" ColumnName="ModePaiement" />
+            <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Users"><EntityTypeMapping TypeName="MyTmpDBModel.Users"><MappingFragment StoreEntitySet="Users">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Login" ColumnName="Login" />
+            <ScalarProperty Name="Pass" ColumnName="Pass" />
+            <ScalarProperty Name="Stock" ColumnName="Stock" />
+            <ScalarProperty Name="Vente" ColumnName="Vente" />
+            <ScalarProperty Name="Vente_S" ColumnName="Vente/S" />
+            <ScalarProperty Name="HistoriqueVente" ColumnName="HistoriqueVente" />
+            <ScalarProperty Name="AVoir" ColumnName="AVoir" />
+            <ScalarProperty Name="Inventaire" ColumnName="Inventaire" />
+            <ScalarProperty Name="VenteCredit" ColumnName="VenteCredit" />
+            <ScalarProperty Name="VenteCredit_S" ColumnName="VenteCredit/S" />
+            <ScalarProperty Name="GererAcces" ColumnName="GererAcces" />
+            <ScalarProperty Name="ViderBase" ColumnName="ViderBase" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Vente"><EntityTypeMapping TypeName="MyTmpDBModel.Vente"><MappingFragment StoreEntitySet="Vente">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="ArticleId" ColumnName="ArticleId" />
+            <ScalarProperty Name="Designation" ColumnName="Designation" />
+            <ScalarProperty Name="PrixAchat" ColumnName="PrixAchat" />
+            <ScalarProperty Name="PrixVente" ColumnName="PrixVente" />
+            <ScalarProperty Name="SN" ColumnName="SN" />
+            <ScalarProperty Name="DateDeVente" ColumnName="DateDeVente" />
+            <ScalarProperty Name="QT" ColumnName="QT" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="TmpDb">
+        <EntityTypeShape EntityType="MyTmpDBModel.Article" Width="1.5" PointX="0.75" PointY="0.75" Height="2.3648893229166665" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyTmpDBModel.Credit" Width="1.5" PointX="2.75" PointY="0.75" Height="3.3263964843749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyTmpDBModel.Users" Width="1.5" PointX="4.75" PointY="0.75" Height="3.5186979166666656" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyTmpDBModel.Vente" Width="1.5" PointX="0.75" PointY="5.75" Height="2.5571907552083335" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

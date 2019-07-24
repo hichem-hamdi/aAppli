@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.3.5" ProviderManifestToken="3.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="DBModelStoreContainer">
+    <EntitySet Name="Article" EntityType="DBModel.Store.Article" store:Type="Tables" />
+    <EntitySet Name="Vente" EntityType="DBModel.Store.Vente" store:Type="Tables" />
+  </EntityContainer>
+  <EntityType Name="Article">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Designation" Type="nvarchar" Nullable="false" />
+    <Property Name="PrixAchat" Type="money" Nullable="false" />
+    <Property Name="PrixVente" Type="money" Nullable="false" />
+    <Property Name="SN" Type="nvarchar" Nullable="false" />
+    <Property Name="QT" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Vente">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ArticleId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Designation" Type="nvarchar" Nullable="false" />
+    <Property Name="PrixAchat" Type="money" Nullable="false" />
+    <Property Name="PrixVente" Type="money" Nullable="false" />
+    <Property Name="SN" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="DateDeVente" Type="datetime" Nullable="false" />
+  </EntityType>
+</Schema>

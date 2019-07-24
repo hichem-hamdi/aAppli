@@ -1,0 +1,31 @@
+groupenouvelit.ddns.net
+
+account no ip
+
+user:stenouvelit
+
+pwd:my...m...S...16
+
+
+vpn user electro : GESTIONNAIRE
+
+pwd: h***hou***t***t***
+
+
+vpn user: SECRETAIRE	
+
+pwd : a***l**m
+
+vpn user:superviseur
+	
+pwd:my...m...S...16
+
+SSTP: 443
+
+PPTP:1723
+
+
+
+
+
+

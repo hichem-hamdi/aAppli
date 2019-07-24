@@ -1,0 +1,96 @@
+#Stock recherche#
+TV LED 32'' SAMSUNG U32 FH4003 ELATHIR LE 22/10/2015     02/01/2016 00:06:12     h
+         #Stock Ajout#
+;1212     02/01/2016 00:21:46     1     h
+     #Vente recherche#
+1212     02/01/2016 00:22:27     h
+         #Vente#
+;1212     02/01/2016 00:22:32     1     h
+     #Vente recherche#
+N1gravure     02/01/2016 00:23:40     n
+         #Vente#
+;N1gravure     02/01/2016 00:23:53     2     n
+         #Stock Ajout#
+;4444     02/01/2016 00:54:43     1     ahlem
+         #Stock Ajout#
+;4444     02/01/2016 00:54:49     1     ahlem
+         #Stock Ajout#
+;2012     02/01/2016 00:55:52     1     ahlem
+         #Stock Ajout#
+;1515     02/01/2016 00:56:07     1     ahlem
+     #Vente recherche#
+N1etui3.5"versN     02/01/2016 18:44:39     nouvelitGsm
+     #Vente recherche#
+355370000138006     02/01/2016 18:44:54     nouvelitGsm
+     #Vente recherche#
+N2anticassy220     02/01/2016 18:45:08     nouvelitGsm
+     #Vente recherche#
+N2etuiBversus4.5     02/01/2016 18:45:23     nouvelitGsm
+     #Vente recherche#
+N3film.normal     02/01/2016 18:45:35     nouvelitGsm
+     #Vente recherche#
+N3film.norml     02/01/2016 18:45:55     nouvelitGsm
+     #Vente recherche#
+mtgsmsoft     02/01/2016 18:46:02     nouvelitGsm
+     #Vente recherche#
+CN4BR19068     02/01/2016 18:46:17     nouvelitGsm
+     #Vente recherche#
+CN4BR19068     02/01/2016 18:46:46     nouvelitGsm
+     #Vente recherche#
+ CN4BR19068     02/01/2016 18:46:55     nouvelitGsm
+     #Vente recherche#
+CN4BR19068      02/01/2016 18:47:02     nouvelitGsm
+     #Vente recherche#
+CN4BR19068       02/01/2016 18:47:06     nouvelitGsm
+     #Vente recherche#
+CN4BR19068        02/01/2016 18:47:09     nouvelitGsm
+     #Vente recherche#
+CN4BR19068         02/01/2016 18:47:14     nouvelitGsm
+     #Vente recherche#
+CN4BR19068          02/01/2016 18:47:19     nouvelitGsm
+         #Stock Ajout#
+;CN4BR19068      02/01/2016 18:48:30     1     nouvelitGsm
+     #Vente recherche#
+CN4BR19068     02/01/2016 18:48:35     nouvelitGsm
+     #Vente recherche#
+CN4BR19068     02/01/2016 18:48:38     nouvelitGsm
+     #Vente recherche#
+868373020061760     02/01/2016 18:49:01     nouvelitGsm
+     #Vente recherche#
+N3anti.cassIGL     02/01/2016 18:49:16     nouvelitGsm
+     #Vente recherche#
+CN4BR19068     02/01/2016 18:49:20     nouvelitGsm
+         #Vente#
+;N1etui3.5"versN     02/01/2016 18:54:11     1     nouvelitGsm;355370000138006     02/01/2016 18:54:11     1     nouvelitGsm;N2anticassy220     02/01/2016 18:54:11     1     nouvelitGsm;N2etuiBversus4.5     02/01/2016 18:54:11     1     nouvelitGsm;N3film.norml     02/01/2016 18:54:11     1     nouvelitGsm;mtgsmsoft     02/01/2016 18:54:11     1     nouvelitGsm;868373020061760     02/01/2016 18:54:11     1     nouvelitGsm;N3anti.cassIGL     02/01/2016 18:54:11     1     nouvelitGsm
+     #Vente recherche#
+CN4BR19068     02/01/2016 18:54:38     nouvelitGsm
+     #Vente recherche#
+CN4BR19068     02/01/2016 18:54:52     nouvelitGsm
+         #Stock Ajout#
+;CN4BR19068     02/01/2016 18:55:15     1     nouvelitGsm
+     #Vente recherche#
+CN4BR19068     02/01/2016 18:55:21     nouvelitGsm
+         #Vente#
+;CN4BR19068     02/01/2016 18:55:28     1     nouvelitGsm
+     #Vente recherche#
+860885024470646     02/01/2016 18:56:27     nouvelitGsm
+     #Vente recherche#
+;862847029847655     02/01/2016 18:56:52     nouvelitGsm
+     #Vente recherche#
+862847029847655     02/01/2016 18:56:53     nouvelitGsm
+         #Vente#
+;860885024470646     02/01/2016 18:57:20     1     nouvelitGsm;862847029847655     02/01/2016 18:57:20     1     nouvelitGsm
+     #Vente recherche#
+;affichd40     02/01/2016 19:26:46     nouvelitGsm
+     #Vente recherche#
+affichd40     02/01/2016 19:26:48     nouvelitGsm
+     #Vente recherche#
+;tacteverstard40     02/01/2016 19:27:32     nouvelitGsm
+     #Vente recherche#
+tacteverstard40     02/01/2016 19:27:34     nouvelitGsm
+         #Vente#
+;affichd40     02/01/2016 19:28:02     1     nouvelitGsm;tacteverstard40     02/01/2016 19:28:02     1     nouvelitGsm
+     #Vente recherche#
+N2Kit.Original     02/01/2016 20:24:38     nouvelit
+         #Vente#
+;N2Kit.Original     02/01/2016 20:24:42     1     nouvelit

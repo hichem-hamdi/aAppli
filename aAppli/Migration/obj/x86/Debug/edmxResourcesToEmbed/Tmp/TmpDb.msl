@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyTmpDBModelStoreContainer" CdmEntityContainer="MyTmpDBEntities">
+    <EntitySetMapping Name="Article">
+      <EntityTypeMapping TypeName="MyTmpDBModel.Article">
+        <MappingFragment StoreEntitySet="Article">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="PrixAchat" ColumnName="PrixAchat" />
+          <ScalarProperty Name="PrixVente" ColumnName="PrixVente" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="QT" ColumnName="QT" />
+          <ScalarProperty Name="IsGenerique" ColumnName="IsGenerique" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Credit">
+      <EntityTypeMapping TypeName="MyTmpDBModel.Credit">
+        <MappingFragment StoreEntitySet="Credit">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ArticleId" ColumnName="ArticleId" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="PrixAchat" ColumnName="PrixAchat" />
+          <ScalarProperty Name="PrixVente" ColumnName="PrixVente" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="DateDeVente" ColumnName="DateDeVente" />
+          <ScalarProperty Name="QT" ColumnName="QT" />
+          <ScalarProperty Name="NomClient" ColumnName="NomClient" />
+          <ScalarProperty Name="Coordonnes" ColumnName="Coordonnes" />
+          <ScalarProperty Name="ModePaiement" ColumnName="ModePaiement" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="MyTmpDBModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Pass" ColumnName="Pass" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Vente" ColumnName="Vente" />
+          <ScalarProperty Name="Vente_S" ColumnName="Vente/S" />
+          <ScalarProperty Name="HistoriqueVente" ColumnName="HistoriqueVente" />
+          <ScalarProperty Name="AVoir" ColumnName="AVoir" />
+          <ScalarProperty Name="Inventaire" ColumnName="Inventaire" />
+          <ScalarProperty Name="VenteCredit" ColumnName="VenteCredit" />
+          <ScalarProperty Name="VenteCredit_S" ColumnName="VenteCredit/S" />
+          <ScalarProperty Name="GererAcces" ColumnName="GererAcces" />
+          <ScalarProperty Name="ViderBase" ColumnName="ViderBase" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vente">
+      <EntityTypeMapping TypeName="MyTmpDBModel.Vente">
+        <MappingFragment StoreEntitySet="Vente">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ArticleId" ColumnName="ArticleId" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="PrixAchat" ColumnName="PrixAchat" />
+          <ScalarProperty Name="PrixVente" ColumnName="PrixVente" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="DateDeVente" ColumnName="DateDeVente" />
+          <ScalarProperty Name="QT" ColumnName="QT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

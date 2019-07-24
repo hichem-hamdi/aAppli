@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DBModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.3.5" ProviderManifestToken="3.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="DBModelStoreContainer">
+          <EntitySet Name="Article" EntityType="DBModel.Store.Article" store:Type="Tables" />
+          <EntitySet Name="Vente" EntityType="DBModel.Store.Vente" store:Type="Tables" />
+        </EntityContainer>
+        <EntityType Name="Article">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Designation" Type="nvarchar" Nullable="false" />
+          <Property Name="PrixAchat" Type="money" Nullable="false" />
+          <Property Name="PrixVente" Type="money" Nullable="false" />
+          <Property Name="SN" Type="nvarchar" Nullable="false" />
+          <Property Name="QT" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Vente">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ArticleId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Designation" Type="nvarchar" Nullable="false" />
+          <Property Name="PrixAchat" Type="money" Nullable="false" />
+          <Property Name="PrixVente" Type="money" Nullable="false" />
+          <Property Name="SN" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="DateDeVente" Type="datetime" Nullable="false" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="DBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Articles" EntityType="DBModel.Article" />
+          <EntitySet Name="Ventes" EntityType="DBModel.Vente" />
+        </EntityContainer>
+        <EntityType Name="Article">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Designation" Type="String" Nullable="false" MaxLength="4000" Unicode="true" FixedLength="false" />
+          <Property Name="PrixAchat" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="PrixVente" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="SN" Type="String" Nullable="false" MaxLength="4000" Unicode="true" FixedLength="false" />
+          <Property Type="Int32" Name="QT" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Vente">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Guid" Name="Id" Nullable="false" />
+          <Property Type="Guid" Name="ArticleId" Nullable="false" />
+          <Property Type="String" Name="Designation" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="PrixAchat" Nullable="false" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="PrixVente" Nullable="false" Precision="19" Scale="4" />
+          <Property Type="String" Name="SN" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="DateDeVente" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DBModelStoreContainer" CdmEntityContainer="DBEntities">
+          <EntitySetMapping Name="Articles"><EntityTypeMapping TypeName="DBModel.Article"><MappingFragment StoreEntitySet="Article">
+                <ScalarProperty Name="QT" ColumnName="QT" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Designation" ColumnName="Designation" />
+            <ScalarProperty Name="PrixAchat" ColumnName="PrixAchat" />
+            <ScalarProperty Name="PrixVente" ColumnName="PrixVente" />
+            <ScalarProperty Name="SN" ColumnName="SN" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Ventes">
+            <EntityTypeMapping TypeName="DBModel.Vente">
+              <MappingFragment StoreEntitySet="Vente">
+                <ScalarProperty Name="DateDeVente" ColumnName="DateDeVente" />
+                <ScalarProperty Name="SN" ColumnName="SN" />
+                <ScalarProperty Name="PrixVente" ColumnName="PrixVente" />
+                <ScalarProperty Name="PrixAchat" ColumnName="PrixAchat" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="ArticleId" ColumnName="ArticleId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1">
+        <EntityTypeShape EntityType="DBModel.Article" Width="1.5" PointX="0.75" PointY="0.75" Height="1.9802864583333331" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Vente" Width="1.5" PointX="3.375" PointY="0.75" Height="2.1725878906249996" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

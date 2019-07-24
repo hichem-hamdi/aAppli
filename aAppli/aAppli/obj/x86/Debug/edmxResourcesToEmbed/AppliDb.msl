@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyDBModelStoreContainer" CdmEntityContainer="MyDBEntities">
+    <EntitySetMapping Name="Article">
+      <EntityTypeMapping TypeName="MyDBModel.Article">
+        <MappingFragment StoreEntitySet="Article">
+          <ScalarProperty Name="SizeId" ColumnName="SizeId" />
+          <ScalarProperty Name="BrandId" ColumnName="BrandId" />
+          <ScalarProperty Name="SousCategorieId" ColumnName="SousCategorieId" />
+          <ScalarProperty Name="CategorieId" ColumnName="CategorieId" />
+          <ScalarProperty Name="FamilleId" ColumnName="FamilleId" />
+          <ScalarProperty Name="EstablishmentId" ColumnName="EstablishmentId" />
+          <ScalarProperty Name="IsGenerique" ColumnName="IsGenerique" />
+          <ScalarProperty Name="QT" ColumnName="QT" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="PrixVente" ColumnName="PrixVente" />
+          <ScalarProperty Name="PrixAchat" ColumnName="PrixAchat" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vente">
+      <EntityTypeMapping TypeName="MyDBModel.Vente">
+        <MappingFragment StoreEntitySet="Vente">
+          <ScalarProperty Name="EstablishmentId" ColumnName="EstablishmentId" />
+          <ScalarProperty Name="QT" ColumnName="QT" />
+          <ScalarProperty Name="DateDeVente" ColumnName="DateDeVente" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="PrixVente" ColumnName="PrixVente" />
+          <ScalarProperty Name="PrixAchat" ColumnName="PrixAchat" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="ArticleId" ColumnName="ArticleId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Credit">
+      <EntityTypeMapping TypeName="MyDBModel.Credit">
+        <MappingFragment StoreEntitySet="Credit">
+          <ScalarProperty Name="EstablishmentId" ColumnName="EstablishmentId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="ModePaiement" ColumnName="ModePaiement" />
+          <ScalarProperty Name="Coordonnes" ColumnName="Coordonnes" />
+          <ScalarProperty Name="NomClient" ColumnName="NomClient" />
+          <ScalarProperty Name="QT" ColumnName="QT" />
+          <ScalarProperty Name="DateDeVente" ColumnName="DateDeVente" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="PrixVente" ColumnName="PrixVente" />
+          <ScalarProperty Name="PrixAchat" ColumnName="PrixAchat" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="ArticleId" ColumnName="ArticleId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="MyDBModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="EstablishmentId" ColumnName="EstablishmentId" />
+          <ScalarProperty Name="ViderBase" ColumnName="ViderBase" />
+          <ScalarProperty Name="GererAcces" ColumnName="GererAcces" />
+          <ScalarProperty Name="VenteCredit_S" ColumnName="VenteCredit/S" />
+          <ScalarProperty Name="VenteCredit" ColumnName="VenteCredit" />
+          <ScalarProperty Name="Inventaire" ColumnName="Inventaire" />
+          <ScalarProperty Name="AVoir" ColumnName="AVoir" />
+          <ScalarProperty Name="HistoriqueVente" ColumnName="HistoriqueVente" />
+          <ScalarProperty Name="Vente_S" ColumnName="Vente/S" />
+          <ScalarProperty Name="Vente" ColumnName="Vente" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Pass" ColumnName="Pass" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Establishment">
+      <EntityTypeMapping TypeName="MyDBModel.Establishment">
+        <MappingFragment StoreEntitySet="Establishment">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reservation">
+      <EntityTypeMapping TypeName="MyDBModel.Reservation">
+        <MappingFragment StoreEntitySet="Reservation">
+          <ScalarProperty Name="Qt" ColumnName="Qt" />
+          <ScalarProperty Name="ValidatedBy" ColumnName="ValidatedBy" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ValidationDate" ColumnName="ValidationDate" />
+          <ScalarProperty Name="IsValidated" ColumnName="IsValidated" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="ToId" ColumnName="ToId" />
+          <ScalarProperty Name="FromId" ColumnName="FromId" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="ArticleId" ColumnName="ArticleId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Brand">
+      <EntityTypeMapping TypeName="MyDBModel.Brand">
+        <MappingFragment StoreEntitySet="Brand">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categorie">
+      <EntityTypeMapping TypeName="MyDBModel.Categorie">
+        <MappingFragment StoreEntitySet="Categorie">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Famille">
+      <EntityTypeMapping TypeName="MyDBModel.Famille">
+        <MappingFragment StoreEntitySet="Famille">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Size">
+      <EntityTypeMapping TypeName="MyDBModel.Size">
+        <MappingFragment StoreEntitySet="Size">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SOUS_CATEGORIE">
+      <EntityTypeMapping TypeName="MyDBModel.SOUS_CATEGORIE">
+        <MappingFragment StoreEntitySet="SOUS_CATEGORIE">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

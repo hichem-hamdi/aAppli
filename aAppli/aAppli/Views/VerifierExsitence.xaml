@@ -1,0 +1,90 @@
+﻿<Window x:Class="aAppli.Views.VerifierExsitence"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="VerifierExsitence" Height="600" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="Auto"/>
+        </Grid.RowDefinitions>
+        <DataGrid Margin="5,5"
+                              x:Name="myDataGrid"
+                              ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                              MaxHeight="300"
+                              BorderThickness="1,0,1,0"
+                              GridLinesVisibility="All"
+                              VerticalScrollBarVisibility="Visible"
+                              HorizontalScrollBarVisibility="Visible"
+                              CanUserResizeColumns="False"
+                              CanUserAddRows="False"
+                              CanUserDeleteRows="False"
+                              AutoGenerateColumns="False"
+                              IsReadOnly="True"
+                              HorizontalGridLinesBrush="#f0f0f0"
+                              VerticalGridLinesBrush="#f0f0f0"
+                              AlternatingRowBackground="#9FC5F8">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Désignation"                                    
+                                                Binding="{Binding Designation}"
+                                                Width="*">
+
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Prix Achat"
+                                                Binding="{Binding PrixAchat,StringFormat=N3}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                            <Setter Property="Margin"
+                                                Value="5" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Prix Vente"
+                                                Binding="{Binding PrixVente,StringFormat=N3}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                            <Setter Property="Margin"
+                                                Value="5" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="S/N"
+                                                Width="250"
+                                                Binding="{Binding SN}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                            <Setter Property="Margin"
+                                                Value="5" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="QT"
+                                                Binding="{Binding QT}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                            <Setter Property="Margin"
+                                                Value="5" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Magasin"
+                                                    Binding="{Binding Establishment.Name}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                            <Setter Property="Margin"
+                                                Value="5" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

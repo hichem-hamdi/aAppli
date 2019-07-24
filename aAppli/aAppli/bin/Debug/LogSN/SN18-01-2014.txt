@@ -1,0 +1,72 @@
+         #Stock Ajout#
+     18/01/2014 12:02:57     0     nouvelit
+         #Stock Ajout#
+;N1ABON.DREAM.MASK     18/01/2014 12:03:21     100     nouvelit
+         #Stock Ajout#
+     18/01/2014 12:04:48     98     nouvelit
+         #Stock Ajout#
+     18/01/2014 12:04:56     0     nouvelit
+         #Stock Ajout#
+     18/01/2014 12:05:04     98     nouvelit
+         #Stock Ajout#
+;abonnement ilyess     18/01/2014 12:05:50     98     nouvelit
+         #Stock Ajout#
+;N1M.BOUTON.POWER     18/01/2014 12:07:33     100     nouvelit
+         #Stock Ajout#
+;N1MAINT.CABLE.CHARG     18/01/2014 12:12:04     98     nouvelit
+         #Stock Ajout#
+;032010000070     18/01/2014 12:12:44     4     nouvelit
+         #Stock Ajout#
+;N1cableHPdell     18/01/2014 12:13:30     6     nouvelit
+         #Stock Ajout#
+;GA00000HV00A00C28V06YE     18/01/2014 12:13:43     1     nouvelit
+         #Stock Ajout#
+;GA00000HV00A00C28V08C9     18/01/2014 12:14:03     2     nouvelit
+         #Stock Ajout#
+;N1cable samsung     18/01/2014 12:14:22     3     nouvelit
+         #Stock Ajout#
+;N1ccharg tochiba     18/01/2014 12:14:35     4     nouvelit
+         #Stock Ajout#
+;N1cable toshiba     18/01/2014 12:14:49     2     nouvelit
+         #Stock Ajout#
+;N1MAINT.CABLE.CHARG     18/01/2014 12:15:13     98     nouvelit
+         #Stock Ajout#
+;N1cable.charge.acer     18/01/2014 12:15:52     2     nouvelit
+         #Stock Ajout#
+;N1charge.gaz.clim     18/01/2014 12:16:28     100     nouvelit
+         #Stock Ajout#
+;N1DIAG.NOTEBOOK     18/01/2014 12:18:49     99     nouvelit
+         #Stock Ajout#
+;N1DIAG.PC     18/01/2014 12:19:47     100     nouvelit
+         #Stock Ajout#
+;N1MAINT.DREM     18/01/2014 12:20:28     96     nouvelit
+         #Stock Ajout#
+;N1MAINT.F.INST.OS     18/01/2014 12:21:40     95     nouvelit
+         #Stock Ajout#
+;N1gravure     18/01/2014 12:22:02     99     nouvelit
+         #Stock Ajout#
+;N1instalation.clim     18/01/2014 12:22:13     100     nouvelit
+         #Stock Ajout#
+;N1JEUX.FLASH.PS2     18/01/2014 12:22:32     100     nouvelit
+         #Stock Ajout#
+;N1JEUX.PSP     18/01/2014 12:22:48     99     nouvelit
+         #Stock Ajout#
+;N1MAINT.LENTIL.PS2     18/01/2014 12:23:01     100     nouvelit
+         #Stock Ajout#
+;N1MAINT.NET.NOTBOOK     18/01/2014 12:23:21     99     nouvelit
+         #Stock Ajout#
+;N1MAINT.NET.PC     18/01/2014 12:23:45     97     nouvelit
+         #Stock Ajout#
+;N1MAINT.NITANDO.DS     18/01/2014 12:24:02     100     nouvelit
+         #Stock Ajout#
+;N1patch.cart.mem.ps2     18/01/2014 12:24:56     99     nouvelit
+         #Stock Ajout#
+;N1PATCHE PSP     18/01/2014 12:26:41     99     nouvelit
+         #Stock Ajout#
+;N1PS2 MAINT     18/01/2014 12:27:46     100     nouvelit
+         #Stock Ajout#
+;N1RECHARGE.CART.     18/01/2014 12:28:13     100     nouvelit
+         #Stock Ajout#
+;N1RECONST.BGA.NOT     18/01/2014 12:28:44     100     nouvelit
+         #Stock Ajout#
+;N1RENOUVELLEMENT.3MOIS     18/01/2014 12:32:33     98     nouvelit
