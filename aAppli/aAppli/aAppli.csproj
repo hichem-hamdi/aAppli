@@ -178,6 +178,7 @@
     <Compile Include="ModuleInit.cs" />
     <Compile Include="pdfPage.cs" />
     <Compile Include="ViewModels\AvoirViewModel.cs" />
+    <Compile Include="ViewModels\MangeSuppliersViewModel.cs" />
     <Compile Include="ViewModels\MangeSizesViewModel.cs" />
     <Compile Include="ViewModels\MangeBrandsViewModel.cs" />
     <Compile Include="ViewModels\ManageCategoriesViewModel.cs" />
@@ -196,6 +197,12 @@
     </Compile>
     <Compile Include="ConnexionView.xaml.cs">
       <DependentUpon>ConnexionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ManageSuppliers.xaml.cs">
+      <DependentUpon>ManageSuppliers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditInsertionView.xaml.cs">
+      <DependentUpon>EditInsertionView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ManageSizes.xaml.cs">
       <DependentUpon>ManageSizes.xaml</DependentUpon>
@@ -268,6 +275,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ConnexionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ManageSuppliers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\EditInsertionView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

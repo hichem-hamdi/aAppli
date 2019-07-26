@@ -117,7 +117,7 @@
                               GridLinesVisibility="All"
                               VerticalScrollBarVisibility="Visible"
                               HorizontalScrollBarVisibility="Visible"
-                              CanUserResizeColumns="False"
+                              CanUserResizeColumns="True"
                               CanUserAddRows="False"
                               CanUserDeleteRows="False"
                               AutoGenerateColumns="False"
@@ -133,18 +133,6 @@
                                     <DataGridTextColumn Header="Id"
                                                 Visibility="Hidden"
                                                 Binding="{Binding Id}" />
-                                    <DataGridTextColumn Header="Désignation"
-                                                Binding="{Binding Designation,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
-                                                Width="*">
-                                        <DataGridTextColumn.ElementStyle>
-                                            <Style TargetType="TextBlock">
-                                                <Setter Property="VerticalAlignment"
-                                                Value="Center" />
-                                                <Setter Property="Margin"
-                                                Value="5" />
-                                            </Style>
-                                        </DataGridTextColumn.ElementStyle>
-                                    </DataGridTextColumn>
                                     <DataGridComboBoxColumn Header="Famille"
                                                             DisplayMemberPath="Name"
                                         SelectedItemBinding="{Binding SelectedFamily,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
@@ -215,6 +203,69 @@
                                             </Style>
                                         </DataGridComboBoxColumn.EditingElementStyle>
                                     </DataGridComboBoxColumn>
+                                    <DataGridComboBoxColumn Header="Fournisseur"
+                                                            DisplayMemberPath="Name"
+                                        SelectedItemBinding="{Binding SelectedSupplier,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                                        <DataGridComboBoxColumn.ElementStyle>
+                                            <Style TargetType="{x:Type ComboBox}">
+                                                <Setter Property="ItemsSource" Value="{Binding Suppliers}" />
+                                            </Style>
+                                        </DataGridComboBoxColumn.ElementStyle>
+                                        <DataGridComboBoxColumn.EditingElementStyle>
+                                            <Style TargetType="{x:Type ComboBox}">
+                                                <Setter Property="ItemsSource" Value="{Binding Suppliers}" />
+                                            </Style>
+                                        </DataGridComboBoxColumn.EditingElementStyle>
+                                    </DataGridComboBoxColumn>
+                                    <DataGridTemplateColumn Header="Date d'achat">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding PurchaseDate,StringFormat='dd/MM/yyyy'}" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                        <DataGridTemplateColumn.CellEditingTemplate>
+                                            <DataTemplate>
+                                                <DatePicker SelectedDate="{Binding PurchaseDate,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellEditingTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTextColumn Header="QT"
+                                                Binding="{Binding QT,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                                        <DataGridTextColumn.ElementStyle>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                                <Setter Property="Margin"
+                                                Value="5" />
+                                            </Style>
+                                        </DataGridTextColumn.ElementStyle>
+                                    </DataGridTextColumn>
+                                    <DataGridTextColumn Header="Description"
+                                                        Width="auto"
+                                                Binding="{Binding Description,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                                        <DataGridTextColumn.ElementStyle>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                                <Setter Property="Margin"
+                                                Value="5" />
+                                            </Style>
+                                        </DataGridTextColumn.ElementStyle>
+                                    </DataGridTextColumn>
+
+                                    <DataGridTextColumn Header="Désignation"
+                                                Binding="{Binding Designation,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                                Width="auto"
+                                                IsReadOnly="True">
+                                        <DataGridTextColumn.ElementStyle>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                                <Setter Property="Margin"
+                                                Value="5" />
+                                            </Style>
+                                        </DataGridTextColumn.ElementStyle>
+                                    </DataGridTextColumn>
                                     <DataGridTextColumn Header="Prix Achat"
                                                 Binding="{Binding PrixAchat,StringFormat=N3,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
                                         <DataGridTextColumn.ElementStyle>
@@ -249,17 +300,7 @@
                                             </Style>
                                         </DataGridTextColumn.ElementStyle>
                                     </DataGridTextColumn>
-                                    <DataGridTextColumn Header="QT"
-                                                Binding="{Binding QT,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                                        <DataGridTextColumn.ElementStyle>
-                                            <Style TargetType="TextBlock">
-                                                <Setter Property="VerticalAlignment"
-                                                Value="Center" />
-                                                <Setter Property="Margin"
-                                                Value="5" />
-                                            </Style>
-                                        </DataGridTextColumn.ElementStyle>
-                                    </DataGridTextColumn>
+                                   
                                     <DataGridCheckBoxColumn Header="Générique"
                                                     Binding="{Binding IsGenerique,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
                                         <DataGridCheckBoxColumn.ElementStyle>

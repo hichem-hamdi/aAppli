@@ -231,6 +231,7 @@ namespace aAppli.ViewModels
             {
                 ArticleModel art = new ArticleModel
                 {
+                    IsLoadedFromDB = true,
                     Id = item.ID,
                     Designation = item.Designation,
                     PrixAchat = item.PrixAchat,
@@ -247,10 +248,15 @@ namespace aAppli.ViewModels
                     Brands = new ObservableCollection<Brand>(db.Brand.ToList()),
                     SelectedBrand = item.Brand,
                     Sizes = new ObservableCollection<Size>(db.Size.ToList()),
-                    SelectedSize = item.Size
+                    SelectedSize = item.Size,
+                    Suppliers = new ObservableCollection<Fournisseur>(db.Fournisseur.ToList()),
+                    SelectedSupplier = item.Fournisseur,
+                    PurchaseDate = item.DateAchat,
+                    Description = item.Description
                 };
                 Articles.Add(art);
                 InitArticles.Add(art);
+                art.IsLoadedFromDB = false;
             }
             NbrArticle = Articles.Count;
             IsBusy = false;
@@ -259,6 +265,13 @@ namespace aAppli.ViewModels
 
         private void OnSave(ArticleModel article)
         {
+            if (article.SelectedBrand == null || article.SelectedCategory == null || article.SelectedFamily == null || article.SelectedSize == null
+            || article.SelectedSubCategory == null || article.SelectedSupplier == null || article.PurchaseDate == null)
+            {
+                Microsoft.Windows.Controls.MessageBox.Show("La saisie n'est pas complete!", "Error", MessageBoxButton.OK, MessageBoxImage.Stop);
+                return;
+            }
+
             IsBusy = true;
             string[] tab = null;
             if (article.SN != null)
@@ -309,7 +322,10 @@ namespace aAppli.ViewModels
                         CategorieId = article.SelectedCategory.Id,
                         SousCategorieId = article.SelectedSubCategory.Id,
                         BrandId = article.SelectedBrand.Id,
-                        SizeId = article.SelectedSize.Id
+                        SizeId = article.SelectedSize.Id,
+                        FournisseurId = article.SelectedSupplier.Id,
+                        Description = article.Description,
+                        DateAchat = article.PurchaseDate
                     };
 
                     db.Article.AddObject(art);
@@ -345,6 +361,9 @@ namespace aAppli.ViewModels
                         art.SousCategorieId = article.SelectedSubCategory.Id;
                         art.BrandId = article.SelectedBrand.Id;
                         art.SizeId = article.SelectedSize.Id;
+                        art.FournisseurId = article.SelectedSupplier.Id;
+                        art.DateAchat = article.PurchaseDate;
+                        art.Description = article.Description;
                         db.SaveChanges();
                     }
                 }

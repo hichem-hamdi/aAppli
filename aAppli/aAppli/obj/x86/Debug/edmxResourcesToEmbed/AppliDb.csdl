@@ -68,6 +68,11 @@
       <End Role="Famille" EntitySet="Famille" />
       <End Role="Article" EntitySet="Article" />
     </AssociationSet>
+    <EntitySet Name="Fournisseur" EntityType="MyDBModel.Fournisseur" />
+    <AssociationSet Name="FK_Article_01" Association="MyDBModel.FK_Article_01">
+      <End Role="Fournisseur" EntitySet="Fournisseur" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="Article">
     <Key>
@@ -93,6 +98,10 @@
     <NavigationProperty Name="SOUS_CATEGORIE" Relationship="MyDBModel.FK_Article_2" FromRole="Article" ToRole="SOUS_CATEGORIE" />
     <NavigationProperty Name="Categorie" Relationship="MyDBModel.FK_Article_3" FromRole="Article" ToRole="Categorie" />
     <NavigationProperty Name="Famille" Relationship="MyDBModel.FK_Article_4" FromRole="Article" ToRole="Famille" />
+    <Property Type="Int64" Name="FournisseurId" />
+    <Property Type="String" Name="Description" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Fournisseur" Relationship="MyDBModel.FK_Article_01" FromRole="Article" ToRole="Fournisseur" />
+    <Property Type="DateTime" Name="DateAchat" />
   </EntityType>
   <EntityType Name="Vente">
     <Key>
@@ -389,6 +398,26 @@
       </Principal>
       <Dependent Role="Article">
         <PropertyRef Name="FamilleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Fournisseur">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_01" FromRole="Fournisseur" ToRole="Article" />
+  </EntityType>
+  <Association Name="FK_Article_01">
+    <End Type="MyDBModel.Fournisseur" Role="Fournisseur" Multiplicity="0..1" />
+    <End Type="MyDBModel.Article" Role="Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fournisseur">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="FournisseurId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

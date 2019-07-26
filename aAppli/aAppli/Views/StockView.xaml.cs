@@ -12,6 +12,7 @@ using System.Windows.Threading;
 using aAppli.Models;
 using aAppli.ViewModels;
 using Microsoft.Windows.Controls;
+using System.Collections.ObjectModel;
 
 namespace aAppli.Views
 {
@@ -69,7 +70,17 @@ namespace aAppli.Views
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            (DataContext as StockViewModel).Articles.Add(new ArticleModel());
+            MyDBEntities db = DbManager.CreateDbManager();
+            ArticleModel art = new ArticleModel
+               {
+                   Families = new ObservableCollection<Famille>(db.Famille.ToList()),
+                   Categories = new ObservableCollection<Categorie>(db.Categorie.ToList()),
+                   SubCategories = new ObservableCollection<SOUS_CATEGORIE>(db.SOUS_CATEGORIE.ToList()),
+                   Brands = new ObservableCollection<Brand>(db.Brand.ToList()),
+                   Sizes = new ObservableCollection<Size>(db.Size.ToList()),
+                   Suppliers = new ObservableCollection<Fournisseur>(db.Fournisseur.ToList())
+               };
+            (DataContext as StockViewModel).Articles.Add(art);
             myDataGrid.SelectedItem = (DataContext as StockViewModel).Articles[(DataContext as StockViewModel).Articles.Count - 1];
             myDataGrid.ScrollIntoView(myDataGrid.SelectedItem);
         }

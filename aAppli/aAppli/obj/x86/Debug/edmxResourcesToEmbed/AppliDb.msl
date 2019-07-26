@@ -4,6 +4,9 @@
     <EntitySetMapping Name="Article">
       <EntityTypeMapping TypeName="MyDBModel.Article">
         <MappingFragment StoreEntitySet="Article">
+          <ScalarProperty Name="DateAchat" ColumnName="DateAchat" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FournisseurId" ColumnName="FournisseurId" />
           <ScalarProperty Name="SizeId" ColumnName="SizeId" />
           <ScalarProperty Name="BrandId" ColumnName="BrandId" />
           <ScalarProperty Name="SousCategorieId" ColumnName="SousCategorieId" />
@@ -134,6 +137,14 @@
     <EntitySetMapping Name="SOUS_CATEGORIE">
       <EntityTypeMapping TypeName="MyDBModel.SOUS_CATEGORIE">
         <MappingFragment StoreEntitySet="SOUS_CATEGORIE">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fournisseur">
+      <EntityTypeMapping TypeName="MyDBModel.Fournisseur">
+        <MappingFragment StoreEntitySet="Fournisseur">
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>

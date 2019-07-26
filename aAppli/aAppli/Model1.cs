@@ -32,6 +32,7 @@ using System.Runtime.Serialization;
 [assembly: EdmRelationshipAttribute("MyDBModel", "FK_Article_2", "SOUS_CATEGORIE", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.SOUS_CATEGORIE), "Article", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Article), true)]
 [assembly: EdmRelationshipAttribute("MyDBModel", "FK_Article_3", "Categorie", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Categorie), "Article", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Article), true)]
 [assembly: EdmRelationshipAttribute("MyDBModel", "FK_Article_4", "Famille", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Famille), "Article", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Article), true)]
+[assembly: EdmRelationshipAttribute("MyDBModel", "FK_Article_01", "Fournisseur", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Fournisseur), "Article", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Article), true)]
 
 #endregion
 
@@ -258,6 +259,22 @@ namespace aAppli
             }
         }
         private ObjectSet<SOUS_CATEGORIE> _SOUS_CATEGORIE;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<Fournisseur> Fournisseur
+        {
+            get
+            {
+                if ((_Fournisseur == null))
+                {
+                    _Fournisseur = base.CreateObjectSet<Fournisseur>("Fournisseur");
+                }
+                return _Fournisseur;
+            }
+        }
+        private ObjectSet<Fournisseur> _Fournisseur;
 
         #endregion
         #region AddTo Methods
@@ -348,6 +365,14 @@ namespace aAppli
         public void AddToSOUS_CATEGORIE(SOUS_CATEGORIE sOUS_CATEGORIE)
         {
             base.AddObject("SOUS_CATEGORIE", sOUS_CATEGORIE);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the Fournisseur EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToFournisseur(Fournisseur fournisseur)
+        {
+            base.AddObject("Fournisseur", fournisseur);
         }
 
         #endregion
@@ -706,6 +731,78 @@ namespace aAppli
         private Nullable<global::System.Int64> _SizeId;
         partial void OnSizeIdChanging(Nullable<global::System.Int64> value);
         partial void OnSizeIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int64> FournisseurId
+        {
+            get
+            {
+                return _FournisseurId;
+            }
+            set
+            {
+                OnFournisseurIdChanging(value);
+                ReportPropertyChanging("FournisseurId");
+                _FournisseurId = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("FournisseurId");
+                OnFournisseurIdChanged();
+            }
+        }
+        private Nullable<global::System.Int64> _FournisseurId;
+        partial void OnFournisseurIdChanging(Nullable<global::System.Int64> value);
+        partial void OnFournisseurIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Description
+        {
+            get
+            {
+                return _Description;
+            }
+            set
+            {
+                OnDescriptionChanging(value);
+                ReportPropertyChanging("Description");
+                _Description = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Description");
+                OnDescriptionChanged();
+            }
+        }
+        private global::System.String _Description;
+        partial void OnDescriptionChanging(global::System.String value);
+        partial void OnDescriptionChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> DateAchat
+        {
+            get
+            {
+                return _DateAchat;
+            }
+            set
+            {
+                OnDateAchatChanging(value);
+                ReportPropertyChanging("DateAchat");
+                _DateAchat = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("DateAchat");
+                OnDateAchatChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _DateAchat;
+        partial void OnDateAchatChanging(Nullable<global::System.DateTime> value);
+        partial void OnDateAchatChanged();
 
         #endregion
     
@@ -957,6 +1054,44 @@ namespace aAppli
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Famille>("MyDBModel.FK_Article_4", "Famille", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("MyDBModel", "FK_Article_01", "Fournisseur")]
+        public Fournisseur Fournisseur
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Fournisseur>("MyDBModel.FK_Article_01", "Fournisseur").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Fournisseur>("MyDBModel.FK_Article_01", "Fournisseur").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<Fournisseur> FournisseurReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Fournisseur>("MyDBModel.FK_Article_01", "Fournisseur");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Fournisseur>("MyDBModel.FK_Article_01", "Fournisseur", value);
                 }
             }
         }
@@ -1869,6 +2004,110 @@ namespace aAppli
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Article>("MyDBModel.FK_Article_4", "Article", value);
+                }
+            }
+        }
+
+        #endregion
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="MyDBModel", Name="Fournisseur")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class Fournisseur : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new Fournisseur object.
+        /// </summary>
+        /// <param name="id">Initial value of the Id property.</param>
+        public static Fournisseur CreateFournisseur(global::System.Int64 id)
+        {
+            Fournisseur fournisseur = new Fournisseur();
+            fournisseur.Id = id;
+            return fournisseur;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int64 _Id;
+        partial void OnIdChanging(global::System.Int64 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Name
+        {
+            get
+            {
+                return _Name;
+            }
+            set
+            {
+                OnNameChanging(value);
+                ReportPropertyChanging("Name");
+                _Name = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Name");
+                OnNameChanged();
+            }
+        }
+        private global::System.String _Name;
+        partial void OnNameChanging(global::System.String value);
+        partial void OnNameChanged();
+
+        #endregion
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("MyDBModel", "FK_Article_01", "Article")]
+        public EntityCollection<Article> Article
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Article>("MyDBModel.FK_Article_01", "Article");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Article>("MyDBModel.FK_Article_01", "Article", value);
                 }
             }
         }

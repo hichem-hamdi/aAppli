@@ -27,6 +27,7 @@ namespace aAppli.Models
                 }
 
                 _SelectedFamily = value;
+                FormatDesignation();
                 RaisePropertyChanged(() => SelectedFamily);
             }
         }
@@ -65,6 +66,7 @@ namespace aAppli.Models
                 }
 
                 _SelectedCategory = value;
+                FormatDesignation();
                 RaisePropertyChanged(() => SelectedCategory);
             }
         }
@@ -103,6 +105,7 @@ namespace aAppli.Models
                 }
 
                 _SelectedSubCategory = value;
+                FormatDesignation();
                 RaisePropertyChanged(() => SelectedSubCategory);
             }
         }
@@ -141,6 +144,7 @@ namespace aAppli.Models
                 }
 
                 _SelectedBrand = value;
+                FormatDesignation();
                 RaisePropertyChanged(() => SelectedBrand);
             }
         }
@@ -179,6 +183,7 @@ namespace aAppli.Models
                 }
 
                 _SelectedSize = value;
+                FormatDesignation();
                 RaisePropertyChanged(() => SelectedSize);
             }
         }
@@ -199,6 +204,84 @@ namespace aAppli.Models
 
                 _Sizes = value;
                 RaisePropertyChanged(() => Sizes);
+            }
+        }
+
+        private Fournisseur _SelectedSupplier;
+        public Fournisseur SelectedSupplier
+        {
+            get
+            {
+                return _SelectedSupplier;
+            }
+            set
+            {
+                if (_SelectedSupplier == value)
+                {
+                    return;
+                }
+
+                _SelectedSupplier = value;
+                FormatDesignation();
+                RaisePropertyChanged(() => SelectedSupplier);
+            }
+        }
+
+        private ObservableCollection<Fournisseur> _Suppliers;
+        public ObservableCollection<Fournisseur> Suppliers
+        {
+            get
+            {
+                return _Suppliers;
+            }
+            set
+            {
+                if (_Suppliers == value)
+                {
+                    return;
+                }
+
+                _Suppliers = value;
+                RaisePropertyChanged(() => Suppliers);
+            }
+        }
+
+        private DateTime? _PurchaseDate;
+        public DateTime? PurchaseDate
+        {
+            get
+            {
+                return _PurchaseDate;
+            }
+            set
+            {
+                if (_PurchaseDate == value)
+                {
+                    return;
+                }
+
+                _PurchaseDate = value;
+                FormatDesignation();
+                RaisePropertyChanged(() => PurchaseDate);
+            }
+        }
+        private string _Description;
+        public string Description
+        {
+            get
+            {
+                return _Description;
+            }
+            set
+            {
+                if (_Description == value)
+                {
+                    return;
+                }
+
+                _Description = value;
+                FormatDesignation();
+                RaisePropertyChanged(() => Description);
             }
         }
 
@@ -359,6 +442,7 @@ namespace aAppli.Models
                 }
 
                 _QT = value;
+                FormatDesignation();
                 RaisePropertyChanged(() => QT);
             }
         }
@@ -419,6 +503,60 @@ namespace aAppli.Models
         {
         }
 
+        public bool IsLoadedFromDB { get; set; }
+
+
+        private void FormatDesignation()
+        {
+            if (IsLoadedFromDB)
+                return;
+
+            var designationStringBuilder = new StringBuilder();
+            if (SelectedFamily != null)
+            {
+                designationStringBuilder.Append(SelectedFamily.Name);
+                designationStringBuilder.Append(" ");
+            }
+
+            if (SelectedCategory != null)
+            {
+                designationStringBuilder.Append(SelectedCategory.Name);
+                designationStringBuilder.Append(" ");
+            }
+
+            if (SelectedSubCategory != null)
+            {
+                designationStringBuilder.Append(SelectedSubCategory.Name);
+                designationStringBuilder.Append(" ");
+            }
+
+            if (SelectedBrand != null)
+            {
+                designationStringBuilder.Append(SelectedBrand.Name);
+                designationStringBuilder.Append(" ");
+            }
+
+            if (SelectedSize != null)
+            {
+                designationStringBuilder.Append(SelectedSize.Name);
+                designationStringBuilder.Append(" ");
+            }
+            if (SelectedSupplier != null)
+            {
+                designationStringBuilder.Append(SelectedSupplier.Name);
+                designationStringBuilder.Append(" ");
+            }
+
+            if (PurchaseDate.HasValue)
+            {
+                designationStringBuilder.Append(PurchaseDate.Value.ToShortDateString());
+                designationStringBuilder.Append(" ");
+            }
+            designationStringBuilder.Append(QT);
+            designationStringBuilder.Append(" ");
+            designationStringBuilder.Append(Description);
+            Designation = designationStringBuilder.ToString();
+        }
 
     }
 }

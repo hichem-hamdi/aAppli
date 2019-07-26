@@ -21,10 +21,6 @@
                 <RowDefinition />
                 <RowDefinition />
                 <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
             </Grid.RowDefinitions>
 
             <Button Click="Button_Click"
@@ -71,27 +67,12 @@
                 Content="Gérer Sociétés"
                 Click="btnManageEstablishments_Click"
                 Grid.Row="10"></Button>
-            <Button Name="btnManageFamilies"
-                Content="Gérer Familles"
-                Click="btnManageFamilies_Click"
+            <Button Name="btnEditInsertion"
+                Content="Edit insertion"
+                Click="btnEditInsertion_Click"
                 Grid.Row="11"></Button>
-            <Button Name="btnManageGategories"
-                Content="Gérer Gatégories"
-                Click="btnManageGategories_Click"
-                Grid.Row="12"></Button>
-            <Button Name="btnManageSubGategories"
-                Content="Gérer Sous-Gatégories"
-                Click="btnManageSubGategories_Click"
-                Grid.Row="13"></Button>
-            <Button Name="btnManageBrands"
-                Content="Gérer Marques"
-                Click="btnManageBrands_Click"
-                Grid.Row="14"></Button>
-            <Button Name="btnManageSizes"
-                Content="Gérer Tailles"
-                Click="btnManageSizes_Click"
-                Grid.Row="15"></Button>
-            <StackPanel Grid.Row="16">
+           
+            <StackPanel Grid.Row="12">
                 <Button Name="btnVider"
                     Content="Vider la base"
                     Click="Button_Click_4" />

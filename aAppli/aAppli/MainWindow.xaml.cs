@@ -171,36 +171,6 @@ namespace aAppli
             manageEstablishments.Show();
         }
 
-        private void btnManageFamilies_Click(object sender, RoutedEventArgs e)
-        {
-            var manageFamilies = new ManageFamilies();
-            manageFamilies.Show();
-        }
-
-        private void btnManageGategories_Click(object sender, RoutedEventArgs e)
-        {
-            var manageCategories = new ManageCategories();
-            manageCategories.Show();
-        }
-
-        private void btnManageSubGategories_Click(object sender, RoutedEventArgs e)
-        {
-            var manageSubCategories = new ManageSubCategories();
-            manageSubCategories.Show();
-        }
-
-        private void btnManageBrands_Click(object sender, RoutedEventArgs e)
-        {
-            var manageBrands = new ManageBrands();
-            manageBrands.Show();
-        }
-
-        private void btnManageSizes_Click(object sender, RoutedEventArgs e)
-        {
-            var manageSizes = new ManageSizes();
-            manageSizes.Show();
-        }
-
         private void btnReserverArticle_Click(object sender, RoutedEventArgs e)
         {
             var reservation = new ReserverArticle();
@@ -211,6 +181,11 @@ namespace aAppli
         {
             var historiqueReservation = new HistoriqueReservation();
             historiqueReservation.Show();
+        }
+        private void btnEditInsertion_Click(object sender, RoutedEventArgs e)
+        {
+            var editInsertion = new EditInsertionView();
+            editInsertion.Show();
         }
     }
 }

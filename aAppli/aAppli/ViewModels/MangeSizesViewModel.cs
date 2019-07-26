@@ -51,7 +51,7 @@ namespace aAppli.ViewModels
         {
             MyDBEntities db = DbManager.CreateDbManager();
 
-            if (db.Brand.Any(f => f.Name.ToLower().Equals(size.Name.ToLower())))
+            if (db.Size.Any(f => f.Name.ToLower().Equals(size.Name.ToLower())))
             {
                 Microsoft.Windows.Controls.MessageBox.Show("Une taille avec le même nom existe déjà!", "Stop", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Stop);
                 return;

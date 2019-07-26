@@ -113,14 +113,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="aAppli.exe" size="512000">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="aAppli.exe" size="530944">
       <assemblyIdentity name="aAppli" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>OcqbO/vP+NqhsOe9Jj2NVSL8rEA=</dsig:DigestValue>
+        <dsig:DigestValue>pbCRngylN3xMoCLillzCQR50jK4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -244,13 +244,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="aAppli.exe.config" size="2085">
+  <file name="aAppli.exe.config" size="1707">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>WFAun1eXoQfigtrhEO/2/JHjuvU=</dsig:DigestValue>
+      <dsig:DigestValue>8D+pGjh68V9IqZ7l61t09bbQ9Vg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="bltinmic.ico" size="3774">

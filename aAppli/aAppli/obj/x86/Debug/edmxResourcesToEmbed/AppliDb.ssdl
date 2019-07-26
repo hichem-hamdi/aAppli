@@ -7,32 +7,37 @@
     <EntitySet Name="Credit" EntityType="MyDBModel.Store.Credit" store:Type="Tables" />
     <EntitySet Name="Establishment" EntityType="MyDBModel.Store.Establishment" store:Type="Tables" />
     <EntitySet Name="Famille" EntityType="MyDBModel.Store.Famille" store:Type="Tables" />
+    <EntitySet Name="Fournisseur" EntityType="MyDBModel.Store.Fournisseur" store:Type="Tables" />
     <EntitySet Name="Reservation" EntityType="MyDBModel.Store.Reservation" store:Type="Tables" />
     <EntitySet Name="Size" EntityType="MyDBModel.Store.Size" store:Type="Tables" />
     <EntitySet Name="SOUS_CATEGORIE" EntityType="MyDBModel.Store.SOUS_CATEGORIE" store:Type="Tables" />
     <EntitySet Name="Users" EntityType="MyDBModel.Store.Users" store:Type="Tables" />
     <EntitySet Name="Vente" EntityType="MyDBModel.Store.Vente" store:Type="Tables" />
     <AssociationSet Name="FK_Article_0" Association="MyDBModel.Store.FK_Article_0">
-      <End Role="Size" EntitySet="Size" />
+      <End Role="Fournisseur" EntitySet="Fournisseur" />
       <End Role="Article" EntitySet="Article" />
     </AssociationSet>
     <AssociationSet Name="FK_Article_1" Association="MyDBModel.Store.FK_Article_1">
-      <End Role="Brand" EntitySet="Brand" />
+      <End Role="Size" EntitySet="Size" />
       <End Role="Article" EntitySet="Article" />
     </AssociationSet>
     <AssociationSet Name="FK_Article_2" Association="MyDBModel.Store.FK_Article_2">
-      <End Role="SOUS_CATEGORIE" EntitySet="SOUS_CATEGORIE" />
+      <End Role="Brand" EntitySet="Brand" />
       <End Role="Article" EntitySet="Article" />
     </AssociationSet>
     <AssociationSet Name="FK_Article_3" Association="MyDBModel.Store.FK_Article_3">
-      <End Role="Categorie" EntitySet="Categorie" />
+      <End Role="SOUS_CATEGORIE" EntitySet="SOUS_CATEGORIE" />
       <End Role="Article" EntitySet="Article" />
     </AssociationSet>
     <AssociationSet Name="FK_Article_4" Association="MyDBModel.Store.FK_Article_4">
-      <End Role="Famille" EntitySet="Famille" />
+      <End Role="Categorie" EntitySet="Categorie" />
       <End Role="Article" EntitySet="Article" />
     </AssociationSet>
     <AssociationSet Name="FK_Article_5" Association="MyDBModel.Store.FK_Article_5">
+      <End Role="Famille" EntitySet="Famille" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Article_6" Association="MyDBModel.Store.FK_Article_6">
       <End Role="Establishment" EntitySet="Establishment" />
       <End Role="Article" EntitySet="Article" />
     </AssociationSet>
@@ -86,12 +91,15 @@
     <Property Name="SousCategorieId" Type="integer" />
     <Property Name="BrandId" Type="integer" />
     <Property Name="SizeId" Type="integer" />
+    <Property Name="FournisseurId" Type="integer" />
+    <Property Name="Description" Type="nvarchar" />
+    <Property Name="DateAchat" Type="datetime" />
   </EntityType>
   <EntityType Name="Brand">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="integer" Nullable="false" />
+    <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Categorie">
@@ -133,6 +141,13 @@
     <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="nvarchar" MaxLength="50" />
   </EntityType>
+  <EntityType Name="Fournisseur">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" />
+  </EntityType>
   <EntityType Name="Reservation">
     <Key>
       <PropertyRef Name="Id" />
@@ -153,7 +168,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="integer" Nullable="false" />
+    <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="nvarchar" MaxLength="20" />
   </EntityType>
   <EntityType Name="SOUS_CATEGORIE">
@@ -197,6 +212,18 @@
     <Property Name="EstablishmentId" Type="integer" />
   </EntityType>
   <Association Name="FK_Article_0">
+    <End Role="Fournisseur" Type="MyDBModel.Store.Fournisseur" Multiplicity="0..1" />
+    <End Role="Article" Type="MyDBModel.Store.Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fournisseur">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="FournisseurId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Article_1">
     <End Role="Size" Type="MyDBModel.Store.Size" Multiplicity="0..1" />
     <End Role="Article" Type="MyDBModel.Store.Article" Multiplicity="*" />
     <ReferentialConstraint>
@@ -208,7 +235,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Article_1">
+  <Association Name="FK_Article_2">
     <End Role="Brand" Type="MyDBModel.Store.Brand" Multiplicity="0..1" />
     <End Role="Article" Type="MyDBModel.Store.Article" Multiplicity="*" />
     <ReferentialConstraint>
@@ -220,7 +247,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Article_2">
+  <Association Name="FK_Article_3">
     <End Role="SOUS_CATEGORIE" Type="MyDBModel.Store.SOUS_CATEGORIE" Multiplicity="0..1" />
     <End Role="Article" Type="MyDBModel.Store.Article" Multiplicity="*" />
     <ReferentialConstraint>
@@ -232,7 +259,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Article_3">
+  <Association Name="FK_Article_4">
     <End Role="Categorie" Type="MyDBModel.Store.Categorie" Multiplicity="0..1" />
     <End Role="Article" Type="MyDBModel.Store.Article" Multiplicity="*" />
     <ReferentialConstraint>
@@ -244,7 +271,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Article_4">
+  <Association Name="FK_Article_5">
     <End Role="Famille" Type="MyDBModel.Store.Famille" Multiplicity="0..1" />
     <End Role="Article" Type="MyDBModel.Store.Article" Multiplicity="*" />
     <ReferentialConstraint>
@@ -256,7 +283,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Article_5">
+  <Association Name="FK_Article_6">
     <End Role="Establishment" Type="MyDBModel.Store.Establishment" Multiplicity="0..1" />
     <End Role="Article" Type="MyDBModel.Store.Article" Multiplicity="*" />
     <ReferentialConstraint>
