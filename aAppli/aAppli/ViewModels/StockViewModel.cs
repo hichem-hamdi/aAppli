@@ -152,7 +152,7 @@ namespace aAppli.ViewModels
             StockViewLoadedCommand = new DelegateCommand(OnStockViewLoaded);
             SaveCommand = new DelegateCommand<ArticleModel>(OnSave);
             DeleteCommand = new DelegateCommand<ArticleModel>(OnDelete);
-
+            EditCommand = new DelegateCommand<ArticleModel>(OnEdit);
             AddCommand = new DelegateCommand(OnAdd);
             EnterCommand = new DelegateCommand<ArticleModel>(OnEnter);
             EnterCommandSearchInOther = new DelegateCommand(OnEnterSearchInOther);
@@ -166,6 +166,7 @@ namespace aAppli.ViewModels
         public ICommand DeleteManque { get; private set; }
 
         public ICommand DeleteCommand { get; private set; }
+        public ICommand EditCommand { get; private set; }
 
         public ICommand AddCommand { get; private set; }
 
@@ -252,6 +253,7 @@ namespace aAppli.ViewModels
                     Suppliers = new ObservableCollection<Fournisseur>(db.Fournisseur.ToList()),
                     SelectedSupplier = item.Fournisseur,
                     PurchaseDate = item.DateAchat,
+                    PicesQuantity = item.PicesQuantity != null ? int.Parse(item.PicesQuantity.Value.ToString()) : 0,
                     Description = item.Description
                 };
                 Articles.Add(art);
@@ -325,6 +327,7 @@ namespace aAppli.ViewModels
                         SizeId = article.SelectedSize.Id,
                         FournisseurId = article.SelectedSupplier.Id,
                         Description = article.Description,
+                        PicesQuantity = article.PicesQuantity,
                         DateAchat = article.PurchaseDate
                     };
 
@@ -363,6 +366,7 @@ namespace aAppli.ViewModels
                         art.SizeId = article.SelectedSize.Id;
                         art.FournisseurId = article.SelectedSupplier.Id;
                         art.DateAchat = article.PurchaseDate;
+                        art.PicesQuantity = article.PicesQuantity;
                         art.Description = article.Description;
                         db.SaveChanges();
                     }
@@ -462,6 +466,112 @@ namespace aAppli.ViewModels
             Articles = new ObservableCollection<ArticleModel>();
             InitArticles = new ObservableCollection<ArticleModel>();
             OnStockViewLoaded();
+            IsBusy = false;
+        }
+
+        private void OnEdit(ArticleModel article)
+        {
+            IsBusy = true;
+            MyDBEntities db = DbManager.CreateDbManager();
+
+            var familyDialog = new FamilleDialog(article);
+            if (familyDialog.ShowDialog() == true)
+            {
+                article.SelectedFamily = familyDialog.cbFamilies.SelectedItem as Famille;
+            }
+            else
+            {
+                return;
+            }
+            var categoryDialog = new CategoryDialog(article);
+            if (categoryDialog.ShowDialog() == true)
+            {
+                article.SelectedCategory = categoryDialog.cbCategories.SelectedItem as Categorie;
+            }
+            else
+            {
+                return;
+            }
+            var subCategoryDialog = new SubCategoryDialog(article);
+            if (subCategoryDialog.ShowDialog() == true)
+            {
+                article.SelectedSubCategory = subCategoryDialog.cbSubCategories.SelectedItem as SOUS_CATEGORIE;
+            }
+            else
+            {
+                return;
+            }
+            var brandsDialog = new BrandDialog(article);
+            if (brandsDialog.ShowDialog() == true)
+            {
+                article.SelectedBrand = brandsDialog.cbBrands.SelectedItem as Brand;
+            }
+            else
+            {
+                return;
+            }
+            var sizesDialog = new SizeDialog(article);
+            if (sizesDialog.ShowDialog() == true)
+            {
+                article.SelectedSize = sizesDialog.cbSizes.SelectedItem as Size;
+            }
+            else
+            {
+                return;
+            }
+            var suppliersDialog = new SupplierDialog(article);
+            if (suppliersDialog.ShowDialog() == true)
+            {
+                article.SelectedSupplier = suppliersDialog.cbSuppliers.SelectedItem as Fournisseur;
+            }
+            else
+            {
+                return;
+            }
+            var purchaseDateDialog = new PurchaseDateDialog(article);
+            if (purchaseDateDialog.ShowDialog() == true)
+            {
+                article.PurchaseDate = purchaseDateDialog.purchaseDate.SelectedDate.Value.Date;
+            }
+            else
+            {
+                return;
+            }
+            var quantityDialog = new QuantityDialog(article);
+            if (quantityDialog.ShowDialog() == true)
+            {
+                article.PicesQuantity = int.Parse(quantityDialog.quantityNumber.Text);
+            }
+            else
+            {
+                return;
+            }
+            var descriptionDialog = new DescriptionDialog(article);
+            if (descriptionDialog.ShowDialog() == true)
+            {
+                article.Description = descriptionDialog.descriptionText.Text;
+            }
+            else
+            {
+                return;
+            }
+
+            Article art = db.Article.FirstOrDefault(a => a.ID == article.Id);
+            if (art != null)
+            {
+                art.Designation = article.Designation;
+                art.FamilleId = article.SelectedFamily.Id;
+                art.CategorieId = article.SelectedCategory.Id;
+                art.SousCategorieId = article.SelectedSubCategory.Id;
+                art.BrandId = article.SelectedBrand.Id;
+                art.SizeId = article.SelectedSize.Id;
+                art.FournisseurId = article.SelectedSupplier.Id;
+                art.DateAchat = article.PurchaseDate;
+                art.PicesQuantity = article.PicesQuantity;
+                art.Description = article.Description;
+                db.SaveChanges();
+            }
+
             IsBusy = false;
         }
     }

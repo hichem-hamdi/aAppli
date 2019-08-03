@@ -1,0 +1,15 @@
+﻿<Window x:Class="aAppli.Views.DescriptionDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen"
+        Title="DescriptionDialog" Height="300" Width="300">
+    <StackPanel>
+        <TextBlock Text="Entrez une description, ou cliquez sur OK" Margin="5"></TextBlock>
+        <TextBox Name="descriptionText" HorizontalAlignment="Left" TextWrapping="Wrap" AcceptsReturn="True" AcceptsTab="True"
+Margin="5"          Width="250" Height="100"
+                          Grid.Column="1"></TextBox>
+        <Button Content="OK" Click="OKButton_Click" Margin="5"/>
+
+
+    </StackPanel>
+</Window>

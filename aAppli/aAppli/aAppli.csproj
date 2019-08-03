@@ -198,6 +198,33 @@
     <Compile Include="ConnexionView.xaml.cs">
       <DependentUpon>ConnexionView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\CategoryDialog.xaml.cs">
+      <DependentUpon>CategoryDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BrandDialog.xaml.cs">
+      <DependentUpon>BrandDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DescriptionDialog.xaml.cs">
+      <DependentUpon>DescriptionDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QuantityDialog.xaml.cs">
+      <DependentUpon>QuantityDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PurchaseDateDialog.xaml.cs">
+      <DependentUpon>PurchaseDateDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SupplierDialog.xaml.cs">
+      <DependentUpon>SupplierDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SizeDialog.xaml.cs">
+      <DependentUpon>SizeDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SubCategoryDialog.xaml.cs">
+      <DependentUpon>SubCategoryDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FamilleDialog.xaml.cs">
+      <DependentUpon>FamilleDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ManageSuppliers.xaml.cs">
       <DependentUpon>ManageSuppliers.xaml</DependentUpon>
     </Compile>
@@ -275,6 +302,42 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ConnexionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CategoryDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\BrandDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\DescriptionDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\QuantityDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PurchaseDateDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SupplierDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SizeDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SubCategoryDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\FamilleDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -413,6 +476,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\téléchargement.jpg" />
+    <Resource Include="Images\edit.png" />
     <Content Include="System.Data.SqlServerCe.dll" />
     <Content Include="System.Data.SqlServerCe.Entity.dll" />
     <Resource Include="bltinmic.ico" />

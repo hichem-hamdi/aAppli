@@ -4,6 +4,7 @@
     <EntitySetMapping Name="Article">
       <EntityTypeMapping TypeName="MyDBModel.Article">
         <MappingFragment StoreEntitySet="Article">
+          <ScalarProperty Name="PicesQuantity" ColumnName="PicesQuantity" />
           <ScalarProperty Name="DateAchat" ColumnName="DateAchat" />
           <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="FournisseurId" ColumnName="FournisseurId" />

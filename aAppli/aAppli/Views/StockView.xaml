@@ -68,6 +68,24 @@
                     </i:Interaction.Triggers>
                 </Image>
 
+                <Image Source="/aAppli;component/Images/Edit.png"
+                       Cursor="Hand"
+                       Margin="5"
+                       Width="16"
+                       Height="16">
+                    <ToolTipService.ToolTip>
+                        <ToolTip>
+                            <TextBlock Text="Edit" />
+                        </ToolTip>
+                    </ToolTipService.ToolTip>
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonDown">
+                            <i:InvokeCommandAction Command="{Binding EditCommand, Source={StaticResource StockViewModel}}"
+                                                   CommandParameter="{Binding}" />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Image>
+
             </StackPanel>
         </DataTemplate>
     </Window.Resources>
@@ -117,7 +135,7 @@
                               GridLinesVisibility="All"
                               VerticalScrollBarVisibility="Visible"
                               HorizontalScrollBarVisibility="Visible"
-                              CanUserResizeColumns="True"
+                              CanUserResizeColumns="False"
                               CanUserAddRows="False"
                               CanUserDeleteRows="False"
                               AutoGenerateColumns="False"
@@ -133,130 +151,10 @@
                                     <DataGridTextColumn Header="Id"
                                                 Visibility="Hidden"
                                                 Binding="{Binding Id}" />
-                                    <DataGridComboBoxColumn Header="Famille"
-                                                            DisplayMemberPath="Name"
-                                        SelectedItemBinding="{Binding SelectedFamily,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                                        <DataGridComboBoxColumn.ElementStyle>
-                                            <Style TargetType="{x:Type ComboBox}">
-                                                <Setter Property="ItemsSource" Value="{Binding Families}" />
-                                            </Style>
-                                        </DataGridComboBoxColumn.ElementStyle>
-                                        <DataGridComboBoxColumn.EditingElementStyle>
-                                            <Style TargetType="{x:Type ComboBox}">
-                                                <Setter Property="ItemsSource" Value="{Binding Families}" />
-                                            </Style>
-                                        </DataGridComboBoxColumn.EditingElementStyle>
-                                    </DataGridComboBoxColumn>
-                                    <DataGridComboBoxColumn Header="Categorie"
-                                                            DisplayMemberPath="Name"
-                                        SelectedItemBinding="{Binding SelectedCategory,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                                        <DataGridComboBoxColumn.ElementStyle>
-                                            <Style TargetType="{x:Type ComboBox}">
-                                                <Setter Property="ItemsSource" Value="{Binding Categories}" />
-                                            </Style>
-                                        </DataGridComboBoxColumn.ElementStyle>
-                                        <DataGridComboBoxColumn.EditingElementStyle>
-                                            <Style TargetType="{x:Type ComboBox}">
-                                                <Setter Property="ItemsSource" Value="{Binding Categories}" />
-                                            </Style>
-                                        </DataGridComboBoxColumn.EditingElementStyle>
-                                    </DataGridComboBoxColumn>
-                                    <DataGridComboBoxColumn Header="Sous-Categorie"
-                                                            DisplayMemberPath="Name"
-                                        SelectedItemBinding="{Binding SelectedSubCategory,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                                        <DataGridComboBoxColumn.ElementStyle>
-                                            <Style TargetType="{x:Type ComboBox}">
-                                                <Setter Property="ItemsSource" Value="{Binding SubCategories}" />
-                                            </Style>
-                                        </DataGridComboBoxColumn.ElementStyle>
-                                        <DataGridComboBoxColumn.EditingElementStyle>
-                                            <Style TargetType="{x:Type ComboBox}">
-                                                <Setter Property="ItemsSource" Value="{Binding SubCategories}" />
-                                            </Style>
-                                        </DataGridComboBoxColumn.EditingElementStyle>
-                                    </DataGridComboBoxColumn>
-                                    <DataGridComboBoxColumn Header="Marque"
-                                                            DisplayMemberPath="Name"
-                                        SelectedItemBinding="{Binding SelectedBrand,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                                        <DataGridComboBoxColumn.ElementStyle>
-                                            <Style TargetType="{x:Type ComboBox}">
-                                                <Setter Property="ItemsSource" Value="{Binding Brands}" />
-                                            </Style>
-                                        </DataGridComboBoxColumn.ElementStyle>
-                                        <DataGridComboBoxColumn.EditingElementStyle>
-                                            <Style TargetType="{x:Type ComboBox}">
-                                                <Setter Property="ItemsSource" Value="{Binding Brands}" />
-                                            </Style>
-                                        </DataGridComboBoxColumn.EditingElementStyle>
-                                    </DataGridComboBoxColumn>
-                                    <DataGridComboBoxColumn Header="Mesure"
-                                                            DisplayMemberPath="Name"
-                                        SelectedItemBinding="{Binding SelectedSize,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                                        <DataGridComboBoxColumn.ElementStyle>
-                                            <Style TargetType="{x:Type ComboBox}">
-                                                <Setter Property="ItemsSource" Value="{Binding Sizes}" />
-                                            </Style>
-                                        </DataGridComboBoxColumn.ElementStyle>
-                                        <DataGridComboBoxColumn.EditingElementStyle>
-                                            <Style TargetType="{x:Type ComboBox}">
-                                                <Setter Property="ItemsSource" Value="{Binding Sizes}" />
-                                            </Style>
-                                        </DataGridComboBoxColumn.EditingElementStyle>
-                                    </DataGridComboBoxColumn>
-                                    <DataGridComboBoxColumn Header="Fournisseur"
-                                                            DisplayMemberPath="Name"
-                                        SelectedItemBinding="{Binding SelectedSupplier,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                                        <DataGridComboBoxColumn.ElementStyle>
-                                            <Style TargetType="{x:Type ComboBox}">
-                                                <Setter Property="ItemsSource" Value="{Binding Suppliers}" />
-                                            </Style>
-                                        </DataGridComboBoxColumn.ElementStyle>
-                                        <DataGridComboBoxColumn.EditingElementStyle>
-                                            <Style TargetType="{x:Type ComboBox}">
-                                                <Setter Property="ItemsSource" Value="{Binding Suppliers}" />
-                                            </Style>
-                                        </DataGridComboBoxColumn.EditingElementStyle>
-                                    </DataGridComboBoxColumn>
-                                    <DataGridTemplateColumn Header="Date d'achat">
-                                        <DataGridTemplateColumn.CellTemplate>
-                                            <DataTemplate>
-                                                <TextBlock Text="{Binding PurchaseDate,StringFormat='dd/MM/yyyy'}" />
-                                            </DataTemplate>
-                                        </DataGridTemplateColumn.CellTemplate>
-                                        <DataGridTemplateColumn.CellEditingTemplate>
-                                            <DataTemplate>
-                                                <DatePicker SelectedDate="{Binding PurchaseDate,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
-                                            </DataTemplate>
-                                        </DataGridTemplateColumn.CellEditingTemplate>
-                                    </DataGridTemplateColumn>
-                                    <DataGridTextColumn Header="QT"
-                                                Binding="{Binding QT,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                                        <DataGridTextColumn.ElementStyle>
-                                            <Style TargetType="TextBlock">
-                                                <Setter Property="VerticalAlignment"
-                                                Value="Center" />
-                                                <Setter Property="Margin"
-                                                Value="5" />
-                                            </Style>
-                                        </DataGridTextColumn.ElementStyle>
-                                    </DataGridTextColumn>
-                                    <DataGridTextColumn Header="Description"
-                                                        Width="auto"
-                                                Binding="{Binding Description,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                                        <DataGridTextColumn.ElementStyle>
-                                            <Style TargetType="TextBlock">
-                                                <Setter Property="VerticalAlignment"
-                                                Value="Center" />
-                                                <Setter Property="Margin"
-                                                Value="5" />
-                                            </Style>
-                                        </DataGridTextColumn.ElementStyle>
-                                    </DataGridTextColumn>
-
                                     <DataGridTextColumn Header="Désignation"
+                                                    IsReadOnly="True"    
                                                 Binding="{Binding Designation,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
-                                                Width="auto"
-                                                IsReadOnly="True">
+                                                Width="*">
                                         <DataGridTextColumn.ElementStyle>
                                             <Style TargetType="TextBlock">
                                                 <Setter Property="VerticalAlignment"
@@ -300,7 +198,17 @@
                                             </Style>
                                         </DataGridTextColumn.ElementStyle>
                                     </DataGridTextColumn>
-                                   
+                                    <DataGridTextColumn Header="QT"
+                                                Binding="{Binding QT,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                                        <DataGridTextColumn.ElementStyle>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="VerticalAlignment"
+                                                Value="Center" />
+                                                <Setter Property="Margin"
+                                                Value="5" />
+                                            </Style>
+                                        </DataGridTextColumn.ElementStyle>
+                                    </DataGridTextColumn>
                                     <DataGridCheckBoxColumn Header="Générique"
                                                     Binding="{Binding IsGenerique,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
                                         <DataGridCheckBoxColumn.ElementStyle>
@@ -313,7 +221,7 @@
                                         </DataGridCheckBoxColumn.ElementStyle>
                                     </DataGridCheckBoxColumn>
                                     <DataGridTemplateColumn Header="Actions"
-                                                    Width="70"
+                                                    Width="90"
                                                     CellTemplate="{StaticResource ActionTemplate}" />
                                 </DataGrid.Columns>
                             </DataGrid>

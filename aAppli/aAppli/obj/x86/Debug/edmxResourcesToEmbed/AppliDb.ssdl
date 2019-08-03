@@ -94,6 +94,7 @@
     <Property Name="FournisseurId" Type="integer" />
     <Property Name="Description" Type="nvarchar" />
     <Property Name="DateAchat" Type="datetime" />
+    <Property Name="PicesQuantity" Type="integer" />
   </EntityType>
   <EntityType Name="Brand">
     <Key>

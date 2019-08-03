@@ -102,6 +102,7 @@
     <Property Type="String" Name="Description" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Fournisseur" Relationship="MyDBModel.FK_Article_01" FromRole="Article" ToRole="Fournisseur" />
     <Property Type="DateTime" Name="DateAchat" />
+    <Property Type="Int64" Name="PicesQuantity" />
   </EntityType>
   <EntityType Name="Vente">
     <Key>

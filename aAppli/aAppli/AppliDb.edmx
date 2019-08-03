@@ -99,6 +99,7 @@
           <Property Name="FournisseurId" Type="integer" />
           <Property Name="Description" Type="nvarchar" />
           <Property Name="DateAchat" Type="datetime" />
+          <Property Name="PicesQuantity" Type="integer" />
         </EntityType>
         <EntityType Name="Brand">
           <Key>
@@ -502,6 +503,7 @@
           <Property Type="String" Name="Description" MaxLength="2147483647" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Fournisseur" Relationship="MyDBModel.FK_Article_01" FromRole="Article" ToRole="Fournisseur" />
           <Property Type="DateTime" Name="DateAchat" />
+          <Property Type="Int64" Name="PicesQuantity" />
         </EntityType>
         <EntityType Name="Vente">
           <Key>
@@ -830,6 +832,7 @@
           <EntitySetMapping Name="Article">
             <EntityTypeMapping TypeName="MyDBModel.Article">
               <MappingFragment StoreEntitySet="Article">
+                <ScalarProperty Name="PicesQuantity" ColumnName="PicesQuantity" />
                 <ScalarProperty Name="DateAchat" ColumnName="DateAchat" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
                 <ScalarProperty Name="FournisseurId" ColumnName="FournisseurId" />

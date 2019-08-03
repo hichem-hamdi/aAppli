@@ -803,6 +803,30 @@ namespace aAppli
         private Nullable<global::System.DateTime> _DateAchat;
         partial void OnDateAchatChanging(Nullable<global::System.DateTime> value);
         partial void OnDateAchatChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int64> PicesQuantity
+        {
+            get
+            {
+                return _PicesQuantity;
+            }
+            set
+            {
+                OnPicesQuantityChanging(value);
+                ReportPropertyChanging("PicesQuantity");
+                _PicesQuantity = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("PicesQuantity");
+                OnPicesQuantityChanged();
+            }
+        }
+        private Nullable<global::System.Int64> _PicesQuantity;
+        partial void OnPicesQuantityChanging(Nullable<global::System.Int64> value);
+        partial void OnPicesQuantityChanged();
 
         #endregion
     

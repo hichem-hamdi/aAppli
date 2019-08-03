@@ -60,7 +60,7 @@ namespace aAppli.Views
                 return;
             }
 
-            viewModel.Articles = new System.Collections.ObjectModel.ObservableCollection<Models.ArticleModel>(viewModel.InitArticles.Where(article => (article.Designation != null && article.Designation.Contains((sender as WatermarkTextBox).Text.ToUpper()) || (article.SN.Split(';').Contains((sender as WatermarkTextBox).Text)))));
+            viewModel.Articles = new System.Collections.ObjectModel.ObservableCollection<Models.ArticleModel>(viewModel.InitArticles.Where(article => (article.Designation != null && article.Designation.Contains((sender as WatermarkTextBox).Text.ToUpper()) || (article.SN != null && article.SN.Split(';').Contains((sender as WatermarkTextBox).Text)))));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -70,16 +70,102 @@ namespace aAppli.Views
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            this.IsEnabled = false;
+
             MyDBEntities db = DbManager.CreateDbManager();
             ArticleModel art = new ArticleModel
-               {
-                   Families = new ObservableCollection<Famille>(db.Famille.ToList()),
-                   Categories = new ObservableCollection<Categorie>(db.Categorie.ToList()),
-                   SubCategories = new ObservableCollection<SOUS_CATEGORIE>(db.SOUS_CATEGORIE.ToList()),
-                   Brands = new ObservableCollection<Brand>(db.Brand.ToList()),
-                   Sizes = new ObservableCollection<Size>(db.Size.ToList()),
-                   Suppliers = new ObservableCollection<Fournisseur>(db.Fournisseur.ToList())
-               };
+            {
+                Families = new ObservableCollection<Famille>(db.Famille.ToList()),
+                Categories = new ObservableCollection<Categorie>(db.Categorie.ToList()),
+                SubCategories = new ObservableCollection<SOUS_CATEGORIE>(db.SOUS_CATEGORIE.ToList()),
+                Brands = new ObservableCollection<Brand>(db.Brand.ToList()),
+                Sizes = new ObservableCollection<Size>(db.Size.ToList()),
+                Suppliers = new ObservableCollection<Fournisseur>(db.Fournisseur.ToList())
+            };
+
+            var familyDialog = new FamilleDialog();
+            if (familyDialog.ShowDialog() == true)
+            {
+                art.SelectedFamily = familyDialog.cbFamilies.SelectedItem as Famille;
+            }
+            else
+            {
+                return;
+            }
+            var categoryDialog = new CategoryDialog();
+            if (categoryDialog.ShowDialog() == true)
+            {
+                art.SelectedCategory = categoryDialog.cbCategories.SelectedItem as Categorie;
+            }
+            else
+            {
+                return;
+            }
+            var subCategoryDialog = new SubCategoryDialog();
+            if (subCategoryDialog.ShowDialog() == true)
+            {
+                art.SelectedSubCategory = subCategoryDialog.cbSubCategories.SelectedItem as SOUS_CATEGORIE;
+            }
+            else
+            {
+                return;
+            }
+            var brandsDialog = new BrandDialog();
+            if (brandsDialog.ShowDialog() == true)
+            {
+                art.SelectedBrand = brandsDialog.cbBrands.SelectedItem as Brand;
+            }
+            else
+            {
+                return;
+            }
+            var sizesDialog = new SizeDialog();
+            if (sizesDialog.ShowDialog() == true)
+            {
+                art.SelectedSize = sizesDialog.cbSizes.SelectedItem as Size;
+            }
+            else
+            {
+                return;
+            }
+            var suppliersDialog = new SupplierDialog();
+            if (suppliersDialog.ShowDialog() == true)
+            {
+                art.SelectedSupplier = suppliersDialog.cbSuppliers.SelectedItem as Fournisseur;
+            }
+            else
+            {
+                return;
+            }
+            var purchaseDateDialog = new PurchaseDateDialog();
+            if (purchaseDateDialog.ShowDialog() == true)
+            {
+                art.PurchaseDate = purchaseDateDialog.purchaseDate.SelectedDate.Value.Date;
+            }
+            else
+            {
+                return;
+            }
+            var quantityDialog = new QuantityDialog();
+            if (quantityDialog.ShowDialog() == true)
+            {
+                art.PicesQuantity = int.Parse(quantityDialog.quantityNumber.Text);
+            }
+            else
+            {
+                return;
+            }
+            var descriptionDialog = new DescriptionDialog();
+            if (descriptionDialog.ShowDialog() == true)
+            {
+                art.Description = descriptionDialog.descriptionText.Text;
+            }
+            else
+            {
+                return;
+            }
+            this.IsEnabled = true;
+
             (DataContext as StockViewModel).Articles.Add(art);
             myDataGrid.SelectedItem = (DataContext as StockViewModel).Articles[(DataContext as StockViewModel).Articles.Count - 1];
             myDataGrid.ScrollIntoView(myDataGrid.SelectedItem);

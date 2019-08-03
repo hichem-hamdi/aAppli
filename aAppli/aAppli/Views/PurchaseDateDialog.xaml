@@ -1,0 +1,14 @@
+﻿<Window x:Class="aAppli.Views.PurchaseDateDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen"
+        Title="PurchaseDateDialog" Height="300" Width="300">
+    <StackPanel>
+        <TextBlock Text="Selectionnez la date d'achat" Margin="5"></TextBlock>
+        <DatePicker Name="purchaseDate" Margin="5" Width="105" HorizontalAlignment="Left"
+                          Grid.Column="1"></DatePicker>
+        <Button Content="OK" Click="OKButton_Click" Margin="5"/>
+        
+        
+    </StackPanel>
+</Window>

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\GitHub\aAppli\aAppli\aAppli\App.xaml
-23-1104055061
+321939019749
 2-1302526093
-57-553883035
+66538817128
 35-698558776
-MainWindow.xaml;Views\AvoirView.xaml;ConnexionView.xaml;Views\ManageSuppliers.xaml;Views\EditInsertionView.xaml;Views\ManageSizes.xaml;Views\ManageBrands.xaml;Views\ManageSubCategories.xaml;Views\ManageCategories.xaml;Views\MnageFamilies.xaml;Views\CreditView.xaml;Views\HistoriqueCreditView.xaml;Views\HistoriqueReservation.xaml;Views\HistoriqueVenteView.xaml;Views\InventaireGlobal.xaml;Views\InventaireView.xaml;Views\ManageEstablishments.xaml;Views\ManageUsers.xaml;Views\RapportVente.xaml;Views\ReserverArticle.xaml;Views\StockView.xaml;Views\VenteView.xaml;Views\VerifierExsitence.xaml;
+MainWindow.xaml;Views\AvoirView.xaml;ConnexionView.xaml;Views\CategoryDialog.xaml;Views\BrandDialog.xaml;Views\DescriptionDialog.xaml;Views\QuantityDialog.xaml;Views\PurchaseDateDialog.xaml;Views\SupplierDialog.xaml;Views\SizeDialog.xaml;Views\SubCategoryDialog.xaml;Views\FamilleDialog.xaml;Views\ManageSuppliers.xaml;Views\EditInsertionView.xaml;Views\ManageSizes.xaml;Views\ManageBrands.xaml;Views\ManageSubCategories.xaml;Views\ManageCategories.xaml;Views\MnageFamilies.xaml;Views\CreditView.xaml;Views\HistoriqueCreditView.xaml;Views\HistoriqueReservation.xaml;Views\HistoriqueVenteView.xaml;Views\InventaireGlobal.xaml;Views\InventaireView.xaml;Views\ManageEstablishments.xaml;Views\ManageUsers.xaml;Views\RapportVente.xaml;Views\ReserverArticle.xaml;Views\StockView.xaml;Views\VenteView.xaml;Views\VerifierExsitence.xaml;
 
 False
 

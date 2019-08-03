@@ -442,7 +442,6 @@ namespace aAppli.Models
                 }
 
                 _QT = value;
-                FormatDesignation();
                 RaisePropertyChanged(() => QT);
             }
         }
@@ -484,6 +483,26 @@ namespace aAppli.Models
                 _IsGenerique = value;
 
                 RaisePropertyChanged(() => IsGenerique);
+            }
+        }
+
+        private int _PicesQuantity;
+        public int PicesQuantity
+        {
+            get
+            {
+                return _PicesQuantity;
+            }
+            set
+            {
+                if (_PicesQuantity == value)
+                {
+                    return;
+                }
+
+                _PicesQuantity = value;
+                FormatDesignation();
+                RaisePropertyChanged(() => PicesQuantity);
             }
         }
 
@@ -549,11 +568,12 @@ namespace aAppli.Models
 
             if (PurchaseDate.HasValue)
             {
+                designationStringBuilder.Append("Le ");
                 designationStringBuilder.Append(PurchaseDate.Value.ToShortDateString());
                 designationStringBuilder.Append(" ");
             }
-            designationStringBuilder.Append(QT);
-            designationStringBuilder.Append(" ");
+            designationStringBuilder.Append(PicesQuantity);
+            designationStringBuilder.Append(" PCS ");
             designationStringBuilder.Append(Description);
             Designation = designationStringBuilder.ToString();
         }
