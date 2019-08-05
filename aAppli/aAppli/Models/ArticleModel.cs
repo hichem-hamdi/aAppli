@@ -560,6 +560,10 @@ namespace aAppli.Models
                 designationStringBuilder.Append(SelectedSize.Name);
                 designationStringBuilder.Append(" ");
             }
+
+            designationStringBuilder.Append(Description);
+            designationStringBuilder.Append(" ");
+
             if (SelectedSupplier != null)
             {
                 designationStringBuilder.Append(SelectedSupplier.Name);
@@ -573,8 +577,7 @@ namespace aAppli.Models
                 designationStringBuilder.Append(" ");
             }
             designationStringBuilder.Append(PicesQuantity);
-            designationStringBuilder.Append(" PCS ");
-            designationStringBuilder.Append(Description);
+            designationStringBuilder.Append(" PCS");
             Designation = designationStringBuilder.ToString();
         }
 

@@ -519,6 +519,16 @@ namespace aAppli.ViewModels
             {
                 return;
             }
+
+            var descriptionDialog = new DescriptionDialog(article);
+            if (descriptionDialog.ShowDialog() == true)
+            {
+                article.Description = descriptionDialog.descriptionText.Text;
+            }
+            else
+            {
+                return;
+            }
             var suppliersDialog = new SupplierDialog(article);
             if (suppliersDialog.ShowDialog() == true)
             {
@@ -541,15 +551,6 @@ namespace aAppli.ViewModels
             if (quantityDialog.ShowDialog() == true)
             {
                 article.PicesQuantity = int.Parse(quantityDialog.quantityNumber.Text);
-            }
-            else
-            {
-                return;
-            }
-            var descriptionDialog = new DescriptionDialog(article);
-            if (descriptionDialog.ShowDialog() == true)
-            {
-                article.Description = descriptionDialog.descriptionText.Text;
             }
             else
             {

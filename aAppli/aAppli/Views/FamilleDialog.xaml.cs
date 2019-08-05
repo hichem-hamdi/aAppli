@@ -24,7 +24,7 @@ namespace aAppli.Views
             InitializeComponent();
 
             MyDBEntities db = DbManager.CreateDbManager();
-            var families = db.Famille.ToList();
+            var families = db.Famille.OrderBy(f => f.Name).ToList();
             families.Insert(0, new Famille { Id = 0, Name = "-- Select --" });
             cbFamilies.ItemsSource = families;
             if (article == null)

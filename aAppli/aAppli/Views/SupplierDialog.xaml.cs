@@ -25,7 +25,7 @@ namespace aAppli.Views
 
 
             MyDBEntities db = DbManager.CreateDbManager();
-            var suppliers = db.Fournisseur.ToList();
+            var suppliers = db.Fournisseur.OrderBy(f => f.Name).ToList();
             suppliers.Insert(0, new Fournisseur { Id = 0, Name = "-- Select --" });
             cbSuppliers.ItemsSource = suppliers;
             if (article == null)

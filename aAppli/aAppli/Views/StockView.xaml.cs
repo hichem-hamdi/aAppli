@@ -128,6 +128,15 @@ namespace aAppli.Views
             {
                 return;
             }
+            var descriptionDialog = new DescriptionDialog();
+            if (descriptionDialog.ShowDialog() == true)
+            {
+                art.Description = descriptionDialog.descriptionText.Text;
+            }
+            else
+            {
+                return;
+            }
             var suppliersDialog = new SupplierDialog();
             if (suppliersDialog.ShowDialog() == true)
             {
@@ -155,15 +164,19 @@ namespace aAppli.Views
             {
                 return;
             }
-            var descriptionDialog = new DescriptionDialog();
-            if (descriptionDialog.ShowDialog() == true)
-            {
-                art.Description = descriptionDialog.descriptionText.Text;
-            }
-            else
-            {
-                return;
-            }
+            Article article = new Article();
+                article.Designation = art.Designation;
+                article.FamilleId = art.SelectedFamily.Id;
+                article.CategorieId = art.SelectedCategory.Id;
+                article.SousCategorieId = art.SelectedSubCategory.Id;
+                article.BrandId = art.SelectedBrand.Id;
+                article.SizeId = art.SelectedSize.Id;
+                article.FournisseurId = art.SelectedSupplier.Id;
+                article.DateAchat = art.PurchaseDate;
+                article.PicesQuantity = art.PicesQuantity;
+                article.Description = art.Description;
+                db.Article.AddObject(article);
+                db.SaveChanges();
             this.IsEnabled = true;
 
             (DataContext as StockViewModel).Articles.Add(art);

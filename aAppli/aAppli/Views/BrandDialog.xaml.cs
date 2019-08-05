@@ -25,7 +25,7 @@ namespace aAppli.Views
 
 
             MyDBEntities db = DbManager.CreateDbManager();
-            var brands = db.Brand.ToList();
+            var brands = db.Brand.OrderBy(b => b.Name).ToList();
             brands.Insert(0, new Brand { Id = 0, Name = "-- Select --" });
             cbBrands.ItemsSource = brands;
             if (article == null)

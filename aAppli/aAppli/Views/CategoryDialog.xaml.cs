@@ -25,14 +25,15 @@ namespace aAppli.Views
 
 
             MyDBEntities db = DbManager.CreateDbManager();
-            var categories = db.Categorie.ToList();
+            var categories = db.Categorie.OrderBy(c => c.Name).ToList();
             categories.Insert(0, new Categorie { Id = 0, Name = "-- Select --" });
             cbCategories.ItemsSource = categories;
             if (article == null)
             {
                 cbCategories.SelectedIndex = 0;
             }
-            else {
+            else
+            {
                 var selectedCategory = categories.Single(c => c.Id == article.SelectedCategory.Id);
                 cbCategories.SelectedItem = selectedCategory;
             }

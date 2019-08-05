@@ -19,13 +19,13 @@ namespace aAppli.Views
     /// </summary>
     public partial class SubCategoryDialog : Window
     {
-        public SubCategoryDialog(ArticleModel article=null)
+        public SubCategoryDialog(ArticleModel article = null)
         {
             InitializeComponent();
 
 
             MyDBEntities db = DbManager.CreateDbManager();
-            var subCategories = db.SOUS_CATEGORIE.ToList();
+            var subCategories = db.SOUS_CATEGORIE.OrderBy(s => s.Name).ToList();
             subCategories.Insert(0, new SOUS_CATEGORIE { Id = 0, Name = "-- Select --" });
             cbSubCategories.ItemsSource = subCategories;
             if (article == null)
