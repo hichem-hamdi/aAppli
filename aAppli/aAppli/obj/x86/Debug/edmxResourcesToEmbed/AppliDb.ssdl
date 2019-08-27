@@ -41,6 +41,10 @@
       <End Role="Establishment" EntitySet="Establishment" />
       <End Role="Article" EntitySet="Article" />
     </AssociationSet>
+    <AssociationSet Name="FK_Categorie_0" Association="MyDBModel.Store.FK_Categorie_0">
+      <End Role="Famille" EntitySet="Famille" />
+      <End Role="Categorie" EntitySet="Categorie" />
+    </AssociationSet>
     <AssociationSet Name="FK_Credit_0" Association="MyDBModel.Store.FK_Credit_0">
       <End Role="Establishment" EntitySet="Establishment" />
       <End Role="Credit" EntitySet="Credit" />
@@ -64,6 +68,10 @@
     <AssociationSet Name="FK_Reservation_4" Association="MyDBModel.Store.FK_Reservation_4">
       <End Role="Article" EntitySet="Article" />
       <End Role="Reservation" EntitySet="Reservation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SOUS_CATEGORIE_0" Association="MyDBModel.Store.FK_SOUS_CATEGORIE_0">
+      <End Role="Categorie" EntitySet="Categorie" />
+      <End Role="SOUS_CATEGORIE" EntitySet="SOUS_CATEGORIE" />
     </AssociationSet>
     <AssociationSet Name="FK_Users_0" Association="MyDBModel.Store.FK_Users_0">
       <End Role="Establishment" EntitySet="Establishment" />
@@ -109,6 +117,7 @@
     </Key>
     <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="FamilyId" Type="integer" />
   </EntityType>
   <EntityType Name="Credit">
     <Key>
@@ -178,6 +187,7 @@
     </Key>
     <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="CategoryId" Type="integer" />
   </EntityType>
   <EntityType Name="Users">
     <Key>
@@ -197,6 +207,7 @@
     <Property Name="GererAcces" Type="bit" />
     <Property Name="ViderBase" Type="bit" />
     <Property Name="EstablishmentId" Type="integer" />
+    <Property Name="EditInsertion" Type="bit" />
   </EntityType>
   <EntityType Name="Vente">
     <Key>
@@ -296,6 +307,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Categorie_0">
+    <End Role="Famille" Type="MyDBModel.Store.Famille" Multiplicity="0..1" />
+    <End Role="Categorie" Type="MyDBModel.Store.Categorie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Famille">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Categorie">
+        <PropertyRef Name="FamilyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Credit_0">
     <End Role="Establishment" Type="MyDBModel.Store.Establishment" Multiplicity="0..1" />
     <End Role="Credit" Type="MyDBModel.Store.Credit" Multiplicity="*" />
@@ -365,6 +388,18 @@
       </Principal>
       <Dependent Role="Reservation">
         <PropertyRef Name="ArticleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SOUS_CATEGORIE_0">
+    <End Role="Categorie" Type="MyDBModel.Store.Categorie" Multiplicity="0..1" />
+    <End Role="SOUS_CATEGORIE" Type="MyDBModel.Store.SOUS_CATEGORIE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categorie">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SOUS_CATEGORIE">
+        <PropertyRef Name="CategoryId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

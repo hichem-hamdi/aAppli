@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Input;
 using Microsoft.Practices.Prism.Commands;
 using Microsoft.Practices.Prism.ViewModel;
+using aAppli.Models;
 
 namespace aAppli.ViewModels
 {
@@ -12,14 +13,14 @@ namespace aAppli.ViewModels
     {
         public ManageSubCategoriesViewModel()
         {
-            _SubCategories = new ObservableCollection<SOUS_CATEGORIE>();
+            _SubCategories = new ObservableCollection<SubCategoryModel>();
             LoadedCommand = new DelegateCommand(OnLoaded);
-            SaveCommand = new DelegateCommand<SOUS_CATEGORIE>(OnSave);
-            DeleteCommand = new DelegateCommand<SOUS_CATEGORIE>(OnDelete);
+            SaveCommand = new DelegateCommand<SubCategoryModel>(OnSave);
+            DeleteCommand = new DelegateCommand<SubCategoryModel>(OnDelete);
         }
 
-        private ObservableCollection<SOUS_CATEGORIE> _SubCategories;
-        public ObservableCollection<SOUS_CATEGORIE> SubCategories
+        private ObservableCollection<SubCategoryModel> _SubCategories;
+        public ObservableCollection<SubCategoryModel> SubCategories
         {
             get
             {
@@ -44,14 +45,21 @@ namespace aAppli.ViewModels
         private void OnLoaded()
         {
             MyDBEntities db = DbManager.CreateDbManager();
-            SubCategories = new ObservableCollection<SOUS_CATEGORIE>(db.SOUS_CATEGORIE.OrderBy(f => f.Name).ToList());
+            SubCategories = new ObservableCollection<SubCategoryModel>(db.SOUS_CATEGORIE.OrderBy(f => f.Name).ToList().Select(s =>
+                new SubCategoryModel
+                {
+                    Id = s.Id,
+                    Name = s.Name,
+                    SelectedCategory = db.Categorie.FirstOrDefault(c => c.Id == s.CategoryId),
+                    Categories = new ObservableCollection<Categorie>(db.Categorie.ToList())
+                }));
         }
 
-        private void OnSave(SOUS_CATEGORIE subCategory)
+        private void OnSave(SubCategoryModel subCategory)
         {
             MyDBEntities db = DbManager.CreateDbManager();
 
-            if (db.SOUS_CATEGORIE.Any(f => f.Name.ToLower().Equals(subCategory.Name.ToLower())))
+            if (subCategory.Id == 0 && db.SOUS_CATEGORIE.Any(f => f.Name.ToLower().Equals(subCategory.Name.ToLower())))
             {
                 Microsoft.Windows.Controls.MessageBox.Show("Une sous-catégorie avec le même nom existe déjà!", "Stop", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Stop);
                 return;
@@ -61,7 +69,7 @@ namespace aAppli.ViewModels
             {
                 try
                 {
-                    db.SOUS_CATEGORIE.AddObject(subCategory);
+                    db.SOUS_CATEGORIE.AddObject(new SOUS_CATEGORIE { Name = subCategory.Name, CategoryId = subCategory.SelectedCategory.Id });
                     db.SaveChanges();
                 }
                 catch (Exception ex)
@@ -80,6 +88,7 @@ namespace aAppli.ViewModels
                     if (est != null)
                     {
                         est.Name = subCategory.Name;
+                        est.CategoryId = subCategory.SelectedCategory.Id;
                     }
 
                     db.SaveChanges();
@@ -95,11 +104,11 @@ namespace aAppli.ViewModels
 
             }
 
-            SubCategories = new ObservableCollection<SOUS_CATEGORIE>();
+            SubCategories = new ObservableCollection<SubCategoryModel>();
             OnLoaded();
         }
 
-        private void OnDelete(SOUS_CATEGORIE subCategory)
+        private void OnDelete(SubCategoryModel subCategory)
         {
             MessageBoxResult result = Microsoft.Windows.Controls.MessageBox.Show("Vous confirmer le Delete de cette sous-catégorie?", "Delete", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
@@ -130,7 +139,7 @@ namespace aAppli.ViewModels
             }
             Microsoft.Windows.Controls.MessageBox.Show("Deleted", "Delete", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
 
-            SubCategories = new ObservableCollection<SOUS_CATEGORIE>();
+            SubCategories = new ObservableCollection<SubCategoryModel>();
             OnLoaded();
         }
     }

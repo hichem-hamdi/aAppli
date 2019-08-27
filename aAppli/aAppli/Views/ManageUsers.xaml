@@ -219,24 +219,23 @@
                                 </Style>
                             </DataGridCheckBoxColumn.ElementStyle>
                         </DataGridCheckBoxColumn>
+                        <DataGridCheckBoxColumn Header="Edit Insertion"
+                                                Binding="{Binding EditInsertion, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                            <DataGridCheckBoxColumn.ElementStyle>
+                                <Style TargetType="CheckBox">
+                                    <Setter Property="VerticalAlignment"
+                                            Value="Center" />
+                                    <Setter Property="HorizontalAlignment"
+                                            Value="Center" />
+                                </Style>
+                            </DataGridCheckBoxColumn.ElementStyle>
+                        </DataGridCheckBoxColumn>
                         <DataGridComboBoxColumn Header="Société" Width="*"
                              DisplayMemberPath="Name"
                              SelectedValuePath="Id"
                              SelectedValueBinding="{Binding EstablishmentId, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
                              ItemsSource="{Binding Source={x:Static viewModels:ManageUsersViewModel.Establishments}}" />
-                        <!--<DataGridTextColumn Header="Société"
-                                            Binding="{Binding EstablishmentName,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
-                                            Width="*">
-                            <DataGridTextColumn.ElementStyle>
-                                <Style TargetType="TextBlock">
-                                    <Setter Property="VerticalAlignment"
-                                            Value="Center" />
-                                    <Setter Property="Margin"
-                                            Value="5" />
-                                </Style>
-                            </DataGridTextColumn.ElementStyle>
-                        </DataGridTextColumn>-->
-                        <DataGridTemplateColumn Header="Actions"
+                       <DataGridTemplateColumn Header="Actions"
                                                 Width="70"
                                                 CellTemplate="{StaticResource ActionTemplate}" />
                     </DataGrid.Columns>

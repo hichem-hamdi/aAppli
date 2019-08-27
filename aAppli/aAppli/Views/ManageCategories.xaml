@@ -97,6 +97,21 @@
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
+                        <DataGridComboBoxColumn DisplayMemberPath="Name"
+                                        Header="Famille"
+                                        Width="*"
+                                        SelectedItemBinding="{Binding SelectedFamily,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                            <DataGridComboBoxColumn.ElementStyle>
+                                <Style TargetType="{x:Type ComboBox}">
+                                    <Setter Property="ItemsSource" Value="{Binding Families}" />
+                                </Style>
+                            </DataGridComboBoxColumn.ElementStyle>
+                            <DataGridComboBoxColumn.EditingElementStyle>
+                                <Style TargetType="{x:Type ComboBox}">
+                                    <Setter Property="ItemsSource" Value="{Binding Families}" />
+                                </Style>
+                            </DataGridComboBoxColumn.EditingElementStyle>
+                        </DataGridComboBoxColumn>
                         <DataGridTemplateColumn Header="Actions"
                                                 Width="70"
                                                 CellTemplate="{StaticResource ActionTemplate}" />

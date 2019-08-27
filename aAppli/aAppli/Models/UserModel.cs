@@ -340,6 +340,25 @@ namespace aAppli.Models
             }
         }
 
+        private bool _EditInsertion;
+        public bool EditInsertion
+        {
+            get
+            {
+                return _EditInsertion;
+            }
+            set
+            {
+                if (_EditInsertion == value)
+                {
+                    return;
+                }
+
+                _EditInsertion = value;
+                RaisePropertyChanged(() => EditInsertion);
+            }
+        }
+
         private long _EstablishmentId;
         public long EstablishmentId
         {

@@ -578,7 +578,8 @@ namespace aAppli.Models
             }
             designationStringBuilder.Append(PicesQuantity);
             designationStringBuilder.Append(" PCS");
-            Designation = designationStringBuilder.ToString();
+
+            Designation = designationStringBuilder.ToString().ToUpper();
         }
 
     }

@@ -15,23 +15,6 @@
         <!-- Data Template Action-->
         <DataTemplate x:Key="ActionTemplate">
             <StackPanel Orientation="Horizontal">
-                <!--<Image Source="/WpfApplication2;component/Images/Update.png"
-                       Cursor="Hand"
-                       Width="16"
-                       Height="16">
-                    <ToolTipService.ToolTip>
-                        <ToolTip>
-                            <TextBlock Text="Update" />
-                        </ToolTip>
-                    </ToolTipService.ToolTip>
-                    <i:Interaction.Triggers>
-                        <i:EventTrigger EventName="MouseLeftButtonDown">
-                            <i:InvokeCommandAction Command="{Binding UpdateCommand, Source={StaticResource ArticleViewModel}}"
-                                                   CommandParameter="{Binding}" />
-                        </i:EventTrigger>
-                    </i:Interaction.Triggers>
-                </Image>-->
-
                 <Image Source="/aAppli;component/Images/save.png"
                        Cursor="Hand"
                        Margin="5"
@@ -105,23 +88,6 @@
                         <RowDefinition Height="Auto" />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <!-- logo -->
-
-                    <!--<TextBlock Text="Nouvelit "
-                       TextWrapping="NoWrap"
-                       Foreground="CornflowerBlue"
-                       FontSize="72"
-                       VerticalAlignment="Stretch"
-                       HorizontalAlignment="Stretch"
-                       FontFamily="Monotype Corsiva"
-                       Typography.StandardSwashes="4"
-                       FontWeight="Bold">
-                <TextBlock.RenderTransform>
-    <ScaleTransform ScaleX="4"
-                    ScaleY="1" />
-  </TextBlock.RenderTransform>
-            </TextBlock>-->
-
                     <StackPanel Margin="5"
                         Grid.Row="1">
 
@@ -129,6 +95,7 @@
                         BorderThickness="1, 1, 1, 1">
                             <DataGrid ItemsSource="{Binding Articles}"
                               x:Name="myDataGrid"
+                                      SelectionUnit="Cell"
                               ScrollViewer.HorizontalScrollBarVisibility="Visible"
                               MaxHeight="300"
                               BorderThickness="1,0,1,0"
@@ -152,7 +119,8 @@
                                                 Visibility="Hidden"
                                                 Binding="{Binding Id}" />
                                     <DataGridTextColumn Header="Désignation"
-                                                    IsReadOnly="True"    
+                                                    IsReadOnly="True"
+                                                        
                                                 Binding="{Binding Designation,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
                                                 Width="*">
                                         <DataGridTextColumn.ElementStyle>
@@ -274,6 +242,98 @@
                                 Command="{Binding EnterCommandSearchInOther}" />
                             </wpf:WatermarkTextBox.InputBindings>
                         </wpf:WatermarkTextBox>
+
+                        <GroupBox Header="Recherche avancée"                                  
+                                  Margin="15">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <GroupBox Header="Famille">
+                                    <StackPanel Orientation="Horizontal">
+                                        <ComboBox Name="cbFamilies"
+                          DisplayMemberPath="Name"
+                          SelectedValuePath="Id" Width="125" SelectionChanged="cbFamilies_SelectionChanged">
+                                        </ComboBox>
+                                        <CheckBox Margin="2" Name="SearchByFamily" 
+                                        VerticalAlignment="Center" Checked="SearchByFamily_Checked"
+                                              Unchecked="SearchByFamily_Checked"></CheckBox>
+                                    </StackPanel>
+                                </GroupBox>
+
+                                <GroupBox Header="Catégorie"
+                                          Grid.Column="1">
+                                    <StackPanel Orientation="Horizontal">
+                                        <ComboBox Name="cbCategories"
+                          DisplayMemberPath="Name"
+                          SelectedValuePath="Id" Width="125" SelectionChanged="cbCategories_SelectionChanged">
+                                        </ComboBox>
+                                        <CheckBox Margin="2" Name="SearchByCategory" 
+                                        VerticalAlignment="Center" Checked="SearchByCategory_Checked"
+                                              Unchecked="SearchByCategory_Checked"></CheckBox>
+                                    </StackPanel>
+                                </GroupBox>
+
+                                <GroupBox Header="Sous-Catégorie"
+                                          Grid.Column="2">
+                                    <StackPanel Orientation="Horizontal">
+                                        <ComboBox Name="cbSubCategories"
+                          DisplayMemberPath="Name"
+                          SelectedValuePath="Id" Width="125" SelectionChanged="cbSubCategories_SelectionChanged">
+                                        </ComboBox>
+                                        <CheckBox Margin="2" Name="SearchBySubCategory" 
+                                        VerticalAlignment="Center" Checked="SearchBySubCategory_Checked"
+                                              Unchecked="SearchBySubCategory_Checked"></CheckBox>
+                                    </StackPanel>
+                                </GroupBox>
+
+                                <GroupBox Header="Marque"
+                                          Grid.Column="3">
+                                    <StackPanel Orientation="Horizontal">
+                                        <ComboBox Name="cbBrands"
+                          DisplayMemberPath="Name"
+                          SelectedValuePath="Id" Width="125" SelectionChanged="cbBrands_SelectionChanged">
+                                        </ComboBox>
+                                        <CheckBox Margin="2" Name="SearchByBrand" 
+                                        VerticalAlignment="Center" Checked="SearchByBrand_Checked"
+                                              Unchecked="SearchByBrand_Checked"></CheckBox>
+                                    </StackPanel>
+                                </GroupBox>
+
+                                <GroupBox Header="Taille"
+                                          Grid.Column="4">
+                                    <StackPanel Orientation="Horizontal">
+                                        <ComboBox Name="cbSizes"
+                          DisplayMemberPath="Name"
+                          SelectedValuePath="Id" Width="125" SelectionChanged="cbSizes_SelectionChanged">
+                                        </ComboBox>
+                                        <CheckBox Margin="2" Name="SearchBySize" 
+                                        VerticalAlignment="Center" Checked="SearchBySize_Checked"
+                                              Unchecked="SearchBySize_Checked"></CheckBox>
+                                    </StackPanel>
+                                </GroupBox>
+
+                                <GroupBox Header="Fournisseur"
+                                          Grid.Column="5">
+                                    <StackPanel Orientation="Horizontal">
+                                        <ComboBox Name="cbSuppliers"
+                          DisplayMemberPath="Name"
+                          SelectedValuePath="Id" Width="125" SelectionChanged="cbSuppliers_SelectionChanged">
+                                        </ComboBox>
+                                        <CheckBox Margin="2" Name="SearchBySupplier" 
+                                        VerticalAlignment="Center" Checked="SearchBySupplier_Checked"
+                                              Unchecked="SearchBySupplier_Checked"></CheckBox>
+                                    </StackPanel>
+                                </GroupBox>
+
+                            </Grid>
+                        </GroupBox>
 
                         <Border BorderBrush="LightGray"
                         Margin="150"

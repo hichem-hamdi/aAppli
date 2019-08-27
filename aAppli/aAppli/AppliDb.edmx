@@ -46,6 +46,10 @@
             <End Role="Establishment" EntitySet="Establishment" />
             <End Role="Article" EntitySet="Article" />
           </AssociationSet>
+          <AssociationSet Name="FK_Categorie_0" Association="MyDBModel.Store.FK_Categorie_0">
+            <End Role="Famille" EntitySet="Famille" />
+            <End Role="Categorie" EntitySet="Categorie" />
+          </AssociationSet>
           <AssociationSet Name="FK_Credit_0" Association="MyDBModel.Store.FK_Credit_0">
             <End Role="Establishment" EntitySet="Establishment" />
             <End Role="Credit" EntitySet="Credit" />
@@ -69,6 +73,10 @@
           <AssociationSet Name="FK_Reservation_4" Association="MyDBModel.Store.FK_Reservation_4">
             <End Role="Article" EntitySet="Article" />
             <End Role="Reservation" EntitySet="Reservation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SOUS_CATEGORIE_0" Association="MyDBModel.Store.FK_SOUS_CATEGORIE_0">
+            <End Role="Categorie" EntitySet="Categorie" />
+            <End Role="SOUS_CATEGORIE" EntitySet="SOUS_CATEGORIE" />
           </AssociationSet>
           <AssociationSet Name="FK_Users_0" Association="MyDBModel.Store.FK_Users_0">
             <End Role="Establishment" EntitySet="Establishment" />
@@ -114,6 +122,7 @@
           </Key>
           <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="nvarchar" MaxLength="20" />
+          <Property Name="FamilyId" Type="integer" />
         </EntityType>
         <EntityType Name="Credit">
           <Key>
@@ -183,6 +192,7 @@
           </Key>
           <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="nvarchar" MaxLength="20" />
+          <Property Name="CategoryId" Type="integer" />
         </EntityType>
         <EntityType Name="Users">
           <Key>
@@ -202,6 +212,7 @@
           <Property Name="GererAcces" Type="bit" />
           <Property Name="ViderBase" Type="bit" />
           <Property Name="EstablishmentId" Type="integer" />
+          <Property Name="EditInsertion" Type="bit" />
         </EntityType>
         <EntityType Name="Vente">
           <Key>
@@ -301,6 +312,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_Categorie_0">
+          <End Role="Famille" Type="MyDBModel.Store.Famille" Multiplicity="0..1" />
+          <End Role="Categorie" Type="MyDBModel.Store.Categorie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Famille">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Categorie">
+              <PropertyRef Name="FamilyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Credit_0">
           <End Role="Establishment" Type="MyDBModel.Store.Establishment" Multiplicity="0..1" />
           <End Role="Credit" Type="MyDBModel.Store.Credit" Multiplicity="*" />
@@ -370,6 +393,18 @@
             </Principal>
             <Dependent Role="Reservation">
               <PropertyRef Name="ArticleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SOUS_CATEGORIE_0">
+          <End Role="Categorie" Type="MyDBModel.Store.Categorie" Multiplicity="0..1" />
+          <End Role="SOUS_CATEGORIE" Type="MyDBModel.Store.SOUS_CATEGORIE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categorie">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SOUS_CATEGORIE">
+              <PropertyRef Name="CategoryId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -474,6 +509,14 @@
             <End Role="Fournisseur" EntitySet="Fournisseur" />
             <End Role="Article" EntitySet="Article" />
           </AssociationSet>
+          <AssociationSet Name="FK_Categorie_0" Association="MyDBModel.FK_Categorie_0">
+            <End Role="Famille" EntitySet="Famille" />
+            <End Role="Categorie" EntitySet="Categorie" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SOUS_CATEGORIE_0" Association="MyDBModel.FK_SOUS_CATEGORIE_0">
+            <End Role="Categorie" EntitySet="Categorie" />
+            <End Role="SOUS_CATEGORIE" EntitySet="SOUS_CATEGORIE" />
+          </AssociationSet>
           </EntityContainer>
         <EntityType Name="Article">
           <Key>
@@ -560,6 +603,7 @@
           <NavigationProperty Name="Establishment" Relationship="MyDBModel.FK_Users_0_0" FromRole="User" ToRole="Establishment" />
           <NavigationProperty Name="Reservation" Relationship="MyDBModel.FK_Reservation_0_0" FromRole="User" ToRole="Reservation" />
           <NavigationProperty Name="Reservation1" Relationship="MyDBModel.FK_Reservation_1_0" FromRole="User" ToRole="Reservation" />
+          <Property Type="Boolean" Name="EditInsertion" />
         </EntityType>
         <EntityType Name="Establishment">
           <Key>
@@ -718,6 +762,9 @@
           <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Type="String" Name="Name" MaxLength="20" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_3" FromRole="Categorie" ToRole="Article" />
+          <Property Type="Int64" Name="FamilyId" />
+          <NavigationProperty Name="Famille" Relationship="MyDBModel.FK_Categorie_0" FromRole="Categorie" ToRole="Famille" />
+          <NavigationProperty Name="SOUS_CATEGORIE" Relationship="MyDBModel.FK_SOUS_CATEGORIE_0" FromRole="Categorie" ToRole="SOUS_CATEGORIE" />
         </EntityType>
         <EntityType Name="Famille">
           <Key>
@@ -726,6 +773,7 @@
           <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_4" FromRole="Famille" ToRole="Article" />
+          <NavigationProperty Name="Categorie" Relationship="MyDBModel.FK_Categorie_0" FromRole="Famille" ToRole="Categorie" />
         </EntityType>
         <EntityType Name="Size">
           <Key>
@@ -742,6 +790,8 @@
           <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Type="String" Name="Name" MaxLength="20" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_2" FromRole="SOUS_CATEGORIE" ToRole="Article" />
+          <Property Type="Int64" Name="CategoryId" />
+          <NavigationProperty Name="Categorie" Relationship="MyDBModel.FK_SOUS_CATEGORIE_0" FromRole="SOUS_CATEGORIE" ToRole="Categorie" />
         </EntityType>
         <Association Name="FK_Article_0">
           <End Type="MyDBModel.Size" Role="Size" Multiplicity="0..1" />
@@ -823,6 +873,30 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_Categorie_0">
+          <End Type="MyDBModel.Famille" Role="Famille" Multiplicity="0..1" />
+          <End Type="MyDBModel.Categorie" Role="Categorie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Famille">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Categorie">
+              <PropertyRef Name="FamilyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SOUS_CATEGORIE_0">
+          <End Type="MyDBModel.Categorie" Role="Categorie" Multiplicity="0..1" />
+          <End Type="MyDBModel.SOUS_CATEGORIE" Role="SOUS_CATEGORIE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categorie">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SOUS_CATEGORIE">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -889,6 +963,7 @@
           <EntitySetMapping Name="Users">
             <EntityTypeMapping TypeName="MyDBModel.User">
               <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="EditInsertion" ColumnName="EditInsertion" />
                 <ScalarProperty Name="EstablishmentId" ColumnName="EstablishmentId" />
                 <ScalarProperty Name="ViderBase" ColumnName="ViderBase" />
                 <ScalarProperty Name="GererAcces" ColumnName="GererAcces" />
@@ -942,6 +1017,7 @@
           <EntitySetMapping Name="Categorie">
             <EntityTypeMapping TypeName="MyDBModel.Categorie">
               <MappingFragment StoreEntitySet="Categorie">
+                <ScalarProperty Name="FamilyId" ColumnName="FamilyId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
@@ -966,6 +1042,7 @@
           <EntitySetMapping Name="SOUS_CATEGORIE">
             <EntityTypeMapping TypeName="MyDBModel.SOUS_CATEGORIE">
               <MappingFragment StoreEntitySet="SOUS_CATEGORIE">
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
@@ -1007,10 +1084,10 @@
         <EntityTypeShape EntityType="MyDBModel.User" Width="1.5" PointX="5.375" PointY="0.75" Height="3.5186979166666665" />
         <EntityTypeShape EntityType="MyDBModel.Establishment" Width="1.5" PointX="0.75" PointY="0.75" Height="1.4033821614583317" />
         <AssociationConnector Association="MyDBModel.FK_Article_0_0" >
-          <ConnectorPoint PointX="2.25" PointY="2.4173006224848343" />
-          <ConnectorPoint PointX="2.9166666666666665" PointY="2.4173006224848335" />
-          <ConnectorPoint PointX="3.1458333333333335" PointY="2.4173006224848343" />
-          <ConnectorPoint PointX="3.375" PointY="2.4173006224848343" />
+          <ConnectorPoint PointX="2.25" PointY="2.7996449761211695" />
+          <ConnectorPoint PointX="2.9791666666666665" PointY="2.799644976121169" />
+          <ConnectorPoint PointX="3.1458333333333335" PointY="2.7996449761211695" />
+          <ConnectorPoint PointX="3.375" PointY="2.7996449761211695" />
         </AssociationConnector>
         <AssociationConnector Association="MyDBModel.FK_Users_0_0" >
           <ConnectorPoint PointX="2.25" PointY="0.75115284615384614" />
@@ -1059,10 +1136,10 @@
         <AssociationConnector Association="MyDBModel.FK_Credit_0_0" >
           <ConnectorPoint PointX="2.2499999999999996" PointY="3.3071907552083331" />
           <ConnectorPoint PointX="2.625" PointY="3.6821907552083335" />
-          <ConnectorPoint PointX="2.625" PointY="6.3142256190998536" />
-          <ConnectorPoint PointX="2.9166666666666665" PointY="6.3142256190998527" />
-          <ConnectorPoint PointX="3.1458333333333335" PointY="6.3142256190998536" />
-          <ConnectorPoint PointX="3.375" PointY="6.3142256190998536" />
+          <ConnectorPoint PointX="2.625" PointY="6.4662016148880355" />
+          <ConnectorPoint PointX="2.9166666666666665" PointY="6.4662016148880346" />
+          <ConnectorPoint PointX="3.2083333333333335" PointY="6.4662016148880355" />
+          <ConnectorPoint PointX="3.375" PointY="6.4662016148880355" />
         </AssociationConnector>
         <EntityTypeShape EntityType="MyDBModel.Brand" Width="1.5" PointX="1.125" PointY="7.5" Height="1.5956835937499996" />
         <EntityTypeShape EntityType="MyDBModel.Categorie" Width="1.5" PointX="1.125" PointY="9.875" Height="1.5956835937499996" />
@@ -1070,40 +1147,51 @@
         <EntityTypeShape EntityType="MyDBModel.Size" Width="1.5" PointX="1.125" PointY="14.5" Height="1.5956835937499996" />
         <EntityTypeShape EntityType="MyDBModel.SOUS_CATEGORIE" Width="1.5" PointX="5.375" PointY="6.875" Height="1.5956835937499996" />
         <AssociationConnector Association="MyDBModel.FK_Article_0" >
-          <ConnectorPoint PointX="2.625" PointY="14.563460538461539" />
-          <ConnectorPoint PointX="3.0625" PointY="14.125960538461541" />
-          <ConnectorPoint PointX="3.0625" PointY="4.3065634324848707" />
-          <ConnectorPoint PointX="3.375" PointY="4.3065634324848707" />
+          <ConnectorPoint PointX="2.625" PointY="14.501152846153847" />
+          <ConnectorPoint PointX="3.125" PointY="14.001152846153847" />
+          <ConnectorPoint PointX="3.125" PointY="4.4194949516982645" />
+          <ConnectorPoint PointX="3.375" PointY="4.4194949516982645" />
         </AssociationConnector>
         <AssociationConnector Association="MyDBModel.FK_Article_1" >
           <ConnectorPoint PointX="2.46875" PointY="7.5" />
           <ConnectorPoint PointX="2.46875" PointY="3.5285953776041667" />
-          <ConnectorPoint PointX="2.9166666666666665" PointY="3.5285953776041663" />
-          <ConnectorPoint PointX="3.0833333333333335" PointY="3.5285953776041667" />
+          <ConnectorPoint PointX="2.9791666666666665" PointY="3.5285953776041663" />
+          <ConnectorPoint PointX="3.1458333333333335" PointY="3.5285953776041667" />
           <ConnectorPoint PointX="3.375" PointY="3.5285953776041667" />
         </AssociationConnector>
         <AssociationConnector Association="MyDBModel.FK_Article_2" >
-          <ConnectorPoint PointX="5.375" PointY="6.8749999999999991" />
-          <ConnectorPoint PointX="4.875" PointY="6.384013671875" />
+          <ConnectorPoint PointX="5.375" PointY="6.875" />
+          <ConnectorPoint PointX="4.875" PointY="6.5763151041666656" />
         </AssociationConnector>
         <AssociationConnector Association="MyDBModel.FK_Article_3" >
-          <ConnectorPoint PointX="2.625" PointY="9.907306692307694" />
-          <ConnectorPoint PointX="3.03125" PointY="9.501056692307694" />
-          <ConnectorPoint PointX="3.03125" PointY="5.3103945257923622" />
-          <ConnectorPoint PointX="3.375" PointY="5.3103945257923622" />
+          <ConnectorPoint PointX="2.625" PointY="9.8761528461538468" />
+          <ConnectorPoint PointX="3" PointY="9.5011528461538468" />
+          <ConnectorPoint PointX="3" PointY="5.44284828329315" />
+          <ConnectorPoint PointX="3.0416666666666665" PointY="5.4428482832931495" />
+          <ConnectorPoint PointX="3.2083333333333335" PointY="5.44284828329315" />
+          <ConnectorPoint PointX="3.375" PointY="5.44284828329315" />
         </AssociationConnector>
         <AssociationConnector Association="MyDBModel.FK_Article_4" >
-          <ConnectorPoint PointX="2.625" PointY="12.126152846153847" />
-          <ConnectorPoint PointX="3" PointY="11.751152846153847" />
-          <ConnectorPoint PointX="3" PointY="1.3143020280615421" />
-          <ConnectorPoint PointX="3.0416666666666665" PointY="1.3143020280615414" />
-          <ConnectorPoint PointX="3.2083333333333335" PointY="1.3143020280615421" />
-          <ConnectorPoint PointX="3.375" PointY="1.3143020280615421" />
+          <ConnectorPoint PointX="2.625" PointY="12.188460538461539" />
+          <ConnectorPoint PointX="3.0625" PointY="11.750960538461539" />
+          <ConnectorPoint PointX="3.0625" PointY="1.3878610010456773" />
+          <ConnectorPoint PointX="3.375" PointY="1.3878610010456773" />
         </AssociationConnector>
         <EntityTypeShape EntityType="MyDBModel.Fournisseur" Width="1.5" PointX="7.375" PointY="5.875" Height="1.5956835937500031" />
         <AssociationConnector Association="MyDBModel.FK_Article_01" >
           <ConnectorPoint PointX="7.375" PointY="6.098254335937499" />
           <ConnectorPoint PointX="4.875" PointY="6.098254335937499" />
+        </AssociationConnector>
+        <AssociationConnector Association="MyDBModel.FK_Categorie_0" >
+          <ConnectorPoint PointX="1.875" PointY="12.125" />
+          <ConnectorPoint PointX="1.875" PointY="12.047587890625" />
+        </AssociationConnector>
+        <AssociationConnector Association="MyDBModel.FK_SOUS_CATEGORIE_0" >
+          <ConnectorPoint PointX="2.625" PointY="10.993122868389424" />
+          <ConnectorPoint PointX="2.9791666666666665" PointY="10.993122868389424" />
+          <ConnectorPoint PointX="3.2083333333333335" PointY="10.993122868389424" />
+          <ConnectorPoint PointX="6.125" PointY="10.993122868389424" />
+          <ConnectorPoint PointX="6.125" PointY="8.8552864583333335" />
         </AssociationConnector>
         </Diagram>
     </Diagrams>

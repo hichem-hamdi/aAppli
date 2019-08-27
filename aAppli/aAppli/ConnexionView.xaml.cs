@@ -56,6 +56,7 @@ namespace aAppli
                 cUser.ViderBase = user.ViderBase.GetValueOrDefault();
                 cUser.Login = user.Login;
                 cUser.EstablishmentId = user.EstablishmentId.GetValueOrDefault();
+                cUser.EditInsertion = user.EditInsertion.GetValueOrDefault();
                 cUser.EstablishmentName = user.Establishment != null ? user.Establishment.Name : string.Empty;
                 MainWindow main = new MainWindow();
                 main.Show();
@@ -87,6 +88,7 @@ namespace aAppli
         public static bool VenteCredit_S { get; set; }
         public static bool GererAcces { get; set; }
         public static bool ViderBase { get; set; }
+        public static bool EditInsertion     { get; set; }
         public static string Login { get; set; }
         public static long EstablishmentId { get; set; }
         public static string EstablishmentName { get; set; }

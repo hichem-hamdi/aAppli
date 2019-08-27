@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using aAppli.ViewModels;
+using aAppli.Models;
 
 namespace aAppli.Views
 {
@@ -27,7 +28,11 @@ namespace aAppli.Views
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            (DataContext as ManageCategoriesViewModel).Categories.Add(new Categorie());
+            MyDBEntities db = DbManager.CreateDbManager();
+            var categoryModel = new CategoryModel { Families = new System.Collections.ObjectModel.ObservableCollection<Famille>(db.Famille.ToList()) };
+            categoryModel.Families.Insert(0, new Famille { Id = 0, Name = "-- Select --" });
+            categoryModel.SelectedFamily = categoryModel.Families.First();
+            (DataContext as ManageCategoriesViewModel).Categories.Add(categoryModel);
             myDataGrid.SelectedItem = (DataContext as ManageCategoriesViewModel).Categories[(DataContext as ManageCategoriesViewModel).Categories.Count - 1];
             myDataGrid.ScrollIntoView(myDataGrid.SelectedItem);
         }

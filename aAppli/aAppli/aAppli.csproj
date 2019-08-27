@@ -59,10 +59,10 @@
     <ApplicationIcon>bltinmic.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>61C124AF9E5647C35B51D283A36F496748079795</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>CDE49C1C07AE752FA0AD611160433E3F3C6B0BB2</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>aAppli_1_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>aAppli_2_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -71,8 +71,6 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Devart.Data, Version=5.0.2194.0, Culture=neutral, PublicKeyToken=09af7300eec23701" />
-    <Reference Include="Devart.Data.SQLite, Version=5.12.1402.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
     <Reference Include="itextsharp, Version=5.2.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>itextsharp.dll</HintPath>
     </Reference>
@@ -171,8 +169,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CategoryModel.cs" />
     <Compile Include="Models\FiltreItem.cs" />
     <Compile Include="Models\MyBooking.cs" />
+    <Compile Include="Models\SubCategoryModel.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Models\VenteItemModel.cs" />
     <Compile Include="ModuleInit.cs" />
@@ -442,6 +447,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="aAppli_1_TemporaryKey.pfx" />
+    <None Include="aAppli_2_TemporaryKey.pfx" />
     <None Include="aAppli_TemporaryKey.pfx" />
     <None Include="App.Config">
       <SubType>Designer</SubType>
@@ -464,6 +470,10 @@
     <None Include="Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.cs</LastGenOutput>
+    </None>
+    <None Include="Model2.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model2.cs</LastGenOutput>
     </None>
     <None Include="MyDB.db" />
     <None Include="Properties\DataSources\DBEntities.datasource" />

@@ -16,6 +16,7 @@ namespace aAppli
             btnStock.IsEnabled = cUser.Stock;
             btnVider.IsEnabled = cUser.ViderBase;
             btnManage.IsEnabled = cUser.GererAcces;
+            btnEditInsertion.IsEnabled = cUser.EditInsertion;
 
             btnHistorique.IsEnabled = cUser.HistoriqueVente;
             btnAVoir.IsEnabled = cUser.AVoir;

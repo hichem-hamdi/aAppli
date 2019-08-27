@@ -93,6 +93,7 @@ namespace aAppli.ViewModels
                     VC_S = item.VenteCredit_S.GetValueOrDefault(),
                     GerrerAcces = item.GererAcces.GetValueOrDefault(),
                     ViderBase = item.ViderBase.GetValueOrDefault(),
+                    EditInsertion = item.EditInsertion.GetValueOrDefault(),
                     EstablishmentId = item.Establishment != null ? item.Establishment.Id : 0
                 };
                 Users.Add(usr);
@@ -129,7 +130,8 @@ namespace aAppli.ViewModels
                         VenteCredit_S = user.VC_S,
                         GererAcces = user.GerrerAcces,
                         ViderBase = user.ViderBase,
-                        EstablishmentId = user.EstablishmentId
+                        EstablishmentId = user.EstablishmentId,
+                        EditInsertion = user.EditInsertion
                     };
                     db.Users.AddObject(usr);
                     db.SaveChanges();
@@ -161,6 +163,7 @@ namespace aAppli.ViewModels
                         usr.VenteCredit_S = user.VC_S;
                         usr.GererAcces = user.GerrerAcces;
                         usr.ViderBase = user.ViderBase;
+                        usr.EditInsertion = user.EditInsertion;
                         usr.EstablishmentId = user.EstablishmentId;
                     }
 

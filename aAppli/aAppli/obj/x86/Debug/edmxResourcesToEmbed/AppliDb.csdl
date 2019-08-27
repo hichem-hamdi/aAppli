@@ -73,6 +73,14 @@
       <End Role="Fournisseur" EntitySet="Fournisseur" />
       <End Role="Article" EntitySet="Article" />
     </AssociationSet>
+    <AssociationSet Name="FK_Categorie_0" Association="MyDBModel.FK_Categorie_0">
+      <End Role="Famille" EntitySet="Famille" />
+      <End Role="Categorie" EntitySet="Categorie" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SOUS_CATEGORIE_0" Association="MyDBModel.FK_SOUS_CATEGORIE_0">
+      <End Role="Categorie" EntitySet="Categorie" />
+      <End Role="SOUS_CATEGORIE" EntitySet="SOUS_CATEGORIE" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="Article">
     <Key>
@@ -159,6 +167,7 @@
     <NavigationProperty Name="Establishment" Relationship="MyDBModel.FK_Users_0_0" FromRole="User" ToRole="Establishment" />
     <NavigationProperty Name="Reservation" Relationship="MyDBModel.FK_Reservation_0_0" FromRole="User" ToRole="Reservation" />
     <NavigationProperty Name="Reservation1" Relationship="MyDBModel.FK_Reservation_1_0" FromRole="User" ToRole="Reservation" />
+    <Property Type="Boolean" Name="EditInsertion" />
   </EntityType>
   <EntityType Name="Establishment">
     <Key>
@@ -317,6 +326,9 @@
     <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Type="String" Name="Name" MaxLength="20" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_3" FromRole="Categorie" ToRole="Article" />
+    <Property Type="Int64" Name="FamilyId" />
+    <NavigationProperty Name="Famille" Relationship="MyDBModel.FK_Categorie_0" FromRole="Categorie" ToRole="Famille" />
+    <NavigationProperty Name="SOUS_CATEGORIE" Relationship="MyDBModel.FK_SOUS_CATEGORIE_0" FromRole="Categorie" ToRole="SOUS_CATEGORIE" />
   </EntityType>
   <EntityType Name="Famille">
     <Key>
@@ -325,6 +337,7 @@
     <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_4" FromRole="Famille" ToRole="Article" />
+    <NavigationProperty Name="Categorie" Relationship="MyDBModel.FK_Categorie_0" FromRole="Famille" ToRole="Categorie" />
   </EntityType>
   <EntityType Name="Size">
     <Key>
@@ -341,6 +354,8 @@
     <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Type="String" Name="Name" MaxLength="20" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_2" FromRole="SOUS_CATEGORIE" ToRole="Article" />
+    <Property Type="Int64" Name="CategoryId" />
+    <NavigationProperty Name="Categorie" Relationship="MyDBModel.FK_SOUS_CATEGORIE_0" FromRole="SOUS_CATEGORIE" ToRole="Categorie" />
   </EntityType>
   <Association Name="FK_Article_0">
     <End Type="MyDBModel.Size" Role="Size" Multiplicity="0..1" />
@@ -419,6 +434,30 @@
       </Principal>
       <Dependent Role="Article">
         <PropertyRef Name="FournisseurId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Categorie_0">
+    <End Type="MyDBModel.Famille" Role="Famille" Multiplicity="0..1" />
+    <End Type="MyDBModel.Categorie" Role="Categorie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Famille">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Categorie">
+        <PropertyRef Name="FamilyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SOUS_CATEGORIE_0">
+    <End Type="MyDBModel.Categorie" Role="Categorie" Multiplicity="0..1" />
+    <End Type="MyDBModel.SOUS_CATEGORIE" Role="SOUS_CATEGORIE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categorie">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SOUS_CATEGORIE">
+        <PropertyRef Name="CategoryId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

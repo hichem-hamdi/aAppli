@@ -35,6 +35,38 @@ namespace aAppli.Views
             timer.Tick += timer1_Tick;
             search.Focus();
             timer.Start();
+
+            MyDBEntities db = new MyDBEntities();
+
+            var families = db.Famille.OrderBy(f => f.Name).ToList();
+            families.Insert(0, new Famille { Id = 0, Name = "-- Select --" });
+            cbFamilies.ItemsSource = families;
+            cbFamilies.SelectedIndex = 0;
+
+            var categories = db.Categorie.OrderBy(c => c.Name).ToList();
+            categories.Insert(0, new Categorie { Id = 0, Name = "-- Select --" });
+            cbCategories.ItemsSource = categories;
+            cbCategories.SelectedIndex = 0;
+
+            var subCategories = db.SOUS_CATEGORIE.OrderBy(s => s.Name).ToList();
+            subCategories.Insert(0, new SOUS_CATEGORIE { Id = 0, Name = "-- Select --" });
+            cbSubCategories.ItemsSource = subCategories;
+            cbSubCategories.SelectedIndex = 0;
+
+            var brands = db.Brand.OrderBy(b => b.Name).ToList();
+            brands.Insert(0, new Brand { Id = 0, Name = "-- Select --" });
+            cbBrands.ItemsSource = brands;
+            cbBrands.SelectedIndex = 0;
+
+            var sizes = db.Size.ToList();
+            sizes.Insert(0, new Size { Id = 0, Name = "-- Select --" });
+            cbSizes.ItemsSource = sizes;
+            cbSizes.SelectedIndex = 0;
+
+            var suppliers = db.Fournisseur.OrderBy(f => f.Name).ToList();
+            suppliers.Insert(0, new Fournisseur { Id = 0, Name = "-- Select --" });
+            cbSuppliers.ItemsSource = suppliers;
+            cbSuppliers.SelectedIndex = 0;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -56,7 +88,7 @@ namespace aAppli.Views
 
             if ((sender as WatermarkTextBox).Text == string.Empty)
             {
-                viewModel.Articles = viewModel.InitArticles;
+                viewModel.Articles = new ObservableCollection<ArticleModel>(viewModel.InitArticles);
                 return;
             }
 
@@ -90,24 +122,27 @@ namespace aAppli.Views
             }
             else
             {
+                this.IsEnabled = true;
                 return;
             }
-            var categoryDialog = new CategoryDialog();
+            var categoryDialog = new CategoryDialog(art);
             if (categoryDialog.ShowDialog() == true)
             {
                 art.SelectedCategory = categoryDialog.cbCategories.SelectedItem as Categorie;
             }
             else
             {
+                this.IsEnabled = true;
                 return;
             }
-            var subCategoryDialog = new SubCategoryDialog();
+            var subCategoryDialog = new SubCategoryDialog(art);
             if (subCategoryDialog.ShowDialog() == true)
             {
                 art.SelectedSubCategory = subCategoryDialog.cbSubCategories.SelectedItem as SOUS_CATEGORIE;
             }
             else
             {
+                this.IsEnabled = true;
                 return;
             }
             var brandsDialog = new BrandDialog();
@@ -117,6 +152,7 @@ namespace aAppli.Views
             }
             else
             {
+                this.IsEnabled = true;
                 return;
             }
             var sizesDialog = new SizeDialog();
@@ -126,6 +162,7 @@ namespace aAppli.Views
             }
             else
             {
+                this.IsEnabled = true;
                 return;
             }
             var descriptionDialog = new DescriptionDialog();
@@ -135,6 +172,7 @@ namespace aAppli.Views
             }
             else
             {
+                this.IsEnabled = true;
                 return;
             }
             var suppliersDialog = new SupplierDialog();
@@ -144,6 +182,7 @@ namespace aAppli.Views
             }
             else
             {
+                this.IsEnabled = true;
                 return;
             }
             var purchaseDateDialog = new PurchaseDateDialog();
@@ -153,6 +192,7 @@ namespace aAppli.Views
             }
             else
             {
+                this.IsEnabled = true;
                 return;
             }
             var quantityDialog = new QuantityDialog();
@@ -162,26 +202,30 @@ namespace aAppli.Views
             }
             else
             {
+                this.IsEnabled = true;
                 return;
             }
             Article article = new Article();
-                article.Designation = art.Designation;
-                article.FamilleId = art.SelectedFamily.Id;
-                article.CategorieId = art.SelectedCategory.Id;
-                article.SousCategorieId = art.SelectedSubCategory.Id;
-                article.BrandId = art.SelectedBrand.Id;
-                article.SizeId = art.SelectedSize.Id;
-                article.FournisseurId = art.SelectedSupplier.Id;
-                article.DateAchat = art.PurchaseDate;
-                article.PicesQuantity = art.PicesQuantity;
-                article.Description = art.Description;
-                db.Article.AddObject(article);
-                db.SaveChanges();
+            article.Designation = art.Designation;
+            article.FamilleId = art.SelectedFamily.Id;
+            article.CategorieId = art.SelectedCategory.Id;
+            article.SousCategorieId = art.SelectedSubCategory.Id;
+            article.BrandId = art.SelectedBrand.Id;
+            article.SizeId = art.SelectedSize.Id;
+            article.FournisseurId = art.SelectedSupplier.Id;
+            article.DateAchat = art.PurchaseDate;
+            article.PicesQuantity = art.PicesQuantity;
+            article.Description = art.Description;
+            db.Article.AddObject(article);
+            db.SaveChanges();
+            StockViewModel viewModel = (DataContext as StockViewModel);
+            viewModel.NbrArticle = db.Article.Count();
             this.IsEnabled = true;
-
+            myDataGrid.SelectionUnit = DataGridSelectionUnit.FullRow;
             (DataContext as StockViewModel).Articles.Add(art);
             myDataGrid.SelectedItem = (DataContext as StockViewModel).Articles[(DataContext as StockViewModel).Articles.Count - 1];
             myDataGrid.ScrollIntoView(myDataGrid.SelectedItem);
+            myDataGrid.SelectionUnit = DataGridSelectionUnit.Cell;
         }
 
         public DataGridCell GetCell(int row, int column)
@@ -350,6 +394,124 @@ namespace aAppli.Views
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void SearchByFamily_Checked(object sender, RoutedEventArgs e)
+        {
+            AdvancedSearch();
+        }
+
+        private void cbFamilies_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            MyDBEntities db = new MyDBEntities();
+            var selectedFamily = cbFamilies.SelectedItem as Famille;
+            var categories = db.Categorie.OrderBy(c => c.Name).ToList();
+            if (selectedFamily.Id > 0)
+                categories = categories.Where(c => c.FamilyId == selectedFamily.Id).ToList();
+            categories.Insert(0, new Categorie { Id = 0, Name = "-- Select --" });
+
+            cbCategories.ItemsSource = categories;
+            cbCategories.SelectedIndex = 0;
+            AdvancedSearch();
+        }
+
+        private void SearchByCategory_Checked(object sender, RoutedEventArgs e)
+        {
+            AdvancedSearch();
+        }
+
+        private void cbCategories_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            MyDBEntities db = new MyDBEntities();
+            var selectedCategory = cbCategories.SelectedItem as Categorie;
+            var subCategories = db.SOUS_CATEGORIE.OrderBy(s => s.Name).ToList();
+            if (selectedCategory != null && selectedCategory.Id > 0)
+                subCategories = subCategories.Where(s => s.CategoryId == selectedCategory.Id).ToList();
+            subCategories.Insert(0, new SOUS_CATEGORIE { Id = 0, Name = "-- Select --" });
+
+            cbSubCategories.ItemsSource = subCategories;
+            cbSubCategories.SelectedIndex = 0;
+
+            AdvancedSearch();
+        }
+
+        private void SearchBySubCategory_Checked(object sender, RoutedEventArgs e)
+        {
+            AdvancedSearch();
+        }
+
+        private void cbSubCategories_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            AdvancedSearch();
+        }
+
+        private void SearchByBrand_Checked(object sender, RoutedEventArgs e)
+        {
+            AdvancedSearch();
+        }
+
+        private void cbBrands_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            AdvancedSearch();
+        }
+
+        private void SearchBySize_Checked(object sender, RoutedEventArgs e)
+        {
+            AdvancedSearch();
+        }
+
+        private void cbSizes_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            AdvancedSearch();
+        }
+
+        private void SearchBySupplier_Checked(object sender, RoutedEventArgs e)
+        {
+            AdvancedSearch();
+        }
+
+        private void cbSuppliers_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            AdvancedSearch();
+        }
+
+        private void AdvancedSearch()
+        {
+            StockViewModel viewModel = (DataContext as StockViewModel);
+            var articles = new ObservableCollection<ArticleModel>(viewModel.InitArticles);
+
+            if (SearchByFamily.IsChecked == true && (cbFamilies.SelectedItem as Famille).Id > 0)
+            {
+                articles = new ObservableCollection<Models.ArticleModel>(articles.Where(a => a.SelectedFamily != null && a.SelectedFamily.Id == (cbFamilies.SelectedItem as Famille).Id).ToList());
+            }
+
+            if (SearchByCategory.IsChecked == true && (cbCategories.SelectedItem as Categorie).Id > 0)
+            {
+                articles = new ObservableCollection<Models.ArticleModel>(articles.Where(a => a.SelectedCategory != null && a.SelectedCategory.Id == (cbCategories.SelectedItem as Categorie).Id));
+            }
+
+            if (SearchBySubCategory.IsChecked == true && (cbSubCategories.SelectedItem as SOUS_CATEGORIE).Id > 0)
+            {
+                articles = new ObservableCollection<Models.ArticleModel>(articles.Where(a => a.SelectedSubCategory != null && a.SelectedSubCategory.Id == (cbSubCategories.SelectedItem as SOUS_CATEGORIE).Id));
+            }
+
+            if (SearchByBrand.IsChecked == true && (cbBrands.SelectedItem as Brand).Id > 0)
+            {
+                articles = new ObservableCollection<Models.ArticleModel>(articles.Where(a => a.SelectedBrand != null && a.SelectedBrand.Id == (cbBrands.SelectedItem as Brand).Id));
+            }
+
+            if (SearchBySize.IsChecked == true && (cbSizes.SelectedItem as Size).Id > 0)
+            {
+                articles = new ObservableCollection<Models.ArticleModel>(articles.Where(a => a.SelectedSize != null && a.SelectedSize.Id == (cbSizes.SelectedItem as Size).Id));
+            }
+
+            if (SearchBySupplier.IsChecked == true && (cbSuppliers.SelectedItem as Fournisseur).Id > 0)
+            {
+                articles = new ObservableCollection<Models.ArticleModel>(articles.Where(a => a.SelectedSupplier != null && a.SelectedSupplier.Id == (cbSuppliers.SelectedItem as Fournisseur).Id));
+            }
+
+            viewModel.Articles = articles;
+            viewModel.NbrArticle = articles.Count;
         }
     }
 }

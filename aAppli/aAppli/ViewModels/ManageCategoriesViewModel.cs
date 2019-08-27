@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Input;
 using Microsoft.Practices.Prism.Commands;
 using Microsoft.Practices.Prism.ViewModel;
+using aAppli.Models;
 
 namespace aAppli.ViewModels
 {
@@ -12,14 +13,14 @@ namespace aAppli.ViewModels
     {
         public ManageCategoriesViewModel()
         {
-            _Categories = new ObservableCollection<Categorie>();
+            _Categories = new ObservableCollection<CategoryModel>();
             LoadedCommand = new DelegateCommand(OnLoaded);
-            SaveCommand = new DelegateCommand<Categorie>(OnSave);
-            DeleteCommand = new DelegateCommand<Categorie>(OnDelete);
+            SaveCommand = new DelegateCommand<CategoryModel>(OnSave);
+            DeleteCommand = new DelegateCommand<CategoryModel>(OnDelete);
         }
 
-        private ObservableCollection<Categorie> _Categories;
-        public ObservableCollection<Categorie> Categories
+        private ObservableCollection<CategoryModel> _Categories;
+        public ObservableCollection<CategoryModel> Categories
         {
             get
             {
@@ -37,6 +38,7 @@ namespace aAppli.ViewModels
             }
         }
 
+
         public ICommand LoadedCommand { get; set; }
         public ICommand SaveCommand { get; set; }
         public ICommand DeleteCommand { get; set; }
@@ -44,14 +46,21 @@ namespace aAppli.ViewModels
         private void OnLoaded()
         {
             MyDBEntities db = DbManager.CreateDbManager();
-            Categories = new ObservableCollection<Categorie>(db.Categorie.OrderBy(f => f.Name).ToList());
+            Categories = new ObservableCollection<CategoryModel>(db.Categorie.OrderBy(f => f.Name).ToList().Select(c =>
+                new CategoryModel
+                {
+                    Id = c.Id,
+                    Name = c.Name,
+                    SelectedFamily = db.Famille.FirstOrDefault(f => f.Id == c.FamilyId),
+                    Families = new ObservableCollection<Famille>(db.Famille.ToList())
+                }));
         }
 
-        private void OnSave(Categorie category)
+        private void OnSave(CategoryModel category)
         {
             MyDBEntities db = DbManager.CreateDbManager();
 
-            if (db.Categorie.Any(f => f.Name.ToLower().Equals(category.Name.ToLower())))
+            if (category.Id == 0 && db.Categorie.Any(f => f.Name.ToLower().Equals(category.Name.ToLower())))
             {
                 Microsoft.Windows.Controls.MessageBox.Show("Une catégorie avec le même nom existe déjà!", "Stop", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Stop);
                 return;
@@ -61,7 +70,7 @@ namespace aAppli.ViewModels
             {
                 try
                 {
-                    db.Categorie.AddObject(category);
+                    db.Categorie.AddObject(new Categorie { Name = category.Name, FamilyId = category.SelectedFamily.Id });
                     db.SaveChanges();
                 }
                 catch (Exception ex)
@@ -80,6 +89,7 @@ namespace aAppli.ViewModels
                     if (est != null)
                     {
                         est.Name = category.Name;
+                        est.FamilyId = category.SelectedFamily.Id;
                     }
 
                     db.SaveChanges();
@@ -95,11 +105,11 @@ namespace aAppli.ViewModels
 
             }
 
-            Categories = new ObservableCollection<Categorie>();
+            Categories = new ObservableCollection<CategoryModel>();
             OnLoaded();
         }
 
-        private void OnDelete(Categorie category)
+        private void OnDelete(CategoryModel category)
         {
             MessageBoxResult result = Microsoft.Windows.Controls.MessageBox.Show("Vous confirmer le Delete de cette catégorie?", "Delete", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
@@ -130,7 +140,7 @@ namespace aAppli.ViewModels
             }
             Microsoft.Windows.Controls.MessageBox.Show("Deleted", "Delete", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
 
-            Categories = new ObservableCollection<Categorie>();
+            Categories = new ObservableCollection<CategoryModel>();
             OnLoaded();
         }
     }

@@ -61,6 +61,7 @@
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="MyDBModel.User">
         <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="EditInsertion" ColumnName="EditInsertion" />
           <ScalarProperty Name="EstablishmentId" ColumnName="EstablishmentId" />
           <ScalarProperty Name="ViderBase" ColumnName="ViderBase" />
           <ScalarProperty Name="GererAcces" ColumnName="GererAcces" />
@@ -114,6 +115,7 @@
     <EntitySetMapping Name="Categorie">
       <EntityTypeMapping TypeName="MyDBModel.Categorie">
         <MappingFragment StoreEntitySet="Categorie">
+          <ScalarProperty Name="FamilyId" ColumnName="FamilyId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
@@ -138,6 +140,7 @@
     <EntitySetMapping Name="SOUS_CATEGORIE">
       <EntityTypeMapping TypeName="MyDBModel.SOUS_CATEGORIE">
         <MappingFragment StoreEntitySet="SOUS_CATEGORIE">
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
