@@ -1708,3 +1708,7 @@ C:\Users\Administrateur\Desktop\aAppli-master\aAppli-master\aAppli\aAppli\obj\x8
 C:\Users\Administrateur\Desktop\aAppli-master\aAppli-master\aAppli\aAppli\obj\x86\Debug\aAppli.csproj.GenerateResource.Cache
 C:\Users\Administrateur\Desktop\aAppli-master\aAppli-master\aAppli\aAppli\obj\x86\Debug\aAppli.exe.manifest
 C:\Users\Administrateur\Desktop\aAppli-master\aAppli-master\aAppli\aAppli\obj\x86\Debug\aAppli.application
+D:\GitHub\aAppli\aAppli\aAppli\obj\x86\Debug\Views\ManageModels.g.cs
+D:\GitHub\aAppli\aAppli\aAppli\obj\x86\Debug\Views\ManageModels.baml
+D:\GitHub\aAppli\aAppli\aAppli\obj\x86\Debug\Views\ModelDialog.baml
+D:\GitHub\aAppli\aAppli\aAppli\obj\x86\Debug\Views\ModelDialog.g.cs

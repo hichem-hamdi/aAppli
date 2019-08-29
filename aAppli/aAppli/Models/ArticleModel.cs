@@ -149,6 +149,45 @@ namespace aAppli.Models
             }
         }
 
+        private ObservableCollection<Model> _Models;
+        public ObservableCollection<Model> Models
+        {
+            get
+            {
+                return _Models;
+            }
+            set
+            {
+                if (_Models == value)
+                {
+                    return;
+                }
+
+                _Models = value;
+                RaisePropertyChanged(() => Models);
+            }
+        }
+
+        private Model _SelectedModel;
+        public Model SelectedModel
+        {
+            get
+            {
+                return _SelectedModel;
+            }
+            set
+            {
+                if (_SelectedModel == value)
+                {
+                    return;
+                }
+
+                _SelectedModel = value;
+                FormatDesignation();
+                RaisePropertyChanged(() => SelectedModel);
+            }
+        }
+
         private ObservableCollection<Brand> _Brands;
         public ObservableCollection<Brand> Brands
         {
@@ -552,6 +591,12 @@ namespace aAppli.Models
             if (SelectedBrand != null)
             {
                 designationStringBuilder.Append(SelectedBrand.Name);
+                designationStringBuilder.Append(" ");
+            }
+
+            if (SelectedModel != null)
+            {
+                designationStringBuilder.Append(SelectedModel.Name);
                 designationStringBuilder.Append(" ");
             }
 

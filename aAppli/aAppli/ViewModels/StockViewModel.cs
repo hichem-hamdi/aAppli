@@ -248,6 +248,8 @@ namespace aAppli.ViewModels
                     SelectedSubCategory = item.SOUS_CATEGORIE,
                     Brands = new ObservableCollection<Brand>(db.Brand.ToList()),
                     SelectedBrand = item.Brand,
+                    Models = new ObservableCollection<Model>(db.Model.ToList()),
+                    SelectedModel = item.Model,
                     Sizes = new ObservableCollection<Size>(db.Size.ToList()),
                     SelectedSize = item.Size,
                     Suppliers = new ObservableCollection<Fournisseur>(db.Fournisseur.ToList()),
@@ -268,7 +270,7 @@ namespace aAppli.ViewModels
         private void OnSave(ArticleModel article)
         {
             if (article.SelectedBrand == null || article.SelectedCategory == null || article.SelectedFamily == null || article.SelectedSize == null
-            || article.SelectedSubCategory == null || article.SelectedSupplier == null || article.PurchaseDate == null)
+            || article.SelectedSubCategory == null || article.SelectedSupplier == null || article.PurchaseDate == null || article.SelectedModel == null)
             {
                 Microsoft.Windows.Controls.MessageBox.Show("La saisie n'est pas complete!", "Error", MessageBoxButton.OK, MessageBoxImage.Stop);
                 return;
@@ -324,6 +326,7 @@ namespace aAppli.ViewModels
                         CategorieId = article.SelectedCategory.Id,
                         SousCategorieId = article.SelectedSubCategory.Id,
                         BrandId = article.SelectedBrand.Id,
+                        ModelId = article.SelectedModel.Id,
                         SizeId = article.SelectedSize.Id,
                         FournisseurId = article.SelectedSupplier.Id,
                         Description = article.Description,
@@ -363,6 +366,7 @@ namespace aAppli.ViewModels
                         art.CategorieId = article.SelectedCategory.Id;
                         art.SousCategorieId = article.SelectedSubCategory.Id;
                         art.BrandId = article.SelectedBrand.Id;
+                        art.ModelId = article.SelectedModel.Id;
                         art.SizeId = article.SelectedSize.Id;
                         art.FournisseurId = article.SelectedSupplier.Id;
                         art.DateAchat = article.PurchaseDate;
@@ -510,6 +514,15 @@ namespace aAppli.ViewModels
             {
                 return;
             }
+            var modelsDialog = new ModelDialog(article);
+            if (modelsDialog.ShowDialog() == true)
+            {
+                article.SelectedModel = modelsDialog.cbModels.SelectedItem as Model;
+            }
+            else
+            {
+                return;
+            }
             var sizesDialog = new SizeDialog(article);
             if (sizesDialog.ShowDialog() == true)
             {
@@ -565,6 +578,7 @@ namespace aAppli.ViewModels
                 art.CategorieId = article.SelectedCategory.Id;
                 art.SousCategorieId = article.SelectedSubCategory.Id;
                 art.BrandId = article.SelectedBrand.Id;
+                art.ModelId = article.SelectedModel.Id;
                 art.SizeId = article.SelectedSize.Id;
                 art.FournisseurId = article.SelectedSupplier.Id;
                 art.DateAchat = article.PurchaseDate;

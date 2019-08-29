@@ -13,6 +13,7 @@
             <RowDefinition />
             <RowDefinition />
             <RowDefinition />
+            <RowDefinition />
         </Grid.RowDefinitions>
         <Button Name="btnManageFamilies"
                 Content="Gérer Familles"
@@ -38,5 +39,9 @@
                 Content="Gérer Fournissuers"
                 Click="btnManageSuppliers_Click"
                 Grid.Row="5"></Button>
+        <Button Name="btnManageModels"
+                Content="Gérer Modèles"
+                Click="btnManageModels_Click"
+                Grid.Row="6"></Button>
     </Grid>
 </Window>

@@ -35,6 +35,7 @@ using System.Runtime.Serialization;
 [assembly: EdmRelationshipAttribute("MyDBModel", "FK_Article_01", "Fournisseur", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Fournisseur), "Article", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Article), true)]
 [assembly: EdmRelationshipAttribute("MyDBModel", "FK_Categorie_0", "Famille", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Famille), "Categorie", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Categorie), true)]
 [assembly: EdmRelationshipAttribute("MyDBModel", "FK_SOUS_CATEGORIE_0", "Categorie", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Categorie), "SOUS_CATEGORIE", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.SOUS_CATEGORIE), true)]
+[assembly: EdmRelationshipAttribute("MyDBModel", "FK_Article_02", "Model", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Model), "Article", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Article), true)]
 
 #endregion
 
@@ -277,6 +278,22 @@ namespace aAppli
             }
         }
         private ObjectSet<Fournisseur> _Fournisseur;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<Model> Model
+        {
+            get
+            {
+                if ((_Model == null))
+                {
+                    _Model = base.CreateObjectSet<Model>("Model");
+                }
+                return _Model;
+            }
+        }
+        private ObjectSet<Model> _Model;
 
         #endregion
         #region AddTo Methods
@@ -375,6 +392,14 @@ namespace aAppli
         public void AddToFournisseur(Fournisseur fournisseur)
         {
             base.AddObject("Fournisseur", fournisseur);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the Model EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToModel(Model model)
+        {
+            base.AddObject("Model", model);
         }
 
         #endregion
@@ -829,6 +854,30 @@ namespace aAppli
         private Nullable<global::System.Int64> _PicesQuantity;
         partial void OnPicesQuantityChanging(Nullable<global::System.Int64> value);
         partial void OnPicesQuantityChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int64> ModelId
+        {
+            get
+            {
+                return _ModelId;
+            }
+            set
+            {
+                OnModelIdChanging(value);
+                ReportPropertyChanging("ModelId");
+                _ModelId = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("ModelId");
+                OnModelIdChanged();
+            }
+        }
+        private Nullable<global::System.Int64> _ModelId;
+        partial void OnModelIdChanging(Nullable<global::System.Int64> value);
+        partial void OnModelIdChanged();
 
         #endregion
     
@@ -1118,6 +1167,44 @@ namespace aAppli
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Fournisseur>("MyDBModel.FK_Article_01", "Fournisseur", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("MyDBModel", "FK_Article_02", "Model")]
+        public Model Model
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Model>("MyDBModel.FK_Article_02", "Model").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Model>("MyDBModel.FK_Article_02", "Model").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<Model> ModelReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Model>("MyDBModel.FK_Article_02", "Model");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Model>("MyDBModel.FK_Article_02", "Model", value);
                 }
             }
         }
@@ -2240,6 +2327,110 @@ namespace aAppli
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Article>("MyDBModel.FK_Article_01", "Article", value);
+                }
+            }
+        }
+
+        #endregion
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="MyDBModel", Name="Model")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class Model : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new Model object.
+        /// </summary>
+        /// <param name="id">Initial value of the Id property.</param>
+        public static Model CreateModel(global::System.Int64 id)
+        {
+            Model model = new Model();
+            model.Id = id;
+            return model;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int64 _Id;
+        partial void OnIdChanging(global::System.Int64 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Name
+        {
+            get
+            {
+                return _Name;
+            }
+            set
+            {
+                OnNameChanging(value);
+                ReportPropertyChanging("Name");
+                _Name = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Name");
+                OnNameChanged();
+            }
+        }
+        private global::System.String _Name;
+        partial void OnNameChanging(global::System.String value);
+        partial void OnNameChanged();
+
+        #endregion
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("MyDBModel", "FK_Article_02", "Article")]
+        public EntityCollection<Article> Article
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Article>("MyDBModel.FK_Article_02", "Article");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Article>("MyDBModel.FK_Article_02", "Article", value);
                 }
             }
         }

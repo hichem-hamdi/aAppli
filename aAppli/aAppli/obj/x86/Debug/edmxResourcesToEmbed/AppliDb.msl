@@ -4,6 +4,7 @@
     <EntitySetMapping Name="Article">
       <EntityTypeMapping TypeName="MyDBModel.Article">
         <MappingFragment StoreEntitySet="Article">
+          <ScalarProperty Name="ModelId" ColumnName="ModelId" />
           <ScalarProperty Name="PicesQuantity" ColumnName="PicesQuantity" />
           <ScalarProperty Name="DateAchat" ColumnName="DateAchat" />
           <ScalarProperty Name="Description" ColumnName="Description" />
@@ -149,6 +150,14 @@
     <EntitySetMapping Name="Fournisseur">
       <EntityTypeMapping TypeName="MyDBModel.Fournisseur">
         <MappingFragment StoreEntitySet="Fournisseur">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Model">
+      <EntityTypeMapping TypeName="MyDBModel.Model">
+        <MappingFragment StoreEntitySet="Model">
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>

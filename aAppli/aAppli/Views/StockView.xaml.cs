@@ -58,6 +58,11 @@ namespace aAppli.Views
             cbBrands.ItemsSource = brands;
             cbBrands.SelectedIndex = 0;
 
+            var models = db.Model.OrderBy(b => b.Name).ToList();
+            models.Insert(0, new Model { Id = 0, Name = "-- Select --" });
+            cbModels.ItemsSource = models;
+            cbModels.SelectedIndex = 0;
+
             var sizes = db.Size.ToList();
             sizes.Insert(0, new Size { Id = 0, Name = "-- Select --" });
             cbSizes.ItemsSource = sizes;
@@ -155,6 +160,16 @@ namespace aAppli.Views
                 this.IsEnabled = true;
                 return;
             }
+            var modelsDialog = new ModelDialog();
+            if (modelsDialog.ShowDialog() == true)
+            {
+                art.SelectedModel = modelsDialog.cbModels.SelectedItem as Model;
+            }
+            else
+            {
+                this.IsEnabled = true;
+                return;
+            }
             var sizesDialog = new SizeDialog();
             if (sizesDialog.ShowDialog() == true)
             {
@@ -211,6 +226,7 @@ namespace aAppli.Views
             article.CategorieId = art.SelectedCategory.Id;
             article.SousCategorieId = art.SelectedSubCategory.Id;
             article.BrandId = art.SelectedBrand.Id;
+            article.ModelId = art.SelectedModel.Id;
             article.SizeId = art.SelectedSize.Id;
             article.FournisseurId = art.SelectedSupplier.Id;
             article.DateAchat = art.PurchaseDate;
@@ -450,7 +466,17 @@ namespace aAppli.Views
             AdvancedSearch();
         }
 
+        private void SearchByModel_Checked(object sender, RoutedEventArgs e)
+        {
+            AdvancedSearch();
+        }
+
         private void cbBrands_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            AdvancedSearch();
+        }
+
+        private void cbModels_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             AdvancedSearch();
         }
@@ -498,6 +524,11 @@ namespace aAppli.Views
             if (SearchByBrand.IsChecked == true && (cbBrands.SelectedItem as Brand).Id > 0)
             {
                 articles = new ObservableCollection<Models.ArticleModel>(articles.Where(a => a.SelectedBrand != null && a.SelectedBrand.Id == (cbBrands.SelectedItem as Brand).Id));
+            }
+
+            if (SearchByModel.IsChecked == true && (cbModels.SelectedItem as Model).Id > 0)
+            {
+                articles = new ObservableCollection<Models.ArticleModel>(articles.Where(a => a.SelectedModel != null && a.SelectedModel.Id == (cbModels.SelectedItem as Model).Id));
             }
 
             if (SearchBySize.IsChecked == true && (cbSizes.SelectedItem as Size).Id > 0)

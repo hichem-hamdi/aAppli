@@ -97,12 +97,11 @@
                               x:Name="myDataGrid"
                                       SelectionUnit="Cell"
                               ScrollViewer.HorizontalScrollBarVisibility="Visible"
-                              MaxHeight="300"
                               BorderThickness="1,0,1,0"
                               GridLinesVisibility="All"
                               VerticalScrollBarVisibility="Visible"
                               HorizontalScrollBarVisibility="Visible"
-                              CanUserResizeColumns="False"
+                              CanUserResizeColumns="True"
                               CanUserAddRows="False"
                               CanUserDeleteRows="False"
                               AutoGenerateColumns="False"
@@ -155,7 +154,7 @@
                                         </DataGridTextColumn.ElementStyle>
                                     </DataGridTextColumn>
                                     <DataGridTextColumn Header="S/N"
-                                                Width="250"
+                                                Width="100"
                                                 Binding="{Binding SN,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
                                         <DataGridTextColumn.ElementStyle>
                                             <Style TargetType="TextBlock">
@@ -253,6 +252,7 @@
                                     <ColumnDefinition/>
                                     <ColumnDefinition/>
                                     <ColumnDefinition/>
+                                    <ColumnDefinition/>
                                 </Grid.ColumnDefinitions>
 
                                 <GroupBox Header="Famille">
@@ -306,8 +306,21 @@
                                     </StackPanel>
                                 </GroupBox>
 
-                                <GroupBox Header="Taille"
+                                <GroupBox Header="Modèle"
                                           Grid.Column="4">
+                                    <StackPanel Orientation="Horizontal">
+                                        <ComboBox Name="cbModels"
+                          DisplayMemberPath="Name"
+                          SelectedValuePath="Id" Width="125" SelectionChanged="cbModels_SelectionChanged">
+                                        </ComboBox>
+                                        <CheckBox Margin="2" Name="SearchByModel" 
+                                        VerticalAlignment="Center" Checked="SearchByModel_Checked"
+                                              Unchecked="SearchByModel_Checked"></CheckBox>
+                                    </StackPanel>
+                                </GroupBox>
+
+                                <GroupBox Header="Taille"
+                                          Grid.Column="5">
                                     <StackPanel Orientation="Horizontal">
                                         <ComboBox Name="cbSizes"
                           DisplayMemberPath="Name"
@@ -320,7 +333,7 @@
                                 </GroupBox>
 
                                 <GroupBox Header="Fournisseur"
-                                          Grid.Column="5">
+                                          Grid.Column="6">
                                     <StackPanel Orientation="Horizontal">
                                         <ComboBox Name="cbSuppliers"
                           DisplayMemberPath="Name"

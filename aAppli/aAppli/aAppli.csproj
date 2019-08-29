@@ -183,6 +183,7 @@
     <Compile Include="ModuleInit.cs" />
     <Compile Include="pdfPage.cs" />
     <Compile Include="ViewModels\AvoirViewModel.cs" />
+    <Compile Include="ViewModels\ManageModelsViewModel.cs" />
     <Compile Include="ViewModels\MangeSuppliersViewModel.cs" />
     <Compile Include="ViewModels\MangeSizesViewModel.cs" />
     <Compile Include="ViewModels\MangeBrandsViewModel.cs" />
@@ -208,6 +209,12 @@
     </Compile>
     <Compile Include="Views\BrandDialog.xaml.cs">
       <DependentUpon>BrandDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ModelDialog.xaml.cs">
+      <DependentUpon>ModelDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ManageModels.xaml.cs">
+      <DependentUpon>ManageModels.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\DescriptionDialog.xaml.cs">
       <DependentUpon>DescriptionDialog.xaml</DependentUpon>
@@ -315,6 +322,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\BrandDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ModelDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ManageModels.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

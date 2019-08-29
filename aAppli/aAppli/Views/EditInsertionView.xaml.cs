@@ -59,5 +59,10 @@ namespace aAppli.Views
             var manageSuppliers = new ManageSuppliers();
             manageSuppliers.Show();
         }
+        private void btnManageModels_Click(object sender, RoutedEventArgs e)
+        {
+            var manageModels = new ManageModels();
+            manageModels.Show();
+        }
     }
 }
