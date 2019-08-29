@@ -8,6 +8,8 @@
     <EntitySet Name="Establishment" EntityType="MyDBModel.Store.Establishment" store:Type="Tables" />
     <EntitySet Name="Famille" EntityType="MyDBModel.Store.Famille" store:Type="Tables" />
     <EntitySet Name="Fournisseur" EntityType="MyDBModel.Store.Fournisseur" store:Type="Tables" />
+    <EntitySet Name="Invoice" EntityType="MyDBModel.Store.Invoice" store:Type="Tables" />
+    <EntitySet Name="InvoiceItem" EntityType="MyDBModel.Store.InvoiceItem" store:Type="Tables" />
     <EntitySet Name="Model" EntityType="MyDBModel.Store.Model" store:Type="Tables" />
     <EntitySet Name="Reservation" EntityType="MyDBModel.Store.Reservation" store:Type="Tables" />
     <EntitySet Name="Size" EntityType="MyDBModel.Store.Size" store:Type="Tables" />
@@ -53,6 +55,14 @@
     <AssociationSet Name="FK_Credit_0" Association="MyDBModel.Store.FK_Credit_0">
       <End Role="Establishment" EntitySet="Establishment" />
       <End Role="Credit" EntitySet="Credit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoice_0" Association="MyDBModel.Store.FK_Invoice_0">
+      <End Role="Fournisseur" EntitySet="Fournisseur" />
+      <End Role="Invoice" EntitySet="Invoice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvoiceItem_0" Association="MyDBModel.Store.FK_InvoiceItem_0">
+      <End Role="Invoice" EntitySet="Invoice" />
+      <End Role="InvoiceItem" EntitySet="InvoiceItem" />
     </AssociationSet>
     <AssociationSet Name="FK_Reservation_0" Association="MyDBModel.Store.FK_Reservation_0">
       <End Role="Users" EntitySet="Users" />
@@ -163,6 +173,39 @@
     </Key>
     <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="InvoiceNumber" Type="nvarchar" />
+    <Property Name="InvoiceDate" Type="datetime" />
+    <Property Name="SupplierId" Type="integer" />
+    <Property Name="TotalHT" Type="decimal" Precision="53" />
+    <Property Name="Remise" Type="decimal" Precision="53" />
+    <Property Name="TotalHTNet" Type="decimal" Precision="53" />
+    <Property Name="TotalTaxes" Type="decimal" Precision="53" />
+    <Property Name="TVA" Type="decimal" Precision="53" />
+    <Property Name="TotalTTC" Type="decimal" Precision="53" />
+    <Property Name="Timbre" Type="decimal" Precision="53" />
+    <Property Name="TotalInvoice" Type="decimal" Precision="53" />
+  </EntityType>
+  <EntityType Name="InvoiceItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Designation" Type="nvarchar" />
+    <Property Name="InvoiceId" Type="integer" />
+    <Property Name="Qt" Type="integer" />
+    <Property Name="PrixHT" Type="decimal" Precision="53" />
+    <Property Name="TVA" Type="integer" />
+    <Property Name="Remise" Type="integer" />
+    <Property Name="HTNet" Type="decimal" Precision="53" />
+    <Property Name="UTTC" Type="decimal" Precision="53" />
+    <Property Name="PrixVente" Type="decimal" Precision="53" />
+    <Property Name="SN" Type="nvarchar" />
   </EntityType>
   <EntityType Name="Model">
     <Key>
@@ -353,6 +396,30 @@
       </Principal>
       <Dependent Role="Credit">
         <PropertyRef Name="EstablishmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoice_0">
+    <End Role="Fournisseur" Type="MyDBModel.Store.Fournisseur" Multiplicity="0..1" />
+    <End Role="Invoice" Type="MyDBModel.Store.Invoice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fournisseur">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Invoice">
+        <PropertyRef Name="SupplierId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InvoiceItem_0">
+    <End Role="Invoice" Type="MyDBModel.Store.Invoice" Multiplicity="0..1" />
+    <End Role="InvoiceItem" Type="MyDBModel.Store.InvoiceItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Invoice">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="InvoiceItem">
+        <PropertyRef Name="InvoiceId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

@@ -36,6 +36,8 @@ using System.Runtime.Serialization;
 [assembly: EdmRelationshipAttribute("MyDBModel", "FK_Categorie_0", "Famille", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Famille), "Categorie", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Categorie), true)]
 [assembly: EdmRelationshipAttribute("MyDBModel", "FK_SOUS_CATEGORIE_0", "Categorie", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Categorie), "SOUS_CATEGORIE", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.SOUS_CATEGORIE), true)]
 [assembly: EdmRelationshipAttribute("MyDBModel", "FK_Article_02", "Model", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Model), "Article", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Article), true)]
+[assembly: EdmRelationshipAttribute("MyDBModel", "FK_Invoice_0", "Fournisseur", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Fournisseur), "Invoice", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Invoice), true)]
+[assembly: EdmRelationshipAttribute("MyDBModel", "FK_InvoiceItem_0", "Invoice", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Invoice), "InvoiceItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.InvoiceItem), true)]
 
 #endregion
 
@@ -294,6 +296,38 @@ namespace aAppli
             }
         }
         private ObjectSet<Model> _Model;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<Invoice> Invoices
+        {
+            get
+            {
+                if ((_Invoices == null))
+                {
+                    _Invoices = base.CreateObjectSet<Invoice>("Invoices");
+                }
+                return _Invoices;
+            }
+        }
+        private ObjectSet<Invoice> _Invoices;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<InvoiceItem> InvoiceItems
+        {
+            get
+            {
+                if ((_InvoiceItems == null))
+                {
+                    _InvoiceItems = base.CreateObjectSet<InvoiceItem>("InvoiceItems");
+                }
+                return _InvoiceItems;
+            }
+        }
+        private ObjectSet<InvoiceItem> _InvoiceItems;
 
         #endregion
         #region AddTo Methods
@@ -400,6 +434,22 @@ namespace aAppli
         public void AddToModel(Model model)
         {
             base.AddObject("Model", model);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the Invoices EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToInvoices(Invoice invoice)
+        {
+            base.AddObject("Invoices", invoice);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the InvoiceItems EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToInvoiceItems(InvoiceItem invoiceItem)
+        {
+            base.AddObject("InvoiceItems", invoiceItem);
         }
 
         #endregion
@@ -2327,6 +2377,746 @@ namespace aAppli
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Article>("MyDBModel.FK_Article_01", "Article", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("MyDBModel", "FK_Invoice_0", "Invoice")]
+        public EntityCollection<Invoice> Invoices
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Invoice>("MyDBModel.FK_Invoice_0", "Invoice");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Invoice>("MyDBModel.FK_Invoice_0", "Invoice", value);
+                }
+            }
+        }
+
+        #endregion
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="MyDBModel", Name="Invoice")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class Invoice : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new Invoice object.
+        /// </summary>
+        /// <param name="id">Initial value of the Id property.</param>
+        public static Invoice CreateInvoice(global::System.Int64 id)
+        {
+            Invoice invoice = new Invoice();
+            invoice.Id = id;
+            return invoice;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int64 _Id;
+        partial void OnIdChanging(global::System.Int64 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String InvoiceNumber
+        {
+            get
+            {
+                return _InvoiceNumber;
+            }
+            set
+            {
+                OnInvoiceNumberChanging(value);
+                ReportPropertyChanging("InvoiceNumber");
+                _InvoiceNumber = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("InvoiceNumber");
+                OnInvoiceNumberChanged();
+            }
+        }
+        private global::System.String _InvoiceNumber;
+        partial void OnInvoiceNumberChanging(global::System.String value);
+        partial void OnInvoiceNumberChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> InvoiceDate
+        {
+            get
+            {
+                return _InvoiceDate;
+            }
+            set
+            {
+                OnInvoiceDateChanging(value);
+                ReportPropertyChanging("InvoiceDate");
+                _InvoiceDate = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("InvoiceDate");
+                OnInvoiceDateChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _InvoiceDate;
+        partial void OnInvoiceDateChanging(Nullable<global::System.DateTime> value);
+        partial void OnInvoiceDateChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int64> SupplierId
+        {
+            get
+            {
+                return _SupplierId;
+            }
+            set
+            {
+                OnSupplierIdChanging(value);
+                ReportPropertyChanging("SupplierId");
+                _SupplierId = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SupplierId");
+                OnSupplierIdChanged();
+            }
+        }
+        private Nullable<global::System.Int64> _SupplierId;
+        partial void OnSupplierIdChanging(Nullable<global::System.Int64> value);
+        partial void OnSupplierIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> TotalHT
+        {
+            get
+            {
+                return _TotalHT;
+            }
+            set
+            {
+                OnTotalHTChanging(value);
+                ReportPropertyChanging("TotalHT");
+                _TotalHT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TotalHT");
+                OnTotalHTChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _TotalHT;
+        partial void OnTotalHTChanging(Nullable<global::System.Decimal> value);
+        partial void OnTotalHTChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> Remise
+        {
+            get
+            {
+                return _Remise;
+            }
+            set
+            {
+                OnRemiseChanging(value);
+                ReportPropertyChanging("Remise");
+                _Remise = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Remise");
+                OnRemiseChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _Remise;
+        partial void OnRemiseChanging(Nullable<global::System.Decimal> value);
+        partial void OnRemiseChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> TotalHTNet
+        {
+            get
+            {
+                return _TotalHTNet;
+            }
+            set
+            {
+                OnTotalHTNetChanging(value);
+                ReportPropertyChanging("TotalHTNet");
+                _TotalHTNet = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TotalHTNet");
+                OnTotalHTNetChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _TotalHTNet;
+        partial void OnTotalHTNetChanging(Nullable<global::System.Decimal> value);
+        partial void OnTotalHTNetChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> TotalTaxes
+        {
+            get
+            {
+                return _TotalTaxes;
+            }
+            set
+            {
+                OnTotalTaxesChanging(value);
+                ReportPropertyChanging("TotalTaxes");
+                _TotalTaxes = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TotalTaxes");
+                OnTotalTaxesChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _TotalTaxes;
+        partial void OnTotalTaxesChanging(Nullable<global::System.Decimal> value);
+        partial void OnTotalTaxesChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> TVA
+        {
+            get
+            {
+                return _TVA;
+            }
+            set
+            {
+                OnTVAChanging(value);
+                ReportPropertyChanging("TVA");
+                _TVA = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TVA");
+                OnTVAChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _TVA;
+        partial void OnTVAChanging(Nullable<global::System.Decimal> value);
+        partial void OnTVAChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> TotalTTC
+        {
+            get
+            {
+                return _TotalTTC;
+            }
+            set
+            {
+                OnTotalTTCChanging(value);
+                ReportPropertyChanging("TotalTTC");
+                _TotalTTC = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TotalTTC");
+                OnTotalTTCChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _TotalTTC;
+        partial void OnTotalTTCChanging(Nullable<global::System.Decimal> value);
+        partial void OnTotalTTCChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> Timbre
+        {
+            get
+            {
+                return _Timbre;
+            }
+            set
+            {
+                OnTimbreChanging(value);
+                ReportPropertyChanging("Timbre");
+                _Timbre = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Timbre");
+                OnTimbreChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _Timbre;
+        partial void OnTimbreChanging(Nullable<global::System.Decimal> value);
+        partial void OnTimbreChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> TotalInvoice
+        {
+            get
+            {
+                return _TotalInvoice;
+            }
+            set
+            {
+                OnTotalInvoiceChanging(value);
+                ReportPropertyChanging("TotalInvoice");
+                _TotalInvoice = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TotalInvoice");
+                OnTotalInvoiceChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _TotalInvoice;
+        partial void OnTotalInvoiceChanging(Nullable<global::System.Decimal> value);
+        partial void OnTotalInvoiceChanged();
+
+        #endregion
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("MyDBModel", "FK_Invoice_0", "Fournisseur")]
+        public Fournisseur Fournisseur
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Fournisseur>("MyDBModel.FK_Invoice_0", "Fournisseur").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Fournisseur>("MyDBModel.FK_Invoice_0", "Fournisseur").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<Fournisseur> FournisseurReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Fournisseur>("MyDBModel.FK_Invoice_0", "Fournisseur");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Fournisseur>("MyDBModel.FK_Invoice_0", "Fournisseur", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("MyDBModel", "FK_InvoiceItem_0", "InvoiceItem")]
+        public EntityCollection<InvoiceItem> InvoiceItems
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<InvoiceItem>("MyDBModel.FK_InvoiceItem_0", "InvoiceItem");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<InvoiceItem>("MyDBModel.FK_InvoiceItem_0", "InvoiceItem", value);
+                }
+            }
+        }
+
+        #endregion
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="MyDBModel", Name="InvoiceItem")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class InvoiceItem : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new InvoiceItem object.
+        /// </summary>
+        /// <param name="id">Initial value of the Id property.</param>
+        public static InvoiceItem CreateInvoiceItem(global::System.Int64 id)
+        {
+            InvoiceItem invoiceItem = new InvoiceItem();
+            invoiceItem.Id = id;
+            return invoiceItem;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int64 _Id;
+        partial void OnIdChanging(global::System.Int64 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Designation
+        {
+            get
+            {
+                return _Designation;
+            }
+            set
+            {
+                OnDesignationChanging(value);
+                ReportPropertyChanging("Designation");
+                _Designation = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Designation");
+                OnDesignationChanged();
+            }
+        }
+        private global::System.String _Designation;
+        partial void OnDesignationChanging(global::System.String value);
+        partial void OnDesignationChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int64> InvoiceId
+        {
+            get
+            {
+                return _InvoiceId;
+            }
+            set
+            {
+                OnInvoiceIdChanging(value);
+                ReportPropertyChanging("InvoiceId");
+                _InvoiceId = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("InvoiceId");
+                OnInvoiceIdChanged();
+            }
+        }
+        private Nullable<global::System.Int64> _InvoiceId;
+        partial void OnInvoiceIdChanging(Nullable<global::System.Int64> value);
+        partial void OnInvoiceIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int64> Qt
+        {
+            get
+            {
+                return _Qt;
+            }
+            set
+            {
+                OnQtChanging(value);
+                ReportPropertyChanging("Qt");
+                _Qt = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Qt");
+                OnQtChanged();
+            }
+        }
+        private Nullable<global::System.Int64> _Qt;
+        partial void OnQtChanging(Nullable<global::System.Int64> value);
+        partial void OnQtChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> PrixHT
+        {
+            get
+            {
+                return _PrixHT;
+            }
+            set
+            {
+                OnPrixHTChanging(value);
+                ReportPropertyChanging("PrixHT");
+                _PrixHT = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("PrixHT");
+                OnPrixHTChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _PrixHT;
+        partial void OnPrixHTChanging(Nullable<global::System.Decimal> value);
+        partial void OnPrixHTChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int64> TVA
+        {
+            get
+            {
+                return _TVA;
+            }
+            set
+            {
+                OnTVAChanging(value);
+                ReportPropertyChanging("TVA");
+                _TVA = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TVA");
+                OnTVAChanged();
+            }
+        }
+        private Nullable<global::System.Int64> _TVA;
+        partial void OnTVAChanging(Nullable<global::System.Int64> value);
+        partial void OnTVAChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int64> Remise
+        {
+            get
+            {
+                return _Remise;
+            }
+            set
+            {
+                OnRemiseChanging(value);
+                ReportPropertyChanging("Remise");
+                _Remise = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Remise");
+                OnRemiseChanged();
+            }
+        }
+        private Nullable<global::System.Int64> _Remise;
+        partial void OnRemiseChanging(Nullable<global::System.Int64> value);
+        partial void OnRemiseChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> HTNet
+        {
+            get
+            {
+                return _HTNet;
+            }
+            set
+            {
+                OnHTNetChanging(value);
+                ReportPropertyChanging("HTNet");
+                _HTNet = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("HTNet");
+                OnHTNetChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _HTNet;
+        partial void OnHTNetChanging(Nullable<global::System.Decimal> value);
+        partial void OnHTNetChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> UTTC
+        {
+            get
+            {
+                return _UTTC;
+            }
+            set
+            {
+                OnUTTCChanging(value);
+                ReportPropertyChanging("UTTC");
+                _UTTC = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("UTTC");
+                OnUTTCChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _UTTC;
+        partial void OnUTTCChanging(Nullable<global::System.Decimal> value);
+        partial void OnUTTCChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Decimal> PrixVente
+        {
+            get
+            {
+                return _PrixVente;
+            }
+            set
+            {
+                OnPrixVenteChanging(value);
+                ReportPropertyChanging("PrixVente");
+                _PrixVente = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("PrixVente");
+                OnPrixVenteChanged();
+            }
+        }
+        private Nullable<global::System.Decimal> _PrixVente;
+        partial void OnPrixVenteChanging(Nullable<global::System.Decimal> value);
+        partial void OnPrixVenteChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String SN
+        {
+            get
+            {
+                return _SN;
+            }
+            set
+            {
+                OnSNChanging(value);
+                ReportPropertyChanging("SN");
+                _SN = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("SN");
+                OnSNChanged();
+            }
+        }
+        private global::System.String _SN;
+        partial void OnSNChanging(global::System.String value);
+        partial void OnSNChanged();
+
+        #endregion
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("MyDBModel", "FK_InvoiceItem_0", "Invoice")]
+        public Invoice Invoice
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Invoice>("MyDBModel.FK_InvoiceItem_0", "Invoice").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Invoice>("MyDBModel.FK_InvoiceItem_0", "Invoice").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<Invoice> InvoiceReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Invoice>("MyDBModel.FK_InvoiceItem_0", "Invoice");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Invoice>("MyDBModel.FK_InvoiceItem_0", "Invoice", value);
                 }
             }
         }

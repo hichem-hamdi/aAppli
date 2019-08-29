@@ -86,6 +86,16 @@
       <End Role="Model" EntitySet="Model" />
       <End Role="Article" EntitySet="Article" />
     </AssociationSet>
+    <EntitySet Name="Invoices" EntityType="MyDBModel.Invoice" />
+    <EntitySet Name="InvoiceItems" EntityType="MyDBModel.InvoiceItem" />
+    <AssociationSet Name="FK_Invoice_0" Association="MyDBModel.FK_Invoice_0">
+      <End Role="Fournisseur" EntitySet="Fournisseur" />
+      <End Role="Invoice" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvoiceItem_0" Association="MyDBModel.FK_InvoiceItem_0">
+      <End Role="Invoice" EntitySet="Invoices" />
+      <End Role="InvoiceItem" EntitySet="InvoiceItems" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="Article">
     <Key>
@@ -431,6 +441,7 @@
     <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Type="String" Name="Name" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_01" FromRole="Fournisseur" ToRole="Article" />
+    <NavigationProperty Name="Invoices" Relationship="MyDBModel.FK_Invoice_0" FromRole="Fournisseur" ToRole="Invoice" />
   </EntityType>
   <Association Name="FK_Article_01">
     <End Type="MyDBModel.Fournisseur" Role="Fournisseur" Multiplicity="0..1" />
@@ -485,6 +496,66 @@
       </Principal>
       <Dependent Role="Article">
         <PropertyRef Name="ModelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="InvoiceNumber" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="InvoiceDate" />
+    <Property Type="Int64" Name="SupplierId" />
+    <Property Type="Decimal" Name="TotalHT" Precision="53" Scale="0" />
+    <Property Type="Decimal" Name="Remise" Precision="53" Scale="0" />
+    <Property Type="Decimal" Name="TotalHTNet" Precision="53" Scale="0" />
+    <Property Type="Decimal" Name="TotalTaxes" Precision="53" Scale="0" />
+    <Property Type="Decimal" Name="TVA" Precision="53" Scale="0" />
+    <Property Type="Decimal" Name="TotalTTC" Precision="53" Scale="0" />
+    <Property Type="Decimal" Name="Timbre" Precision="53" Scale="0" />
+    <Property Type="Decimal" Name="TotalInvoice" Precision="53" Scale="0" />
+    <NavigationProperty Name="Fournisseur" Relationship="MyDBModel.FK_Invoice_0" FromRole="Invoice" ToRole="Fournisseur" />
+    <NavigationProperty Name="InvoiceItems" Relationship="MyDBModel.FK_InvoiceItem_0" FromRole="Invoice" ToRole="InvoiceItem" />
+  </EntityType>
+  <EntityType Name="InvoiceItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Designation" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="InvoiceId" />
+    <Property Type="Int64" Name="Qt" />
+    <Property Type="Decimal" Name="PrixHT" Precision="53" Scale="0" />
+    <Property Type="Int64" Name="TVA" />
+    <Property Type="Int64" Name="Remise" />
+    <Property Type="Decimal" Name="HTNet" Precision="53" Scale="0" />
+    <Property Type="Decimal" Name="UTTC" Precision="53" Scale="0" />
+    <Property Type="Decimal" Name="PrixVente" Precision="53" Scale="0" />
+    <Property Type="String" Name="SN" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Invoice" Relationship="MyDBModel.FK_InvoiceItem_0" FromRole="InvoiceItem" ToRole="Invoice" />
+  </EntityType>
+  <Association Name="FK_Invoice_0">
+    <End Type="MyDBModel.Fournisseur" Role="Fournisseur" Multiplicity="0..1" />
+    <End Type="MyDBModel.Invoice" Role="Invoice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fournisseur">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Invoice">
+        <PropertyRef Name="SupplierId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InvoiceItem_0">
+    <End Type="MyDBModel.Invoice" Role="Invoice" Multiplicity="0..1" />
+    <End Type="MyDBModel.InvoiceItem" Role="InvoiceItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Invoice">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="InvoiceItem">
+        <PropertyRef Name="InvoiceId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
