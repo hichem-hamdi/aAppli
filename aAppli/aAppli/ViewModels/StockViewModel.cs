@@ -482,54 +482,66 @@ namespace aAppli.ViewModels
             if (familyDialog.ShowDialog() == true)
             {
                 article.SelectedFamily = familyDialog.cbFamilies.SelectedItem as Famille;
+                UpdateArticle(article, db);
             }
             else
             {
+                IsBusy = false;
                 return;
             }
             var categoryDialog = new CategoryDialog(article);
             if (categoryDialog.ShowDialog() == true)
             {
                 article.SelectedCategory = categoryDialog.cbCategories.SelectedItem as Categorie;
+                UpdateArticle(article, db);
             }
             else
             {
+                IsBusy = false;
                 return;
             }
             var subCategoryDialog = new SubCategoryDialog(article);
             if (subCategoryDialog.ShowDialog() == true)
             {
                 article.SelectedSubCategory = subCategoryDialog.cbSubCategories.SelectedItem as SOUS_CATEGORIE;
+                UpdateArticle(article, db);
             }
             else
             {
+                IsBusy = false;
                 return;
             }
             var brandsDialog = new BrandDialog(article);
             if (brandsDialog.ShowDialog() == true)
             {
                 article.SelectedBrand = brandsDialog.cbBrands.SelectedItem as Brand;
+                UpdateArticle(article, db);
             }
             else
             {
+                IsBusy = false;
                 return;
             }
             var modelsDialog = new ModelDialog(article);
             if (modelsDialog.ShowDialog() == true)
             {
                 article.SelectedModel = modelsDialog.cbModels.SelectedItem as Model;
+                UpdateArticle(article, db);
             }
             else
             {
+                IsBusy = false;
                 return;
             }
             var sizesDialog = new SizeDialog(article);
             if (sizesDialog.ShowDialog() == true)
             {
                 article.SelectedSize = sizesDialog.cbSizes.SelectedItem as Size;
+                UpdateArticle(article, db);
             }
             else
             {
+                IsBusy = false;
                 return;
             }
 
@@ -537,39 +549,52 @@ namespace aAppli.ViewModels
             if (descriptionDialog.ShowDialog() == true)
             {
                 article.Description = descriptionDialog.descriptionText.Text;
+                UpdateArticle(article, db);
             }
             else
             {
+                IsBusy = false;
                 return;
             }
             var suppliersDialog = new SupplierDialog(article);
             if (suppliersDialog.ShowDialog() == true)
             {
                 article.SelectedSupplier = suppliersDialog.cbSuppliers.SelectedItem as Fournisseur;
+                UpdateArticle(article, db);
             }
             else
             {
+                IsBusy = false;
                 return;
             }
             var purchaseDateDialog = new PurchaseDateDialog(article);
             if (purchaseDateDialog.ShowDialog() == true)
             {
                 article.PurchaseDate = purchaseDateDialog.purchaseDate.SelectedDate.Value.Date;
+                UpdateArticle(article, db);
             }
             else
             {
+                IsBusy = false;
                 return;
             }
             var quantityDialog = new QuantityDialog(article);
             if (quantityDialog.ShowDialog() == true)
             {
                 article.PicesQuantity = int.Parse(quantityDialog.quantityNumber.Text);
+                UpdateArticle(article, db);
             }
             else
             {
+                IsBusy = false;
                 return;
             }
 
+            IsBusy = false;
+        }
+
+        private static void UpdateArticle(ArticleModel article, MyDBEntities db)
+        {
             Article art = db.Article.FirstOrDefault(a => a.ID == article.Id);
             if (art != null)
             {
@@ -586,8 +611,6 @@ namespace aAppli.ViewModels
                 art.Description = article.Description;
                 db.SaveChanges();
             }
-
-            IsBusy = false;
         }
     }
 }
