@@ -95,6 +95,7 @@
                         BorderThickness="1, 1, 1, 1">
                             <DataGrid ItemsSource="{Binding Articles}"
                               x:Name="myDataGrid"
+                                      MaxHeight="400"
                                       SelectionUnit="Cell"
                               ScrollViewer.HorizontalScrollBarVisibility="Visible"
                               BorderThickness="1,0,1,0"
