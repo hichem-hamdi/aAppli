@@ -27,7 +27,11 @@ namespace aAppli.Views
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            (DataContext as ManageModelsViewModel).Models.Add(new Model());
+            MyDBEntities db = DbManager.CreateDbManager();
+            var modelsModel = new ModelsModel { Brands = new System.Collections.ObjectModel.ObservableCollection<Brand>(db.Brand.ToList().OrderBy(b => b.Name)) };
+            modelsModel.Brands.Insert(0, new Brand { Id = 0, Name = "-- Select --" });
+            modelsModel.SelectedBrand = modelsModel.Brands.First();
+            (DataContext as ManageModelsViewModel).Models.Add(modelsModel);
             myDataGrid.SelectedItem = (DataContext as ManageModelsViewModel).Models[(DataContext as ManageModelsViewModel).Models.Count - 1];
             myDataGrid.ScrollIntoView(myDataGrid.SelectedItem);
         }

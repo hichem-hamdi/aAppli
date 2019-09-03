@@ -51,12 +51,13 @@ namespace aAppli.ViewModels
                     Id = s.Id,
                     Name = s.Name,
                     SelectedCategory = db.Categorie.FirstOrDefault(c => c.Id == s.CategoryId),
-                    Categories = new ObservableCollection<Categorie>(db.Categorie.ToList())
+                    Categories = new ObservableCollection<Categorie>(db.Categorie.OrderBy(c => c.Name).ToList())
                 }));
         }
 
         private void OnSave(SubCategoryModel subCategory)
         {
+            subCategory.Name = subCategory.Name.ToUpperInvariant();
             MyDBEntities db = DbManager.CreateDbManager();
 
             if (subCategory.Id == 0 && db.SOUS_CATEGORIE.Any(f => f.Name.ToLower().Equals(subCategory.Name.ToLower())))

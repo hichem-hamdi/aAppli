@@ -29,7 +29,7 @@ namespace aAppli.Views
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             MyDBEntities db = DbManager.CreateDbManager();
-            var categoryModel = new CategoryModel { Families = new System.Collections.ObjectModel.ObservableCollection<Famille>(db.Famille.ToList()) };
+            var categoryModel = new CategoryModel { Families = new System.Collections.ObjectModel.ObservableCollection<Famille>(db.Famille.ToList().OrderBy(f => f.Name)) };
             categoryModel.Families.Insert(0, new Famille { Id = 0, Name = "-- Select --" });
             categoryModel.SelectedFamily = categoryModel.Families.First();
             (DataContext as ManageCategoriesViewModel).Categories.Add(categoryModel);

@@ -49,6 +49,7 @@ namespace aAppli.ViewModels
 
         private void OnSave(Famille famille)
         {
+            famille.Name = famille.Name.ToUpperInvariant();
             MyDBEntities db = DbManager.CreateDbManager();
 
             if (db.Famille.Any(f => f.Name.ToLower().Equals(famille.Name.ToLower())))

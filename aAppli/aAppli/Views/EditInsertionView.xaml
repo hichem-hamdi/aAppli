@@ -31,17 +31,17 @@
                 Content="Gérer Marques"
                 Click="btnManageBrands_Click"
                 Grid.Row="3"></Button>
-        <Button Name="btnManageSizes"
-                Content="Gérer Tailles"
-                Click="btnManageSizes_Click"
-                Grid.Row="4"></Button>
-        <Button Name="btnManageSuppliers"
-                Content="Gérer Fournissuers"
-                Click="btnManageSuppliers_Click"
-                Grid.Row="5"></Button>
         <Button Name="btnManageModels"
                 Content="Gérer Modèles"
                 Click="btnManageModels_Click"
+                Grid.Row="4"></Button>
+        <Button Name="btnManageSizes"
+                Content="Gérer Tailles"
+                Click="btnManageSizes_Click"
+                Grid.Row="5"></Button>
+        <Button Name="btnManageSuppliers"
+                Content="Gérer Fournissuers"
+                Click="btnManageSuppliers_Click"
                 Grid.Row="6"></Button>
     </Grid>
 </Window>

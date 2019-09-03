@@ -27,7 +27,7 @@ namespace aAppli.Views
             var families = db.Famille.OrderBy(f => f.Name).ToList();
             families.Insert(0, new Famille { Id = 0, Name = "-- Select --" });
             cbFamilies.ItemsSource = families;
-            if (article == null)
+            if (article == null || article.SelectedFamily == null)
             {
                 cbFamilies.SelectedIndex = 0;
             }

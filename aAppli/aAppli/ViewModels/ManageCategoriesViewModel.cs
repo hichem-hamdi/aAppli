@@ -52,7 +52,7 @@ namespace aAppli.ViewModels
                     Id = c.Id,
                     Name = c.Name,
                     SelectedFamily = db.Famille.FirstOrDefault(f => f.Id == c.FamilyId),
-                    Families = new ObservableCollection<Famille>(db.Famille.ToList())
+                    Families = new ObservableCollection<Famille>(db.Famille.ToList().OrderBy(f => f.Name))
                 }));
         }
 
@@ -70,7 +70,7 @@ namespace aAppli.ViewModels
             {
                 try
                 {
-                    db.Categorie.AddObject(new Categorie { Name = category.Name, FamilyId = category.SelectedFamily.Id });
+                    db.Categorie.AddObject(new Categorie { Name = category.Name.ToUpperInvariant(), FamilyId = category.SelectedFamily.Id });
                     db.SaveChanges();
                 }
                 catch (Exception ex)
@@ -88,7 +88,7 @@ namespace aAppli.ViewModels
                     Categorie est = db.Categorie.FirstOrDefault(u => u.Id == category.Id);
                     if (est != null)
                     {
-                        est.Name = category.Name;
+                        est.Name = category.Name.ToUpperInvariant();
                         est.FamilyId = category.SelectedFamily.Id;
                     }
 

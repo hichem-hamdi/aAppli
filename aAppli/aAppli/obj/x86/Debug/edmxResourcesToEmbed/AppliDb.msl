@@ -158,6 +158,7 @@
     <EntitySetMapping Name="Model">
       <EntityTypeMapping TypeName="MyDBModel.Model">
         <MappingFragment StoreEntitySet="Model">
+          <ScalarProperty Name="BrandId" ColumnName="BrandId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>

@@ -563,6 +563,58 @@ namespace aAppli.Models
 
         public bool IsLoadedFromDB { get; set; }
 
+        public string DesignationText
+        {
+            get
+            {
+                var designationStringBuilder = new StringBuilder();
+
+                if (SelectedSubCategory != null)
+                {
+                    designationStringBuilder.Append(SelectedSubCategory.Name);
+                    designationStringBuilder.Append(" ");
+                }
+
+                if (SelectedBrand != null)
+                {
+                    designationStringBuilder.Append(SelectedBrand.Name);
+                    designationStringBuilder.Append(" ");
+                }
+
+                if (SelectedModel != null)
+                {
+                    designationStringBuilder.Append(SelectedModel.Name);
+                    designationStringBuilder.Append(" ");
+                }
+
+                if (SelectedSize != null)
+                {
+                    designationStringBuilder.Append(SelectedSize.Name);
+                    designationStringBuilder.Append(" ");
+                }
+
+                designationStringBuilder.Append(Description);
+                designationStringBuilder.Append(" ");
+
+                if (SelectedSupplier != null)
+                {
+                    designationStringBuilder.Append(SelectedSupplier.Name);
+                    designationStringBuilder.Append(" ");
+                }
+
+                if (PurchaseDate.HasValue)
+                {
+                    designationStringBuilder.Append("Le ");
+                    designationStringBuilder.Append(PurchaseDate.Value.ToShortDateString());
+                    designationStringBuilder.Append(" ");
+                }
+                designationStringBuilder.Append(PicesQuantity);
+                designationStringBuilder.Append(" PCS");
+
+                return designationStringBuilder.ToString().ToUpper();
+            }
+        }
+
 
         private void FormatDesignation()
         {

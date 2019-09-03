@@ -96,6 +96,10 @@
       <End Role="Invoice" EntitySet="Invoices" />
       <End Role="InvoiceItem" EntitySet="InvoiceItems" />
     </AssociationSet>
+    <AssociationSet Name="FK_Model_0" Association="MyDBModel.FK_Model_0">
+      <End Role="Brand" EntitySet="Brand" />
+      <End Role="Model" EntitySet="Model" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="Article">
     <Key>
@@ -335,6 +339,7 @@
     <Property Type="Int64" Name="Id" Nullable="false" />
     <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_1" FromRole="Brand" ToRole="Article" />
+    <NavigationProperty Name="Models" Relationship="MyDBModel.FK_Model_0" FromRole="Brand" ToRole="Model" />
   </EntityType>
   <EntityType Name="Categorie">
     <Key>
@@ -486,6 +491,8 @@
     <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Type="String" Name="Name" MaxLength="2147483647" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_02" FromRole="Model" ToRole="Article" />
+    <Property Type="Int64" Name="BrandId" />
+    <NavigationProperty Name="Brand" Relationship="MyDBModel.FK_Model_0" FromRole="Model" ToRole="Brand" />
   </EntityType>
   <Association Name="FK_Article_02">
     <End Type="MyDBModel.Model" Role="Model" Multiplicity="0..1" />
@@ -556,6 +563,18 @@
       </Principal>
       <Dependent Role="InvoiceItem">
         <PropertyRef Name="InvoiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Model_0">
+    <End Type="MyDBModel.Brand" Role="Brand" Multiplicity="0..1" />
+    <End Type="MyDBModel.Model" Role="Model" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Brand">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Model">
+        <PropertyRef Name="BrandId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

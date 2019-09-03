@@ -46,13 +46,12 @@ namespace aAppli.ViewModels
         private void OnLoaded()
         {
             MyDBEntities db = DbManager.CreateDbManager();
-            Establishments = new ObservableCollection<Establishment>(db.Establishment.ToList());
+            Establishments = new ObservableCollection<Establishment>(db.Establishment.ToList().OrderBy(e => e.Name));
         }
 
         private void OnSave(Establishment establishment)
         {
             MyDBEntities db = DbManager.CreateDbManager();
-
             if (establishment.Id == 0)
             {
                 try

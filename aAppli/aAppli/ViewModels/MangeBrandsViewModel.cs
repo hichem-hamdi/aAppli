@@ -49,6 +49,7 @@ namespace aAppli.ViewModels
 
         private void OnSave(Brand brand)
         {
+            brand.Name = brand.Name.ToUpperInvariant();
             MyDBEntities db = DbManager.CreateDbManager();
 
             if (db.Brand.Any(f => f.Name.ToLower().Equals(brand.Name.ToLower())))

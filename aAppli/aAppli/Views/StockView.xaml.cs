@@ -160,7 +160,7 @@ namespace aAppli.Views
                 this.IsEnabled = true;
                 return;
             }
-            var modelsDialog = new ModelDialog();
+            var modelsDialog = new ModelDialog(art);
             if (modelsDialog.ShowDialog() == true)
             {
                 art.SelectedModel = modelsDialog.cbModels.SelectedItem as Model;
@@ -473,6 +473,16 @@ namespace aAppli.Views
 
         private void cbBrands_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            MyDBEntities db = new MyDBEntities();
+            var selectedBrand = cbBrands.SelectedItem as Brand;
+            var models = db.Model.OrderBy(c => c.Name).ToList();
+            if (selectedBrand.Id > 0)
+                models = models.Where(c => c.BrandId == selectedBrand.Id).ToList();
+            models.Insert(0, new Model { Id = 0, Name = "-- Select --" });
+
+            cbModels.ItemsSource = models;
+            cbModels.SelectedIndex = 0;
+
             AdvancedSearch();
         }
 

@@ -38,6 +38,7 @@ using System.Runtime.Serialization;
 [assembly: EdmRelationshipAttribute("MyDBModel", "FK_Article_02", "Model", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Model), "Article", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Article), true)]
 [assembly: EdmRelationshipAttribute("MyDBModel", "FK_Invoice_0", "Fournisseur", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Fournisseur), "Invoice", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Invoice), true)]
 [assembly: EdmRelationshipAttribute("MyDBModel", "FK_InvoiceItem_0", "Invoice", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Invoice), "InvoiceItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.InvoiceItem), true)]
+[assembly: EdmRelationshipAttribute("MyDBModel", "FK_Model_0", "Brand", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Brand), "Model", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Model), true)]
 
 #endregion
 
@@ -1359,6 +1360,28 @@ namespace aAppli
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Article>("MyDBModel.FK_Article_1", "Article", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("MyDBModel", "FK_Model_0", "Model")]
+        public EntityCollection<Model> Models
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Model>("MyDBModel.FK_Model_0", "Model");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Model>("MyDBModel.FK_Model_0", "Model", value);
                 }
             }
         }
@@ -3198,6 +3221,30 @@ namespace aAppli
         private global::System.String _Name;
         partial void OnNameChanging(global::System.String value);
         partial void OnNameChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int64> BrandId
+        {
+            get
+            {
+                return _BrandId;
+            }
+            set
+            {
+                OnBrandIdChanging(value);
+                ReportPropertyChanging("BrandId");
+                _BrandId = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("BrandId");
+                OnBrandIdChanged();
+            }
+        }
+        private Nullable<global::System.Int64> _BrandId;
+        partial void OnBrandIdChanging(Nullable<global::System.Int64> value);
+        partial void OnBrandIdChanged();
 
         #endregion
     
@@ -3221,6 +3268,44 @@ namespace aAppli
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Article>("MyDBModel.FK_Article_02", "Article", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("MyDBModel", "FK_Model_0", "Brand")]
+        public Brand Brand
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Brand>("MyDBModel.FK_Model_0", "Brand").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Brand>("MyDBModel.FK_Model_0", "Brand").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<Brand> BrandReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Brand>("MyDBModel.FK_Model_0", "Brand");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Brand>("MyDBModel.FK_Model_0", "Brand", value);
                 }
             }
         }

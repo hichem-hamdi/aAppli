@@ -14,14 +14,14 @@ namespace aAppli.ViewModels
     {
         public ManageModelsViewModel()
         {
-            _Models = new ObservableCollection<Model>();
+            _Models = new ObservableCollection<ModelsModel>();
             LoadedCommand = new DelegateCommand(OnLoaded);
-            SaveCommand = new DelegateCommand<Model>(OnSave);
-            DeleteCommand = new DelegateCommand<Model>(OnDelete);
+            SaveCommand = new DelegateCommand<ModelsModel>(OnSave);
+            DeleteCommand = new DelegateCommand<ModelsModel>(OnDelete);
         }
 
-        private ObservableCollection<Model> _Models;
-        public ObservableCollection<Model> Models
+        private ObservableCollection<ModelsModel> _Models;
+        public ObservableCollection<ModelsModel> Models
         {
             get
             {
@@ -46,14 +46,22 @@ namespace aAppli.ViewModels
         private void OnLoaded()
         {
             MyDBEntities db = DbManager.CreateDbManager();
-            Models = new ObservableCollection<Model>(db.Model.OrderBy(f => f.Name).ToList());
+            Models = new ObservableCollection<ModelsModel>(db.Model.OrderBy(f => f.Name).ToList().Select(m =>
+                new ModelsModel
+                {
+                    Id = m.Id,
+                    Name = m.Name,
+                    SelectedBrand = db.Brand.FirstOrDefault(b => b.Id == m.BrandId),
+                    Brands = new ObservableCollection<Brand>(db.Brand.ToList().OrderBy(b => b.Name))
+                }));
         }
 
-        private void OnSave(Model model)
+        private void OnSave(ModelsModel model)
         {
+            model.Name = model.Name.ToUpperInvariant();
             MyDBEntities db = DbManager.CreateDbManager();
 
-            if (db.Brand.Any(f => f.Name.ToLower().Equals(model.Name.ToLower())))
+            if (db.Model.Any(f => f.Name.ToLower().Equals(model.Name.ToLower())))
             {
                 Microsoft.Windows.Controls.MessageBox.Show("Un model avec le même nom existe déjà!", "Stop", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Stop);
                 return;
@@ -63,7 +71,7 @@ namespace aAppli.ViewModels
             {
                 try
                 {
-                    db.Model.AddObject(model);
+                    db.Model.AddObject(new Model { Id = model.Id, Name = model.Name, BrandId = model.SelectedBrand.Id });
                     db.SaveChanges();
                 }
                 catch (Exception ex)
@@ -97,11 +105,11 @@ namespace aAppli.ViewModels
 
             }
 
-            Models = new ObservableCollection<Model>();
+            Models = new ObservableCollection<ModelsModel>();
             OnLoaded();
         }
 
-        private void OnDelete(Model model)
+        private void OnDelete(ModelsModel model)
         {
             MessageBoxResult result = Microsoft.Windows.Controls.MessageBox.Show("Vous confirmer le Delete de ce Model?", "Delete", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
@@ -132,7 +140,7 @@ namespace aAppli.ViewModels
             }
             Microsoft.Windows.Controls.MessageBox.Show("Deleted", "Delete", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
 
-            Models = new ObservableCollection<Model>();
+            Models = new ObservableCollection<ModelsModel>();
             OnLoaded();
         }
     }

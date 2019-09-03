@@ -49,6 +49,7 @@ namespace aAppli.ViewModels
 
         private void OnSave(Fournisseur supplier)
         {
+            supplier.Name = supplier.Name.ToUpperInvariant();
             MyDBEntities db = DbManager.CreateDbManager();
 
             if (db.Fournisseur.Any(f => f.Name.ToLower().Equals(supplier.Name.ToLower())))

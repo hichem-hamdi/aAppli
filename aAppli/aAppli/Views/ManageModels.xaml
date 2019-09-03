@@ -97,6 +97,21 @@
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
+                        <DataGridComboBoxColumn DisplayMemberPath="Name"
+                                        Header="Marque"
+                                        Width="*"
+                                        SelectedItemBinding="{Binding SelectedBrand,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                            <DataGridComboBoxColumn.ElementStyle>
+                                <Style TargetType="{x:Type ComboBox}">
+                                    <Setter Property="ItemsSource" Value="{Binding Brands}" />
+                                </Style>
+                            </DataGridComboBoxColumn.ElementStyle>
+                            <DataGridComboBoxColumn.EditingElementStyle>
+                                <Style TargetType="{x:Type ComboBox}">
+                                    <Setter Property="ItemsSource" Value="{Binding Brands}" />
+                                </Style>
+                            </DataGridComboBoxColumn.EditingElementStyle>
+                        </DataGridComboBoxColumn>
                         <DataGridTemplateColumn Header="Actions"
                                                 Width="70"
                                                 CellTemplate="{StaticResource ActionTemplate}" />

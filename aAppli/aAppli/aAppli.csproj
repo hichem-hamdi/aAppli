@@ -195,6 +195,7 @@
     <Compile Include="ViewModels\ManageEstablishmentsViewModel.cs" />
     <Compile Include="ViewModels\ManageSubCategoriesViewModel.cs" />
     <Compile Include="ViewModels\ManageUsersViewModel.cs" />
+    <Compile Include="ViewModels\ModelsModel.cs" />
     <Compile Include="ViewModels\ReservationArticleViewModel.cs" />
     <Compile Include="ViewModels\StockViewModel.cs" />
     <Compile Include="ViewModels\VenteViewModel.cs" />

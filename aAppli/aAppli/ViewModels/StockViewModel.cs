@@ -599,13 +599,20 @@ namespace aAppli.ViewModels
             if (art != null)
             {
                 art.Designation = article.Designation;
-                art.FamilleId = article.SelectedFamily.Id;
-                art.CategorieId = article.SelectedCategory.Id;
-                art.SousCategorieId = article.SelectedSubCategory.Id;
-                art.BrandId = article.SelectedBrand.Id;
-                art.ModelId = article.SelectedModel.Id;
-                art.SizeId = article.SelectedSize.Id;
-                art.FournisseurId = article.SelectedSupplier.Id;
+                if (article.SelectedFamily != null)
+                    art.FamilleId = article.SelectedFamily.Id;
+                if (article.SelectedCategory != null)
+                    art.CategorieId = article.SelectedCategory.Id;
+                if (article.SelectedSubCategory != null)
+                    art.SousCategorieId = article.SelectedSubCategory.Id;
+                if (article.SelectedBrand != null)
+                    art.BrandId = article.SelectedBrand.Id;
+                if (article.SelectedModel != null)
+                    art.ModelId = article.SelectedModel.Id;
+                if (article.SelectedSize != null)
+                    art.SizeId = article.SelectedSize.Id;
+                if (article.SelectedSupplier != null)
+                    art.FournisseurId = article.SelectedSupplier.Id;
                 art.DateAchat = article.PurchaseDate;
                 art.PicesQuantity = article.PicesQuantity;
                 art.Description = article.Description;
