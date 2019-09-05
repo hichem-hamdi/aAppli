@@ -25,7 +25,7 @@ namespace aAppli.Views
 
 
             MyDBEntities db = DbManager.CreateDbManager();
-            var models = db.Model.Where(m => m.BrandId == article.SelectedBrand.Id).OrderBy(b => b.Name).ToList();
+            var models = db.Models.Where(m => m.SubCategoryId == article.SelectedSubCategory.Id).OrderBy(b => b.Name).ToList();
             models.Insert(0, new Model { Id = 0, Name = "-- Select --" });
             cbModels.ItemsSource = models;
             if (article == null || article.SelectedModel == null)

@@ -35,10 +35,10 @@ using System.Runtime.Serialization;
 [assembly: EdmRelationshipAttribute("MyDBModel", "FK_Article_01", "Fournisseur", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Fournisseur), "Article", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Article), true)]
 [assembly: EdmRelationshipAttribute("MyDBModel", "FK_Categorie_0", "Famille", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Famille), "Categorie", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Categorie), true)]
 [assembly: EdmRelationshipAttribute("MyDBModel", "FK_SOUS_CATEGORIE_0", "Categorie", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Categorie), "SOUS_CATEGORIE", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.SOUS_CATEGORIE), true)]
-[assembly: EdmRelationshipAttribute("MyDBModel", "FK_Article_02", "Model", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Model), "Article", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Article), true)]
 [assembly: EdmRelationshipAttribute("MyDBModel", "FK_Invoice_0", "Fournisseur", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Fournisseur), "Invoice", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Invoice), true)]
 [assembly: EdmRelationshipAttribute("MyDBModel", "FK_InvoiceItem_0", "Invoice", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Invoice), "InvoiceItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.InvoiceItem), true)]
-[assembly: EdmRelationshipAttribute("MyDBModel", "FK_Model_0", "Brand", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Brand), "Model", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Model), true)]
+[assembly: EdmRelationshipAttribute("MyDBModel", "FK_Article_02", "Model", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.Model), "Article", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Article), true)]
+[assembly: EdmRelationshipAttribute("MyDBModel", "FK_Model_0", "SOUS_CATEGORIE", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(aAppli.SOUS_CATEGORIE), "Model", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(aAppli.Model), true)]
 
 #endregion
 
@@ -285,22 +285,6 @@ namespace aAppli
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        public ObjectSet<Model> Model
-        {
-            get
-            {
-                if ((_Model == null))
-                {
-                    _Model = base.CreateObjectSet<Model>("Model");
-                }
-                return _Model;
-            }
-        }
-        private ObjectSet<Model> _Model;
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
         public ObjectSet<Invoice> Invoices
         {
             get
@@ -329,6 +313,22 @@ namespace aAppli
             }
         }
         private ObjectSet<InvoiceItem> _InvoiceItems;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<Model> Models
+        {
+            get
+            {
+                if ((_Models == null))
+                {
+                    _Models = base.CreateObjectSet<Model>("Models");
+                }
+                return _Models;
+            }
+        }
+        private ObjectSet<Model> _Models;
 
         #endregion
         #region AddTo Methods
@@ -430,14 +430,6 @@ namespace aAppli
         }
     
         /// <summary>
-        /// Deprecated Method for adding a new object to the Model EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
-        /// </summary>
-        public void AddToModel(Model model)
-        {
-            base.AddObject("Model", model);
-        }
-    
-        /// <summary>
         /// Deprecated Method for adding a new object to the Invoices EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
         public void AddToInvoices(Invoice invoice)
@@ -451,6 +443,14 @@ namespace aAppli
         public void AddToInvoiceItems(InvoiceItem invoiceItem)
         {
             base.AddObject("InvoiceItems", invoiceItem);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the Models EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToModels(Model model)
+        {
+            base.AddObject("Models", model);
         }
 
         #endregion
@@ -1360,28 +1360,6 @@ namespace aAppli
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Article>("MyDBModel.FK_Article_1", "Article", value);
-                }
-            }
-        }
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MyDBModel", "FK_Model_0", "Model")]
-        public EntityCollection<Model> Models
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Model>("MyDBModel.FK_Model_0", "Model");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Model>("MyDBModel.FK_Model_0", "Model", value);
                 }
             }
         }
@@ -3227,24 +3205,24 @@ namespace aAppli
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public Nullable<global::System.Int64> BrandId
+        public Nullable<global::System.Int64> SubCategoryId
         {
             get
             {
-                return _BrandId;
+                return _SubCategoryId;
             }
             set
             {
-                OnBrandIdChanging(value);
-                ReportPropertyChanging("BrandId");
-                _BrandId = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("BrandId");
-                OnBrandIdChanged();
+                OnSubCategoryIdChanging(value);
+                ReportPropertyChanging("SubCategoryId");
+                _SubCategoryId = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SubCategoryId");
+                OnSubCategoryIdChanged();
             }
         }
-        private Nullable<global::System.Int64> _BrandId;
-        partial void OnBrandIdChanging(Nullable<global::System.Int64> value);
-        partial void OnBrandIdChanged();
+        private Nullable<global::System.Int64> _SubCategoryId;
+        partial void OnSubCategoryIdChanging(Nullable<global::System.Int64> value);
+        partial void OnSubCategoryIdChanged();
 
         #endregion
     
@@ -3257,7 +3235,7 @@ namespace aAppli
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
         [EdmRelationshipNavigationPropertyAttribute("MyDBModel", "FK_Article_02", "Article")]
-        public EntityCollection<Article> Article
+        public EntityCollection<Article> Articles
         {
             get
             {
@@ -3278,16 +3256,16 @@ namespace aAppli
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MyDBModel", "FK_Model_0", "Brand")]
-        public Brand Brand
+        [EdmRelationshipNavigationPropertyAttribute("MyDBModel", "FK_Model_0", "SOUS_CATEGORIE")]
+        public SOUS_CATEGORIE SOUS_CATEGORIE
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Brand>("MyDBModel.FK_Model_0", "Brand").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<SOUS_CATEGORIE>("MyDBModel.FK_Model_0", "SOUS_CATEGORIE").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Brand>("MyDBModel.FK_Model_0", "Brand").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<SOUS_CATEGORIE>("MyDBModel.FK_Model_0", "SOUS_CATEGORIE").Value = value;
             }
         }
         /// <summary>
@@ -3295,17 +3273,17 @@ namespace aAppli
         /// </summary>
         [BrowsableAttribute(false)]
         [DataMemberAttribute()]
-        public EntityReference<Brand> BrandReference
+        public EntityReference<SOUS_CATEGORIE> SOUS_CATEGORIEReference
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Brand>("MyDBModel.FK_Model_0", "Brand");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<SOUS_CATEGORIE>("MyDBModel.FK_Model_0", "SOUS_CATEGORIE");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Brand>("MyDBModel.FK_Model_0", "Brand", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<SOUS_CATEGORIE>("MyDBModel.FK_Model_0", "SOUS_CATEGORIE", value);
                 }
             }
         }
@@ -4076,6 +4054,28 @@ namespace aAppli
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Categorie>("MyDBModel.FK_SOUS_CATEGORIE_0", "Categorie", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("MyDBModel", "FK_Model_0", "Model")]
+        public EntityCollection<Model> Models
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Model>("MyDBModel.FK_Model_0", "Model");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Model>("MyDBModel.FK_Model_0", "Model", value);
                 }
             }
         }

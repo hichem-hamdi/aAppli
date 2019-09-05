@@ -50,47 +50,47 @@ namespace aAppli.ViewModels
             }
         }
 
-        private ObservableCollection<Brand> _Brands;
-        public ObservableCollection<Brand> Brands
+        private ObservableCollection<SOUS_CATEGORIE> _SubCategories;
+        public ObservableCollection<SOUS_CATEGORIE> SubCategories
         {
             get
             {
-                return _Brands;
+                return _SubCategories;
             }
             set
             {
-                if (_Brands == value)
+                if (_SubCategories == value)
                 {
                     return;
                 }
 
-                _Brands = value;
-                RaisePropertyChanged(() => Brands);
+                _SubCategories = value;
+                RaisePropertyChanged(() => SubCategories);
             }
         }
 
-        private Brand _SelectedBrand;
-        public Brand SelectedBrand
+        private SOUS_CATEGORIE _SelectedSubCategory;
+        public SOUS_CATEGORIE SelectedSubCategory
         {
             get
             {
-                return _SelectedBrand;
+                return _SelectedSubCategory;
             }
             set
             {
-                if (_SelectedBrand == value)
+                if (_SelectedSubCategory == value)
                 {
                     return;
                 }
 
-                _SelectedBrand = value;
-                RaisePropertyChanged(() => SelectedBrand);
+                _SelectedSubCategory = value;
+                RaisePropertyChanged(() => SelectedSubCategory);
             }
         }
 
         public ModelsModel()
         {
-            Brands = new ObservableCollection<Brand>();
+            SubCategories = new ObservableCollection<SOUS_CATEGORIE>();
         }
     }
 }

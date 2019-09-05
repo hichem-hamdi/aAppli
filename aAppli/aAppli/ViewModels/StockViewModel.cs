@@ -248,7 +248,7 @@ namespace aAppli.ViewModels
                     SelectedSubCategory = item.SOUS_CATEGORIE,
                     Brands = new ObservableCollection<Brand>(db.Brand.ToList()),
                     SelectedBrand = item.Brand,
-                    Models = new ObservableCollection<Model>(db.Model.ToList()),
+                    Models = new ObservableCollection<Model>(db.Models.ToList()),
                     SelectedModel = item.Model,
                     Sizes = new ObservableCollection<Size>(db.Size.ToList()),
                     SelectedSize = item.Size,

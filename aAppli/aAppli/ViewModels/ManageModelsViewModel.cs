@@ -46,13 +46,13 @@ namespace aAppli.ViewModels
         private void OnLoaded()
         {
             MyDBEntities db = DbManager.CreateDbManager();
-            Models = new ObservableCollection<ModelsModel>(db.Model.OrderBy(f => f.Name).ToList().Select(m =>
+            Models = new ObservableCollection<ModelsModel>(db.Models.OrderBy(f => f.Name).ToList().Select(m =>
                 new ModelsModel
                 {
                     Id = m.Id,
                     Name = m.Name,
-                    SelectedBrand = db.Brand.FirstOrDefault(b => b.Id == m.BrandId),
-                    Brands = new ObservableCollection<Brand>(db.Brand.ToList().OrderBy(b => b.Name))
+                    SelectedSubCategory = db.SOUS_CATEGORIE.FirstOrDefault(b => b.Id == m.SubCategoryId),
+                    SubCategories = new ObservableCollection<SOUS_CATEGORIE>(db.SOUS_CATEGORIE.ToList().OrderBy(b => b.Name))
                 }));
         }
 
@@ -61,7 +61,7 @@ namespace aAppli.ViewModels
             model.Name = model.Name.ToUpperInvariant();
             MyDBEntities db = DbManager.CreateDbManager();
 
-            if (db.Model.Any(f => f.Name.ToLower().Equals(model.Name.ToLower())))
+            if (db.Models.Any(f => f.Name.ToLower().Equals(model.Name.ToLower())))
             {
                 Microsoft.Windows.Controls.MessageBox.Show("Un model avec le même nom existe déjà!", "Stop", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Stop);
                 return;
@@ -71,7 +71,7 @@ namespace aAppli.ViewModels
             {
                 try
                 {
-                    db.Model.AddObject(new Model { Id = model.Id, Name = model.Name, BrandId = model.SelectedBrand.Id });
+                    db.Models.AddObject(new Model { Id = model.Id, Name = model.Name, SubCategoryId = model.SelectedSubCategory.Id });
                     db.SaveChanges();
                 }
                 catch (Exception ex)
@@ -86,7 +86,7 @@ namespace aAppli.ViewModels
                 try
                 {
 
-                    Model est = db.Model.FirstOrDefault(u => u.Id == model.Id);
+                    Model est = db.Models.FirstOrDefault(u => u.Id == model.Id);
                     if (est != null)
                     {
                         est.Name = model.Name;
@@ -129,8 +129,8 @@ namespace aAppli.ViewModels
             try
             {
                 MyDBEntities db = DbManager.CreateDbManager();
-                Model est = db.Model.FirstOrDefault(u => u.Id == model.Id);
-                db.Model.DeleteObject(est);
+                Model est = db.Models.FirstOrDefault(u => u.Id == model.Id);
+                db.Models.DeleteObject(est);
                 db.SaveChanges();
             }
             catch (Exception ex)

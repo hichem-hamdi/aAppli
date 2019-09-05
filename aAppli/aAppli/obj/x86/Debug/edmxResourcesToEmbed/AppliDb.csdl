@@ -81,11 +81,6 @@
       <End Role="Categorie" EntitySet="Categorie" />
       <End Role="SOUS_CATEGORIE" EntitySet="SOUS_CATEGORIE" />
     </AssociationSet>
-    <EntitySet Name="Model" EntityType="MyDBModel.Model" />
-    <AssociationSet Name="FK_Article_02" Association="MyDBModel.FK_Article_02">
-      <End Role="Model" EntitySet="Model" />
-      <End Role="Article" EntitySet="Article" />
-    </AssociationSet>
     <EntitySet Name="Invoices" EntityType="MyDBModel.Invoice" />
     <EntitySet Name="InvoiceItems" EntityType="MyDBModel.InvoiceItem" />
     <AssociationSet Name="FK_Invoice_0" Association="MyDBModel.FK_Invoice_0">
@@ -96,9 +91,14 @@
       <End Role="Invoice" EntitySet="Invoices" />
       <End Role="InvoiceItem" EntitySet="InvoiceItems" />
     </AssociationSet>
+    <EntitySet Name="Models" EntityType="MyDBModel.Model" />
+    <AssociationSet Name="FK_Article_02" Association="MyDBModel.FK_Article_02">
+      <End Role="Model" EntitySet="Models" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
     <AssociationSet Name="FK_Model_0" Association="MyDBModel.FK_Model_0">
-      <End Role="Brand" EntitySet="Brand" />
-      <End Role="Model" EntitySet="Model" />
+      <End Role="SOUS_CATEGORIE" EntitySet="SOUS_CATEGORIE" />
+      <End Role="Model" EntitySet="Models" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="Article">
@@ -339,7 +339,6 @@
     <Property Type="Int64" Name="Id" Nullable="false" />
     <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_1" FromRole="Brand" ToRole="Article" />
-    <NavigationProperty Name="Models" Relationship="MyDBModel.FK_Model_0" FromRole="Brand" ToRole="Model" />
   </EntityType>
   <EntityType Name="Categorie">
     <Key>
@@ -378,6 +377,7 @@
     <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_2" FromRole="SOUS_CATEGORIE" ToRole="Article" />
     <Property Type="Int64" Name="CategoryId" />
     <NavigationProperty Name="Categorie" Relationship="MyDBModel.FK_SOUS_CATEGORIE_0" FromRole="SOUS_CATEGORIE" ToRole="Categorie" />
+    <NavigationProperty Name="Models" Relationship="MyDBModel.FK_Model_0" FromRole="SOUS_CATEGORIE" ToRole="Model" />
   </EntityType>
   <Association Name="FK_Article_0">
     <End Type="MyDBModel.Size" Role="Size" Multiplicity="0..1" />
@@ -484,28 +484,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityType Name="Model">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Type="String" Name="Name" MaxLength="2147483647" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="Article" Relationship="MyDBModel.FK_Article_02" FromRole="Model" ToRole="Article" />
-    <Property Type="Int64" Name="BrandId" />
-    <NavigationProperty Name="Brand" Relationship="MyDBModel.FK_Model_0" FromRole="Model" ToRole="Brand" />
-  </EntityType>
-  <Association Name="FK_Article_02">
-    <End Type="MyDBModel.Model" Role="Model" Multiplicity="0..1" />
-    <End Type="MyDBModel.Article" Role="Article" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Model">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Article">
-        <PropertyRef Name="ModelId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityType Name="Invoice">
     <Key>
       <PropertyRef Name="Id" />
@@ -566,15 +544,37 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <EntityType Name="Model">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="SubCategoryId" />
+    <NavigationProperty Name="Articles" Relationship="MyDBModel.FK_Article_02" FromRole="Model" ToRole="Article" />
+    <NavigationProperty Name="SOUS_CATEGORIE" Relationship="MyDBModel.FK_Model_0" FromRole="Model" ToRole="SOUS_CATEGORIE" />
+  </EntityType>
+  <Association Name="FK_Article_02">
+    <End Type="MyDBModel.Model" Role="Model" Multiplicity="0..1" />
+    <End Type="MyDBModel.Article" Role="Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Model">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="ModelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Model_0">
-    <End Type="MyDBModel.Brand" Role="Brand" Multiplicity="0..1" />
+    <End Type="MyDBModel.SOUS_CATEGORIE" Role="SOUS_CATEGORIE" Multiplicity="0..1" />
     <End Type="MyDBModel.Model" Role="Model" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Brand">
+      <Principal Role="SOUS_CATEGORIE">
         <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="Model">
-        <PropertyRef Name="BrandId" />
+        <PropertyRef Name="SubCategoryId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

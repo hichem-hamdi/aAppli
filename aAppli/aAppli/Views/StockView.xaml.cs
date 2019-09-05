@@ -58,7 +58,7 @@ namespace aAppli.Views
             cbBrands.ItemsSource = brands;
             cbBrands.SelectedIndex = 0;
 
-            var models = db.Model.OrderBy(b => b.Name).ToList();
+            var models = db.Models.OrderBy(b => b.Name).ToList();
             models.Insert(0, new Model { Id = 0, Name = "-- Select --" });
             cbModels.ItemsSource = models;
             cbModels.SelectedIndex = 0;
@@ -458,6 +458,16 @@ namespace aAppli.Views
 
         private void cbSubCategories_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            MyDBEntities db = new MyDBEntities();
+            var selectedSubCategory = cbSubCategories.SelectedItem as Brand;
+            var models = db.Models.OrderBy(c => c.Name).ToList();
+            if (selectedSubCategory != null && selectedSubCategory.Id > 0)
+                models = models.Where(c => c.SubCategoryId == selectedSubCategory.Id).ToList();
+            models.Insert(0, new Model { Id = 0, Name = "-- Select --" });
+
+            cbModels.ItemsSource = models;
+            cbModels.SelectedIndex = 0;
+
             AdvancedSearch();
         }
 
@@ -473,16 +483,6 @@ namespace aAppli.Views
 
         private void cbBrands_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            MyDBEntities db = new MyDBEntities();
-            var selectedBrand = cbBrands.SelectedItem as Brand;
-            var models = db.Model.OrderBy(c => c.Name).ToList();
-            if (selectedBrand.Id > 0)
-                models = models.Where(c => c.BrandId == selectedBrand.Id).ToList();
-            models.Insert(0, new Model { Id = 0, Name = "-- Select --" });
-
-            cbModels.ItemsSource = models;
-            cbModels.SelectedIndex = 0;
-
             AdvancedSearch();
         }
 

@@ -98,17 +98,17 @@
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
                         <DataGridComboBoxColumn DisplayMemberPath="Name"
-                                        Header="Marque"
+                                        Header="Sous catégorie"
                                         Width="*"
-                                        SelectedItemBinding="{Binding SelectedBrand,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                                        SelectedItemBinding="{Binding SelectedSubCategory,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
                             <DataGridComboBoxColumn.ElementStyle>
                                 <Style TargetType="{x:Type ComboBox}">
-                                    <Setter Property="ItemsSource" Value="{Binding Brands}" />
+                                    <Setter Property="ItemsSource" Value="{Binding SubCategories}" />
                                 </Style>
                             </DataGridComboBoxColumn.ElementStyle>
                             <DataGridComboBoxColumn.EditingElementStyle>
                                 <Style TargetType="{x:Type ComboBox}">
-                                    <Setter Property="ItemsSource" Value="{Binding Brands}" />
+                                    <Setter Property="ItemsSource" Value="{Binding SubCategories}" />
                                 </Style>
                             </DataGridComboBoxColumn.EditingElementStyle>
                         </DataGridComboBoxColumn>

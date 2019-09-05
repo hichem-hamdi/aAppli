@@ -65,7 +65,7 @@
       <End Role="InvoiceItem" EntitySet="InvoiceItem" />
     </AssociationSet>
     <AssociationSet Name="FK_Model_0" Association="MyDBModel.Store.FK_Model_0">
-      <End Role="Brand" EntitySet="Brand" />
+      <End Role="SOUS_CATEGORIE" EntitySet="SOUS_CATEGORIE" />
       <End Role="Model" EntitySet="Model" />
     </AssociationSet>
     <AssociationSet Name="FK_Reservation_0" Association="MyDBModel.Store.FK_Reservation_0">
@@ -217,7 +217,7 @@
     </Key>
     <Property Name="Id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="nvarchar" />
-    <Property Name="BrandId" Type="integer" />
+    <Property Name="SubCategoryId" Type="integer" />
   </EntityType>
   <EntityType Name="Reservation">
     <Key>
@@ -429,14 +429,14 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Model_0">
-    <End Role="Brand" Type="MyDBModel.Store.Brand" Multiplicity="0..1" />
+    <End Role="SOUS_CATEGORIE" Type="MyDBModel.Store.SOUS_CATEGORIE" Multiplicity="0..1" />
     <End Role="Model" Type="MyDBModel.Store.Model" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Brand">
+      <Principal Role="SOUS_CATEGORIE">
         <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="Model">
-        <PropertyRef Name="BrandId" />
+        <PropertyRef Name="SubCategoryId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
