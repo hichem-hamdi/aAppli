@@ -62,11 +62,13 @@
             <i:InvokeCommandAction Command="{Binding LoadedCommand}" />
         </i:EventTrigger>
     </i:Interaction.Triggers>
-    <Grid>
-        <StackPanel Margin="5">
-            <Border BorderBrush="LightGray"
+    <wpf:BusyIndicator x:Name="busy">
+        <wpf:BusyIndicator IsBusy="{Binding IsBusy}">
+            <Grid>
+                <StackPanel Margin="5">
+                    <Border BorderBrush="LightGray"
                     BorderThickness="1, 1, 1, 1">
-                <DataGrid ItemsSource="{Binding Users}"
+                        <DataGrid ItemsSource="{Binding Users}"
                           x:Name="myDataGrid"
                           ScrollViewer.HorizontalScrollBarVisibility="Visible"
                           MaxHeight="300"
@@ -81,176 +83,178 @@
                           HorizontalGridLinesBrush="#f0f0f0"
                           VerticalGridLinesBrush="#f0f0f0"
                           AlternatingRowBackground="#9FC5F8">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="Id"
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Id"
                                             Visibility="Hidden"
                                             Binding="{Binding Id}" />
-                        <DataGridTextColumn Header="Login"
+                                <DataGridTextColumn Header="Login"
                                             Binding="{Binding Login,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
                                             Width="*">
-                            <DataGridTextColumn.ElementStyle>
-                                <Style TargetType="TextBlock">
-                                    <Setter Property="VerticalAlignment"
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="VerticalAlignment"
                                             Value="Center" />
-                                    <Setter Property="Margin"
+                                            <Setter Property="Margin"
                                             Value="5" />
-                                </Style>
-                            </DataGridTextColumn.ElementStyle>
-                        </DataGridTextColumn>
-                        <DataGridTextColumn Header="Password"
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Password"
                                             Binding="{Binding Password,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
                                             Width="150">
-                            <DataGridTextColumn.ElementStyle>
-                                <Style TargetType="TextBlock">
-                                    <Setter Property="VerticalAlignment"
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="VerticalAlignment"
                                             Value="Center" />
-                                    <Setter Property="Margin"
+                                            <Setter Property="Margin"
                                             Value="5" />
-                                </Style>
-                            </DataGridTextColumn.ElementStyle>
-                        </DataGridTextColumn>
-                        <DataGridCheckBoxColumn Header="Stock"
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridCheckBoxColumn Header="Stock"
                                                 Binding="{Binding Stock, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                            <DataGridCheckBoxColumn.ElementStyle>
-                                <Style TargetType="CheckBox">
-                                    <Setter Property="VerticalAlignment"
+                                    <DataGridCheckBoxColumn.ElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="VerticalAlignment"
                                             Value="Center" />
-                                    <Setter Property="HorizontalAlignment"
+                                            <Setter Property="HorizontalAlignment"
                                             Value="Center" />
-                                </Style>
-                            </DataGridCheckBoxColumn.ElementStyle>
-                        </DataGridCheckBoxColumn>
-                        <DataGridCheckBoxColumn Header="Vente"
+                                        </Style>
+                                    </DataGridCheckBoxColumn.ElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridCheckBoxColumn Header="Vente"
                                                 Binding="{Binding Vente, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                            <DataGridCheckBoxColumn.ElementStyle>
-                                <Style TargetType="CheckBox">
-                                    <Setter Property="VerticalAlignment"
+                                    <DataGridCheckBoxColumn.ElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="VerticalAlignment"
                                             Value="Center" />
-                                    <Setter Property="HorizontalAlignment"
+                                            <Setter Property="HorizontalAlignment"
                                             Value="Center" />
-                                </Style>
-                            </DataGridCheckBoxColumn.ElementStyle>
-                        </DataGridCheckBoxColumn>
-                        <DataGridCheckBoxColumn Header="Vente/S"
+                                        </Style>
+                                    </DataGridCheckBoxColumn.ElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridCheckBoxColumn Header="Vente/S"
                                                 Binding="{Binding Vente_S, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                            <DataGridCheckBoxColumn.ElementStyle>
-                                <Style TargetType="CheckBox">
-                                    <Setter Property="VerticalAlignment"
+                                    <DataGridCheckBoxColumn.ElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="VerticalAlignment"
                                             Value="Center" />
-                                    <Setter Property="HorizontalAlignment"
+                                            <Setter Property="HorizontalAlignment"
                                             Value="Center" />
-                                </Style>
-                            </DataGridCheckBoxColumn.ElementStyle>
-                        </DataGridCheckBoxColumn>
-                        <DataGridCheckBoxColumn Header="Historique Vente"
+                                        </Style>
+                                    </DataGridCheckBoxColumn.ElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridCheckBoxColumn Header="Historique Vente"
                                                 Binding="{Binding HV, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                            <DataGridCheckBoxColumn.ElementStyle>
-                                <Style TargetType="CheckBox">
-                                    <Setter Property="VerticalAlignment"
+                                    <DataGridCheckBoxColumn.ElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="VerticalAlignment"
                                             Value="Center" />
-                                    <Setter Property="HorizontalAlignment"
+                                            <Setter Property="HorizontalAlignment"
                                             Value="Center" />
-                                </Style>
-                            </DataGridCheckBoxColumn.ElementStyle>
-                        </DataGridCheckBoxColumn>
-                        <DataGridCheckBoxColumn Header="A voir"
+                                        </Style>
+                                    </DataGridCheckBoxColumn.ElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridCheckBoxColumn Header="A voir"
                                                 Binding="{Binding AVoir, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                            <DataGridCheckBoxColumn.ElementStyle>
-                                <Style TargetType="CheckBox">
-                                    <Setter Property="VerticalAlignment"
+                                    <DataGridCheckBoxColumn.ElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="VerticalAlignment"
                                             Value="Center" />
-                                    <Setter Property="HorizontalAlignment"
+                                            <Setter Property="HorizontalAlignment"
                                             Value="Center" />
-                                </Style>
-                            </DataGridCheckBoxColumn.ElementStyle>
-                        </DataGridCheckBoxColumn>
-                        <DataGridCheckBoxColumn Header="Inventaire"
+                                        </Style>
+                                    </DataGridCheckBoxColumn.ElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridCheckBoxColumn Header="Inventaire"
                                                 Binding="{Binding Inventaire, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                            <DataGridCheckBoxColumn.ElementStyle>
-                                <Style TargetType="CheckBox">
-                                    <Setter Property="VerticalAlignment"
+                                    <DataGridCheckBoxColumn.ElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="VerticalAlignment"
                                             Value="Center" />
-                                    <Setter Property="HorizontalAlignment"
+                                            <Setter Property="HorizontalAlignment"
                                             Value="Center" />
-                                </Style>
-                            </DataGridCheckBoxColumn.ElementStyle>
-                        </DataGridCheckBoxColumn>
-                        <DataGridCheckBoxColumn Header="Vente Credit"
+                                        </Style>
+                                    </DataGridCheckBoxColumn.ElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridCheckBoxColumn Header="Vente Credit"
                                                 Binding="{Binding VC, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                            <DataGridCheckBoxColumn.ElementStyle>
-                                <Style TargetType="CheckBox">
-                                    <Setter Property="VerticalAlignment"
+                                    <DataGridCheckBoxColumn.ElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="VerticalAlignment"
                                             Value="Center" />
-                                    <Setter Property="HorizontalAlignment"
+                                            <Setter Property="HorizontalAlignment"
                                             Value="Center" />
-                                </Style>
-                            </DataGridCheckBoxColumn.ElementStyle>
-                        </DataGridCheckBoxColumn>
-                        <DataGridCheckBoxColumn Header="Vente Credit/S"
+                                        </Style>
+                                    </DataGridCheckBoxColumn.ElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridCheckBoxColumn Header="Vente Credit/S"
                                                 Binding="{Binding VC_S, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                            <DataGridCheckBoxColumn.ElementStyle>
-                                <Style TargetType="CheckBox">
-                                    <Setter Property="VerticalAlignment"
+                                    <DataGridCheckBoxColumn.ElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="VerticalAlignment"
                                             Value="Center" />
-                                    <Setter Property="HorizontalAlignment"
+                                            <Setter Property="HorizontalAlignment"
                                             Value="Center" />
-                                </Style>
-                            </DataGridCheckBoxColumn.ElementStyle>
-                        </DataGridCheckBoxColumn>
-                        <DataGridCheckBoxColumn Header="Gérer Accés"
+                                        </Style>
+                                    </DataGridCheckBoxColumn.ElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridCheckBoxColumn Header="Gérer Accés"
                                                 Binding="{Binding GerrerAcces, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                            <DataGridCheckBoxColumn.ElementStyle>
-                                <Style TargetType="CheckBox">
-                                    <Setter Property="VerticalAlignment"
+                                    <DataGridCheckBoxColumn.ElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="VerticalAlignment"
                                             Value="Center" />
-                                    <Setter Property="HorizontalAlignment"
+                                            <Setter Property="HorizontalAlignment"
                                             Value="Center" />
-                                </Style>
-                            </DataGridCheckBoxColumn.ElementStyle>
-                        </DataGridCheckBoxColumn>
-                        <DataGridCheckBoxColumn Header="Vider Base"
+                                        </Style>
+                                    </DataGridCheckBoxColumn.ElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridCheckBoxColumn Header="Vider Base"
                                                 Binding="{Binding ViderBase, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                            <DataGridCheckBoxColumn.ElementStyle>
-                                <Style TargetType="CheckBox">
-                                    <Setter Property="VerticalAlignment"
+                                    <DataGridCheckBoxColumn.ElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="VerticalAlignment"
                                             Value="Center" />
-                                    <Setter Property="HorizontalAlignment"
+                                            <Setter Property="HorizontalAlignment"
                                             Value="Center" />
-                                </Style>
-                            </DataGridCheckBoxColumn.ElementStyle>
-                        </DataGridCheckBoxColumn>
-                        <DataGridCheckBoxColumn Header="Edit Insertion"
+                                        </Style>
+                                    </DataGridCheckBoxColumn.ElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridCheckBoxColumn Header="Edit Insertion"
                                                 Binding="{Binding EditInsertion, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                            <DataGridCheckBoxColumn.ElementStyle>
-                                <Style TargetType="CheckBox">
-                                    <Setter Property="VerticalAlignment"
+                                    <DataGridCheckBoxColumn.ElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="VerticalAlignment"
                                             Value="Center" />
-                                    <Setter Property="HorizontalAlignment"
+                                            <Setter Property="HorizontalAlignment"
                                             Value="Center" />
-                                </Style>
-                            </DataGridCheckBoxColumn.ElementStyle>
-                        </DataGridCheckBoxColumn>
-                        <DataGridComboBoxColumn Header="Société" Width="*"
+                                        </Style>
+                                    </DataGridCheckBoxColumn.ElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridComboBoxColumn Header="Société" Width="*"
                              DisplayMemberPath="Name"
                              SelectedValuePath="Id"
                              SelectedValueBinding="{Binding EstablishmentId, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
                              ItemsSource="{Binding Source={x:Static viewModels:ManageUsersViewModel.Establishments}}" />
-                       <DataGridTemplateColumn Header="Actions"
+                                <DataGridTemplateColumn Header="Actions"
                                                 Width="70"
                                                 CellTemplate="{StaticResource ActionTemplate}" />
-                    </DataGrid.Columns>
-                </DataGrid>
-            </Border>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Border>
 
-            <Border BorderBrush="LightGray"
+                    <Border BorderBrush="LightGray"
                     BorderThickness="1, 1, 1, 1">
-                <StackPanel>
-                    <Button Content="+"
+                        <StackPanel>
+                            <Button Content="+"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Center"
                             Click="Button_Click_1" />
+                        </StackPanel>
+                    </Border>
                 </StackPanel>
-            </Border>
-        </StackPanel>
-    </Grid>
+            </Grid>
+        </wpf:BusyIndicator>
+    </wpf:BusyIndicator>
 </Window>

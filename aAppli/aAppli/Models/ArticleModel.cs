@@ -563,6 +563,7 @@ namespace aAppli.Models
 
         public bool IsLoadedFromDB { get; set; }
 
+        private string _DesignationText;
         public string DesignationText
         {
             get
@@ -612,6 +613,11 @@ namespace aAppli.Models
                 designationStringBuilder.Append(" PCS");
 
                 return designationStringBuilder.ToString().ToUpper();
+            }
+
+            set
+            {
+                _DesignationText = value;
             }
         }
 

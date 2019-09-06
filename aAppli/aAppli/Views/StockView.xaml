@@ -119,7 +119,7 @@
                                                 Visibility="Hidden"
                                                 Binding="{Binding Id}" />
                                     <DataGridTextColumn Header="Désignation"
-                                                Binding="{Binding DesignationText,Mode=OneWay}"
+                                                Binding="{Binding DesignationText,Mode=TwoWay}"
                                                 Width="*">
                                         <DataGridTextColumn.ElementStyle>
                                             <Style TargetType="TextBlock">

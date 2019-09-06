@@ -12,6 +12,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using aAppli.ViewModels;
 using aAppli.Models;
+using System.Runtime.InteropServices;
+using System.Windows.Threading;
 
 namespace aAppli.Views
 {
@@ -20,10 +22,32 @@ namespace aAppli.Views
     /// </summary>
     public partial class ManageUsers : Window
     {
+        [DllImport("user32.dll", CharSet = CharSet.Auto, ExactSpelling = true, CallingConvention = CallingConvention.Winapi)]
+        public static extern short GetKeyState(int keyCode);
+        private DispatcherTimer timer;
+
         public ManageUsers()
         {
             InitializeComponent();
             this.Title += " " + cUser.Login + " / " + cUser.EstablishmentName;
+
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(0.5);
+            timer.Tick += timer1_Tick;
+            timer.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            bool CapsLock = (((ushort)GetKeyState(0x14)) & 0xffff) != 0;
+            if (CapsLock)
+            {
+                busy.IsBusy = true;
+                busy.BusyContent = "Touche Majuscule";
+                return;
+            }
+
+            busy.IsBusy = false;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

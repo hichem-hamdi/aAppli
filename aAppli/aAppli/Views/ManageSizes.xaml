@@ -62,11 +62,13 @@
             <i:InvokeCommandAction Command="{Binding LoadedCommand}" />
         </i:EventTrigger>
     </i:Interaction.Triggers>
-    <Grid>
-        <StackPanel Margin="5">
-            <Border BorderBrush="LightGray"
+    <wpf:BusyIndicator x:Name="busy">
+        <wpf:BusyIndicator IsBusy="{Binding IsBusy}">
+            <Grid>
+                <StackPanel Margin="5">
+                    <Border BorderBrush="LightGray"
                     BorderThickness="1, 1, 1, 1">
-                <DataGrid ItemsSource="{Binding Sizes}"
+                        <DataGrid ItemsSource="{Binding Sizes}"
                           x:Name="myDataGrid"
                           ScrollViewer.HorizontalScrollBarVisibility="Visible"
                           MaxHeight="300"
@@ -81,37 +83,44 @@
                           HorizontalGridLinesBrush="#f0f0f0"
                           VerticalGridLinesBrush="#f0f0f0"
                           AlternatingRowBackground="#9FC5F8">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="Id"
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Id"
                                             Visibility="Hidden"
                                             Binding="{Binding Id}" />
-                        <DataGridTextColumn Header="Nom"
+                                <DataGridTextColumn Header="Nom"
                                             Binding="{Binding Name,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
                                             Width="*">
-                            <DataGridTextColumn.ElementStyle>
-                                <Style TargetType="TextBlock">
-                                    <Setter Property="VerticalAlignment"
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="VerticalAlignment"
                                             Value="Center" />
-                                    <Setter Property="Margin"
+                                            <Setter Property="Margin"
                                             Value="5" />
-                                </Style>
-                            </DataGridTextColumn.ElementStyle>
-                        </DataGridTextColumn>
-                        <DataGridTemplateColumn Header="Actions"
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="CharacterCasing" Value="Upper"/>
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTemplateColumn Header="Actions"
                                                 Width="70"
                                                 CellTemplate="{StaticResource ActionTemplate}" />
-                    </DataGrid.Columns>
-                </DataGrid>
-            </Border>
-            <Border BorderBrush="LightGray"
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Border>
+                    <Border BorderBrush="LightGray"
                     BorderThickness="1, 1, 1, 1">
-                <StackPanel>
-                    <Button Content="+"
+                        <StackPanel>
+                            <Button Content="+"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Center"
                             Click="Button_Click_1" />
+                        </StackPanel>
+                    </Border>
                 </StackPanel>
-            </Border>
-        </StackPanel>
-    </Grid>
+            </Grid>
+        </wpf:BusyIndicator>
+    </wpf:BusyIndicator>
 </Window>
