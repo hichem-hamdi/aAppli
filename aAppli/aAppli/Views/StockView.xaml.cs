@@ -237,11 +237,9 @@ namespace aAppli.Views
             StockViewModel viewModel = (DataContext as StockViewModel);
             viewModel.NbrArticle = db.Article.Count();
             this.IsEnabled = true;
-            myDataGrid.SelectionUnit = DataGridSelectionUnit.FullRow;
             (DataContext as StockViewModel).Articles.Add(art);
             myDataGrid.SelectedItem = (DataContext as StockViewModel).Articles[(DataContext as StockViewModel).Articles.Count - 1];
             myDataGrid.ScrollIntoView(myDataGrid.SelectedItem);
-            myDataGrid.SelectionUnit = DataGridSelectionUnit.Cell;
         }
 
         public DataGridCell GetCell(int row, int column)
