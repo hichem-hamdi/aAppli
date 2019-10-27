@@ -1540,7 +1540,6 @@ D:\GitHub\aAppli\aAppli\aAppli\bin\Debug\System.Data.SqlServerCe.Entity.dll
 D:\GitHub\aAppli\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.dll
 D:\GitHub\aAppli\aAppli\aAppli\bin\Debug\WPFToolkit.Extended.dll
 D:\GitHub\aAppli\aAppli\aAppli\bin\Debug\System.Windows.Interactivity.xml
-D:\GitHub\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.csprojResolveAssemblyReference.cache
 D:\GitHub\aAppli\aAppli\aAppli\obj\x86\Debug\MainWindow.baml
 D:\GitHub\aAppli\aAppli\aAppli\obj\x86\Debug\ConnexionView.baml
 D:\GitHub\aAppli\aAppli\aAppli\obj\x86\Debug\Views\HistoriqueReservation.baml
@@ -1712,3 +1711,4 @@ D:\GitHub\aAppli\aAppli\aAppli\obj\x86\Debug\Views\ManageModels.g.cs
 D:\GitHub\aAppli\aAppli\aAppli\obj\x86\Debug\Views\ManageModels.baml
 D:\GitHub\aAppli\aAppli\aAppli\obj\x86\Debug\Views\ModelDialog.baml
 D:\GitHub\aAppli\aAppli\aAppli\obj\x86\Debug\Views\ModelDialog.g.cs
+D:\GitHub\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.csprojResolveAssemblyReference.cache

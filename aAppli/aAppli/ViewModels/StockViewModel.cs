@@ -282,7 +282,7 @@ namespace aAppli.ViewModels
             {
                 tab = article.SN.Split(';');
             }
-            if (tab != null && article.Id == 0)
+            if (tab != null)
             {
                 bool snExist = false;
                 foreach (var item in tab)
@@ -301,13 +301,17 @@ namespace aAppli.ViewModels
                 }
             }
 
-            if (DesignationExist(article.Designation) && article.Id == 0)
-            {
-                Microsoft.Windows.Controls.MessageBox.Show(string.Format("La designation : {0} existe dans la BD.", article.Designation), "Error", MessageBoxButton.OK, MessageBoxImage.Stop);
-                IsBusy = false;
-                return;
-            }
+            //if (DesignationExist(article.Designation) && article.Id == 0)
+            //{
+            //    Microsoft.Windows.Controls.MessageBox.Show(string.Format("La designation : {0} existe dans la BD.", article.Designation), "Error", MessageBoxButton.OK, MessageBoxImage.Stop);
+            //    IsBusy = false;
+            //    return;
+            //}
             MyDBEntities db = DbManager.CreateDbManager();
+
+            var articleItem = db.Article.FirstOrDefault(a => a.Designation == article.Designation);
+            if (articleItem != null)
+                article.Id = articleItem.ID;
             //DBEntities db = new DBEntities();            
             if (article.Id == 0)
             {

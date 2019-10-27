@@ -116,7 +116,7 @@
                                 <DataGrid.Columns>
                                     <DataGridTextColumn Header="Id"
                                                 Visibility="Hidden"
-                                                Binding="{Binding Id}" />
+                                                Binding="{Binding Id,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
                                     <DataGridTextColumn Header="Désignation"
                                                 Binding="{Binding DesignationText,Mode=TwoWay}"
                                                 Width="*">

@@ -111,7 +111,7 @@ namespace aAppli.Views
                 MyBooking b = new MyBooking
                 {
                     Id = item.Id,
-                    Designation = item.Article.Designation,
+                    Designation = item.Article?.Designation,
                     Magasin = item.Establishment.Name,
                     QT = item.Qt.GetValueOrDefault(),
                     RequestDate = item.RequestDate,

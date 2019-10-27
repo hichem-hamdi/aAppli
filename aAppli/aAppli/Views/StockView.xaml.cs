@@ -238,7 +238,7 @@ namespace aAppli.Views
             viewModel.NbrArticle = db.Article.Count();
             this.IsEnabled = true;
             (DataContext as StockViewModel).Articles.Add(art);
-            myDataGrid.SelectedItem = (DataContext as StockViewModel).Articles[(DataContext as StockViewModel).Articles.Count - 1];
+            myDataGrid.SelectedItem = art;
             myDataGrid.ScrollIntoView(myDataGrid.SelectedItem);
         }
 

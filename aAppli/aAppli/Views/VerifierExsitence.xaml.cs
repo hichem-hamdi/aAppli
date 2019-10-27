@@ -30,7 +30,7 @@ namespace aAppli.Views
 
             MyDBEntities db = DbManager.CreateDbManager();
             var articles = db.Article.ToList();
-            myDataGrid.ItemsSource = articles.Where(article => (article.Designation != null && article.Designation.Contains(search.ToUpper()) || (article.SN.Split(';').Contains(search)))).ToList();
+            myDataGrid.ItemsSource = articles.Where(article => (article.Designation != null && article.Designation.Contains(search.ToUpper()) || (article.SN != null && article.SN.Split(';').Contains(search)))).ToList();
         }
     }
 }
