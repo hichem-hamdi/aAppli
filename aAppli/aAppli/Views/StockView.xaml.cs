@@ -231,6 +231,7 @@ namespace aAppli.Views
             article.FournisseurId = art.SelectedSupplier.Id;
             article.DateAchat = art.PurchaseDate;
             article.PicesQuantity = art.PicesQuantity;
+            article.EstablishmentId = cUser.EstablishmentId;
             article.Description = art.Description;
             db.Article.AddObject(article);
             db.SaveChanges();

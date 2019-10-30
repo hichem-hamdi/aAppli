@@ -366,6 +366,7 @@ namespace aAppli.ViewModels
                         art.PrixVente = article.PrixVente;
                         art.QT = article.QT;
                         art.SN = article.SN;
+                        art.EstablishmentId = cUser.EstablishmentId;
                         art.FamilleId = article.SelectedFamily.Id;
                         art.CategorieId = article.SelectedCategory.Id;
                         art.SousCategorieId = article.SelectedSubCategory.Id;

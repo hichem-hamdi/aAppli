@@ -111,7 +111,7 @@ namespace aAppli.Views
                 MyBooking b = new MyBooking
                 {
                     Id = item.Id,
-                    Designation = item.Article?.Designation,
+                    Designation = item.Article == null ? null : item.Article.Designation,
                     Magasin = item.Establishment.Name,
                     QT = item.Qt.GetValueOrDefault(),
                     RequestDate = item.RequestDate,
@@ -164,16 +164,37 @@ namespace aAppli.Views
                     PrixAchat = obj.Article.PrixAchat,
                     PrixVente = obj.Article.PrixVente,
                     QT = obj.Qt.GetValueOrDefault(),
-                    SN = obj.SN
+                    SN = obj.SN,
+                    FamilleId = obj.Article.FamilleId,
+                    CategorieId = obj.Article.CategorieId,
+                    SousCategorieId = obj.Article.SousCategorieId,
+                    BrandId = obj.Article.BrandId,
+                    SizeId = obj.Article.SizeId,
+                    FournisseurId = obj.Article.FournisseurId,
+                    Description = obj.Article.Description,
+                    DateAchat = obj.Article.DateAchat,
+                    PicesQuantity = obj.Article.PicesQuantity,
+                    ModelId = obj.Article.ModelId
                 };
                 db.Article.AddObject(art);
             }
             else
             {
                 art.QT += obj.Qt.GetValueOrDefault();
+                art.FamilleId = obj.Article.FamilleId;
+                art.CategorieId = obj.Article.CategorieId;
+                art.SousCategorieId = obj.Article.SousCategorieId;
+                art.BrandId = obj.Article.BrandId;
+                art.SizeId = obj.Article.SizeId;
+                art.FournisseurId = obj.Article.FournisseurId;
+                art.Description = obj.Article.Description;
+                art.DateAchat = obj.Article.DateAchat;
+                art.PicesQuantity = obj.Article.PicesQuantity;
+                art.ModelId = obj.Article.ModelId;
+
                 if (!art.IsGenerique)
                 {
-                    art.SN +=obj.SN;
+                    art.SN += obj.SN;
                 }
             }
 
@@ -197,7 +218,7 @@ namespace aAppli.Views
             {
                 article.SN = string.Empty;
             }
-           
+
 
             db.SaveChanges();
 
