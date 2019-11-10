@@ -287,7 +287,7 @@ namespace aAppli.ViewModels
                 bool snExist = false;
                 foreach (var item in tab)
                 {
-                    if (item != string.Empty && SnExist(item))
+                    if (item != string.Empty && SnExist(item, article.Id))
                     {
                         Microsoft.Windows.Controls.MessageBox.Show(string.Format("Le SN : {0} existe dans la BD.", item), "Error", MessageBoxButton.OK, MessageBoxImage.Stop);
                         snExist = true;
@@ -405,11 +405,11 @@ namespace aAppli.ViewModels
             IsBusy = false;
         }
 
-        private bool SnExist(string sn)
+        private bool SnExist(string sn, long articleId)
         {
             string Sn = "";
             MyDBEntities db = DbManager.CreateDbManager();
-            foreach (var item in db.Article.Where(a => a.EstablishmentId == cUser.EstablishmentId || cUser.EstablishmentName.Equals("Nouvelit", StringComparison.InvariantCultureIgnoreCase)).OrderBy(a => a.Designation))
+            foreach (var item in db.Article.Where(a => a.ID != articleId && (a.EstablishmentId == cUser.EstablishmentId || cUser.EstablishmentName.Equals("Nouvelit", StringComparison.InvariantCultureIgnoreCase))).OrderBy(a => a.Designation))
             {
                 Sn += item.SN;
             }

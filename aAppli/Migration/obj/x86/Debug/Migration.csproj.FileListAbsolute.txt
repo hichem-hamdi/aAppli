@@ -26,3 +26,4 @@ C:\Users\Administrateur\Desktop\aAppli-master\aAppli-master\aAppli\Migration\bin
 C:\Users\Administrateur\Desktop\aAppli-master\aAppli-master\aAppli\Migration\bin\Debug\Migration.pdb
 C:\Users\Administrateur\Desktop\aAppli-master\aAppli-master\aAppli\Migration\obj\x86\Debug\Migration.exe
 C:\Users\Administrateur\Desktop\aAppli-master\aAppli-master\aAppli\Migration\obj\x86\Debug\Migration.pdb
+D:\GitHub\aAppli\aAppli\Migration\obj\x86\Debug\Migration.csprojResolveAssemblyReference.cache

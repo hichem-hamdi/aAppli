@@ -1711,3 +1711,4 @@ D:\GitHub\aAppli\aAppli\aAppli\obj\x86\Debug\Views\ManageModels.g.cs
 D:\GitHub\aAppli\aAppli\aAppli\obj\x86\Debug\Views\ManageModels.baml
 D:\GitHub\aAppli\aAppli\aAppli\obj\x86\Debug\Views\ModelDialog.baml
 D:\GitHub\aAppli\aAppli\aAppli\obj\x86\Debug\Views\ModelDialog.g.cs
+D:\GitHub\aAppli\aAppli\aAppli\obj\x86\Debug\aAppli.csprojResolveAssemblyReference.cache
