@@ -561,7 +561,7 @@ namespace aAppli.ViewModels
             {
                 MyDBEntities db = DbManager.CreateDbManager();
                 List<Article> art2s = db.Article.Where(a => a.EstablishmentId == cUser.EstablishmentId || cUser.EstablishmentName.Equals("Nouvelit", StringComparison.InvariantCultureIgnoreCase)).ToList();
-                Article art2 = art2s.FirstOrDefault(a => a.SN.Split(';').Contains(SN));
+                Article art2 = art2s.FirstOrDefault(a => a.SN != null && a.SN.Split(';').Contains(SN));
                 if (art2 == null)
                 {
                     Microsoft.Windows.Controls.MessageBox.Show("Aucun article trouvé.", "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
