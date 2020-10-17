@@ -16,6 +16,7 @@ using iTextSharp.text.pdf;
 using System.IO;
 using System.Diagnostics;
 using aAppli.Models;
+using System.Globalization;
 
 namespace aAppli.Views
 {
@@ -76,6 +77,14 @@ namespace aAppli.Views
 
         private void btnVisualiser_Click(object sender, RoutedEventArgs e)
         {
+            vm.Items = new System.Collections.ObjectModel.ObservableCollection<CreditItemModel>(vm.Items.Where(i => i.ParentId == 0).ToList());
+            List<CreditItemModel> l = new List<CreditItemModel>();
+            foreach (var item in vm.AccItems)
+            {
+                if (vm.Items.Any(i => i.Id == item.ParentId))
+                    l.Add(item);
+            }
+
             Document document = new Document();
             
             string fileName = string.Format(@"RapportsCredit\Rapport{0}.pdf", DateDe.SelectedDate.GetValueOrDefault().ToShortDateString().Replace('/', '-'));
@@ -86,10 +95,42 @@ namespace aAppli.Views
                 writer.PageEvent = new pdfPage(DateDe.SelectedDate.GetValueOrDefault(), "Credit De : " + DateTime.Now);
             document.Open();
 
+            var nfi = (NumberFormatInfo)CultureInfo.InvariantCulture.NumberFormat.Clone();
+            nfi.NumberGroupSeparator = " ";
+
+            iTextSharp.text.Paragraph p = new iTextSharp.text.Paragraph();
+            var totalAchat = vm.Items.Sum(t => t.PrixAchat);
+            p.Add(new Phrase("Total achat: " + totalAchat.ToString("#,0.000") + " D.T"));
+            p.Alignment = Element.ALIGN_LEFT;
+            p.SpacingBefore = 10;
+            document.Add(p);
+
+            iTextSharp.text.Paragraph pVente = new iTextSharp.text.Paragraph();
+            var totalVente = vm.Items.Sum(t => t.PrixVente);
+            pVente.Add(new Phrase("Total vente: " + totalVente.ToString("#,0.000") + " D.T"));
+            pVente.Alignment = Element.ALIGN_LEFT;
+            pVente.SpacingBefore = 10;
+            document.Add(pVente);
+
+            iTextSharp.text.Paragraph pAchatAcc = new iTextSharp.text.Paragraph();
+            var totalAchatAcc = l.Sum(t => t.PrixAchat);
+            pAchatAcc.Add(new Phrase("Total achat accéssoires: " + totalAchatAcc.ToString("#,0.000") + " D.T"));
+            pAchatAcc.Alignment = Element.ALIGN_LEFT;
+            pAchatAcc.SpacingBefore = 10;
+            document.Add(pAchatAcc);
+
+            iTextSharp.text.Paragraph pBenefices = new iTextSharp.text.Paragraph();
+            var benefices = totalVente - totalAchat - totalAchatAcc;
+            pBenefices.Add(new Phrase("Bénéfices: " + benefices.ToString("#,0.000") + " D.T"));
+            pBenefices.Alignment = Element.ALIGN_LEFT;
+            pBenefices.SpacingBefore = 10;
+            document.Add(pBenefices);
+
             PdfPTable table = new PdfPTable(9);
             table.WidthPercentage = 100f;
             float[] intTblWidth = new float[9] { .3f, .5f, .1f, .1f, .1f, .1f, .2f, .2f, .1f };
             table.SetWidths(intTblWidth);
+
 
             BaseColor grey = new BaseColor(System.Drawing.Color.Red);
             Font font = FontFactory.GetFont("Arial", 9, Font.NORMAL, grey);
@@ -138,7 +179,7 @@ namespace aAppli.Views
             cell = new PdfPCell(new Phrase("Date/Time", FontFactory.GetFont("Arial", 9, Font.BOLD)));
             cell.HorizontalAlignment = 1;
             table.AddCell(cell);
-            vm.Items= new System.Collections.ObjectModel.ObservableCollection<CreditItemModel>( vm.Items.Where(i => i.ParentId == 0).ToList());
+            
             foreach (var item in vm.Items)
             {
                 cell = new PdfPCell(new Phrase(item.SN, FontFactory.GetFont("Arial", 7)));
@@ -170,9 +211,9 @@ namespace aAppli.Views
             }
             document.Add(table);
 
-            PdfPTable table2 = new PdfPTable(3);
+            PdfPTable table2 = new PdfPTable(5);
             table2.WidthPercentage = 100f;
-            float[] intTblWidth2 = new float[3] { .3f, .5f,.2f };
+            float[] intTblWidth2 = new float[5] { .3f, .5f, .1f, .1f, .2f };
             table2.SetWidths(intTblWidth2);
 
              grey = new BaseColor(System.Drawing.Color.Red);
@@ -181,7 +222,7 @@ namespace aAppli.Views
              cell = new PdfPCell(new Phrase(""));
 
             cell.HorizontalAlignment = 1;
-            cell.Colspan = 3;
+            cell.Colspan = 5;
             cell.Border = 0;
             table2.AddCell(cell);
 
@@ -194,16 +235,18 @@ namespace aAppli.Views
             cell.HorizontalAlignment = 1;
             table2.AddCell(cell);
 
-            cell = new PdfPCell(new Phrase("SN", FontFactory.GetFont("Arial", 9, Font.BOLD)));
+            cell = new PdfPCell(new Phrase("Prix Achat", FontFactory.GetFont("Arial", 9, Font.BOLD)));
             cell.HorizontalAlignment = 1;
             table2.AddCell(cell);
 
-            List<CreditItemModel> l = new List<CreditItemModel>();
-            foreach (var item in vm.AccItems)
-            {
-                if (vm.Items.Any(i => i.Id == item.ParentId))
-                    l.Add(item);
-            }
+
+            cell = new PdfPCell(new Phrase("Prix Vente ", FontFactory.GetFont("Arial", 9, Font.BOLD)));
+            cell.HorizontalAlignment = 1;
+            table2.AddCell(cell);
+
+            cell = new PdfPCell(new Phrase("SN", FontFactory.GetFont("Arial", 9, Font.BOLD)));
+            cell.HorizontalAlignment = 1;
+            table2.AddCell(cell);          
 
             foreach (var item in l)
             {
@@ -211,6 +254,12 @@ namespace aAppli.Views
                 table2.AddCell(cell);
 
                 cell = new PdfPCell(new Phrase(item.Designation, FontFactory.GetFont("Arial", 7)));
+                table2.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase(item.PrixAchat.ToString("0.000"), FontFactory.GetFont("Arial", 7)));
+                table2.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase(item.PrixVente.ToString("0.000"), FontFactory.GetFont("Arial", 7)));
                 table2.AddCell(cell);
 
                 cell = new PdfPCell(new Phrase(item.SN, FontFactory.GetFont("Arial", 7)));

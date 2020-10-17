@@ -16,14 +16,13 @@ D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\Migration\bi
 D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\Migration\obj\x86\Debug\Migration.exe
 D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\Migration\obj\x86\Debug\Migration.pdb
 D:\LOGICIEL CODE A BARE GROUPE NOUVELIT LE 03 01 2016 VPN OK\aAppli\Migration\obj\x86\Debug\Migration.csprojResolveAssemblyReference.cache
-D:\GitHub\aAppli\aAppli\Migration\bin\Debug\Migration.exe.config
-D:\GitHub\aAppli\aAppli\Migration\bin\Debug\Migration.exe
-D:\GitHub\aAppli\aAppli\Migration\bin\Debug\Migration.pdb
-D:\GitHub\aAppli\aAppli\Migration\obj\x86\Debug\Migration.exe
-D:\GitHub\aAppli\aAppli\Migration\obj\x86\Debug\Migration.pdb
 C:\Users\Administrateur\Desktop\aAppli-master\aAppli-master\aAppli\Migration\bin\Debug\Migration.exe.config
 C:\Users\Administrateur\Desktop\aAppli-master\aAppli-master\aAppli\Migration\bin\Debug\Migration.exe
 C:\Users\Administrateur\Desktop\aAppli-master\aAppli-master\aAppli\Migration\bin\Debug\Migration.pdb
 C:\Users\Administrateur\Desktop\aAppli-master\aAppli-master\aAppli\Migration\obj\x86\Debug\Migration.exe
 C:\Users\Administrateur\Desktop\aAppli-master\aAppli-master\aAppli\Migration\obj\x86\Debug\Migration.pdb
-D:\GitHub\aAppli\aAppli\Migration\obj\x86\Debug\Migration.csprojResolveAssemblyReference.cache
+D:\GitHub\aAppli\aAppli\Migration\bin\Debug\Migration.exe.config
+D:\GitHub\aAppli\aAppli\Migration\bin\Debug\Migration.exe
+D:\GitHub\aAppli\aAppli\Migration\bin\Debug\Migration.pdb
+D:\GitHub\aAppli\aAppli\Migration\obj\x86\Debug\Migration.exe
+D:\GitHub\aAppli\aAppli\Migration\obj\x86\Debug\Migration.pdb
